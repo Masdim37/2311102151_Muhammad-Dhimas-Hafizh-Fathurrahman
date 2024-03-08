@@ -1,23 +1,5 @@
 # Repository praktikum algoritma dan struktur data
 
-
-## Nama
-
-Muhammad Dhimas Hafizh Fathurrahman
-
-
-## NIM : 2311102151
-
-
-## Kelas
-
-S1IF-11-D
-
-
-Repository praktikum algoritma dan struktur data
-
-Nama Muhammad Dhimas Hafizh Fathurrahman
-
+Nama : Muhammad Dhimas Hafizh Fathurrahman
 NIM : 2311102151
-
-Kelas S1IF-11-D
+Kelas : S1IF-11-D
