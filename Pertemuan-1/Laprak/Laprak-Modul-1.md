@@ -243,7 +243,10 @@ int main(){
 ##### Output 3
 ![Screenshot Output Unguided 1_3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Output-Unguided1-3.png)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+Kode di atas merupakan program kalkulator lingkaran. Program ini dapat digunakan untuk menghitung luas, keliling, dan jari-jari lingkaran. Program ini menggunakan 3 fungsi dan 2 prosedur yang masing-masing menangani operasi terkait lingkaran. Program ini juga dilengkapi percabangan switch-case dan if-else yang membantu user dalam memilih menu yang diinginkan. Program ini menggunakan beberapa tipe data primitif, antara lain integer dan float yang digunakan untuk menyimpan nilai-nilai yang digunakan dalam perhitungan terkait lingkaran. 
+
+Kesimpulan materi tipe data primitif =
+Tipe data primitif adalah tipe data dasar yang tersedia dalam banyak bahasa pemrograman (sudah ditentukan oleh sistem) yang digunakan untuk menyimpan nilai sederhana seperti bilangan bulat, bilangan desimal, karakter, dan nilai boolean.
 
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
