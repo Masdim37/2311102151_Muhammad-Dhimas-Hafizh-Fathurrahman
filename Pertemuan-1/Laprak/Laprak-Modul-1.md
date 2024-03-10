@@ -242,6 +242,7 @@ int main(){
 
 #### Output 3
 ![Screenshot Output Unguided 1_3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Output-Unguided1-3.png)
+
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 ## Kesimpulan
