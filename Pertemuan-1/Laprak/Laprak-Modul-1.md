@@ -93,7 +93,7 @@ int main(){
     return 0;
 }
 ```
-Kode diatas digunakan untuk menampilkan biodata mahasiswa. 
+Kode diatas digunakan untuk menampilkan biodata mahasiswa antara lain nama, alamat, dan umur. Data biodata mahasiswa tersebut disimpan dalam struct mahasiswa. Terdapat 2 variabel mhs1 dan mhs2 yang masing-masing menyimpan informasi tentang dua mahasiswa. Setiap mahasiswa memiliki tiga atribut, yaitu name (nama) yang disimpan dalam array Name[50], address (alamat) yang disimpan pada array Address[50], dan age (umur) yang dismpan pada variabel age.  Kemudian biodata tersebut dicetak menggunakan fungsi printf.
 
 ### 3. [Tipe Data Koleksi]
 
@@ -122,7 +122,8 @@ cout << "Isi array kelima : " << nilai[4] << endl;
 return 0;
 }
 ```
-deksripsi
+
+Kode diatas digunakan untuk mencetak nilai yang terdapat dalam array nilai dengan ukuran 5. Pada awal program, nilai dari masing-masing indeks array tersebut telah dideklarasikan, antara lain 23 pada indeks ke-0, 50 pada indeks ke-1, 34 pada indeks ke-2, 78 pada indeks ke-3, dan 90 pada indeks ke-4. kemudian nilai-nilai tersebut dicetak satu persatu.
 
 ## Unguided 
 
