@@ -247,7 +247,7 @@ int main(){
 Kode di atas merupakan program kalkulator lingkaran. Program ini dapat digunakan untuk menghitung luas, keliling, dan jari-jari lingkaran. Program ini menggunakan 3 fungsi dan 2 prosedur yang masing-masing menangani operasi terkait lingkaran. Program ini juga dilengkapi percabangan switch-case dan if-else yang membantu user dalam memilih menu yang diinginkan. Program ini menggunakan beberapa tipe data primitif, antara lain integer dan float yang digunakan untuk menyimpan nilai-nilai yang digunakan dalam perhitungan terkait lingkaran. 
 
 ##### Kesimpulan materi tipe data primitif =
-<br> Tipe data primitif adalah tipe data dasar yang tersedia dalam banyak bahasa pemrograman (sudah ditentukan oleh sistem) yang digunakan untuk menyimpan nilai sederhana seperti bilangan bulat, bilangan desimal, karakter, dan nilai boolean.
+Tipe data primitif adalah tipe data dasar yang tersedia dalam banyak bahasa pemrograman (sudah ditentukan oleh sistem) yang digunakan untuk menyimpan nilai sederhana seperti bilangan bulat, bilangan desimal, karakter, dan nilai boolean.
 
 ### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya!
 
@@ -333,10 +333,10 @@ int main(){
 Kode di atas merupakan program yang digunakan untuk merekap nilai siswa. Program ini menggunakan struct Student_151 untuk menyimpan biodata siswa berupa nama (Name_151), kelas (Class_151), dan NIS (NIS_151); serta menggunakan class Subject_151 dengan akses publik untuk menyimpan nilai matematika (Math_151), IPA (Science_151), dan bahasa indonesia (Indonesian_151). Program ini juga menggunakan fungsi RataRataNilai_151 untuk menghitung nilai rata-rata setip murid. User diminta untuk menginputkan biodata serta nilai masing-masing siswa, kemudian program akan menghasilkan output berupa rekapitulasi nilai siswa.
 
 ##### A. Struct 
-<br> Struct atau struktur data dalam bahasa pemrograman C++ adalah sekumpulan data yang terdiri dari lebih dari satu variabel bertipe data sama maupun berbeda. Struct merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram (user defined data type)[1]. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda. Selain itu, penggunaan struct dapat memudahkan pengelolaan dan manipulasi data dengan mengakses atribut secara individu.
+Struct atau struktur data dalam bahasa pemrograman C++ adalah sekumpulan data yang terdiri dari lebih dari satu variabel bertipe data sama maupun berbeda. Struct merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram (user defined data type)[1]. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda. Selain itu, penggunaan struct dapat memudahkan pengelolaan dan manipulasi data dengan mengakses atribut secara individu.
 
 ##### B. Class
-<br> Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Fitur class merupakan fitur Object Oriented Program(OOP) pada bahasa C++. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[2]. Sama seperti struct, class  digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
+Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Fitur class merupakan fitur Object Oriented Program(OOP) pada bahasa C++. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[2]. Sama seperti struct, class  digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map
 
