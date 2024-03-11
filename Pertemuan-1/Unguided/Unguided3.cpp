@@ -28,7 +28,7 @@ int main() {
     if (Stok_151.find(Buah_151) != Stok_151.end()) { //jika buah yang dicari ada dalam map Stok_151, maka tampilkan output
         cout << "Jumlah stok " << Buah_151 << " adalah " << Stok_151[Buah_151] << " kg" << endl;
     } else { //jika buah yang dicari tidak ada dalam map Stok_151, maka tampilkan output
-        cout << "Buah tidak ditemukan dalam katalog." << endl;
+        cout << "Buah yang anda cari tidak ditemukan." << endl;
     }
     
     return 0;

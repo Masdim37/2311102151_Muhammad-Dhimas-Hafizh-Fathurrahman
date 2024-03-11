@@ -329,9 +329,13 @@ int main(){
 ##### Output 2
 ![Screenshot Output Unguided 2_2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Output-Unguided2-2.png)
 
-Kode di atas merupakan ...
-fungsi dari class ...
-fungsi dari struct ...
+Kode di atas merupakan program yang digunakan untuk merekap nilai siswa. Program ini menggunakan struct Student_151 untuk menyimpan biodata siswa berupa nama (Name_151), kelas (Class_151), dan NIS (NIS_151); serta menggunakan class Subject_151 dengan akses publik untuk menyimpan nilai matematika (Math_151), IPA (Science_151), dan bahasa indonesia (Indonesian_151). Program ini juga menggunakan fungsi RataRataNilai_151 untuk menghitung nilai rata-rata setip murid. User diminta untuk menginputkan biodata serta nilai masing-masing siswa, kemudian program akan menghasilkan output berupa rekapitulasi nilai siswa.
+
+A. Struct 
+Struct atau struktur data dalam bahasa pemrograman C++ adalah sekumpulan data yang terdiri dari lebih dari satu variabel bertipe data sama maupun berbeda. Struct merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram (user defined data type)[1]. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda. Selain itu, penggunaan struct dapat memudahkan pengelolaan dan manipulasi data dengan mengakses atribut secara individu.
+
+B. Class
+Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Fitur class merupakan fitur Object Oriented Program(OOP) pada bahasa C++. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[2]. Sama seperti struct, class  digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map
 
@@ -366,7 +370,7 @@ int main() {
     if (Stok_151.find(Buah_151) != Stok_151.end()) { //jika buah yang dicari ada dalam map Stok_151, maka tampilkan output
         cout << "Jumlah stok " << Buah_151 << " adalah " << Stok_151[Buah_151] << " kg" << endl;
     } else { //jika buah yang dicari tidak ada dalam map Stok_151, maka tampilkan output
-        cout << "Buah tidak ditemukan dalam katalog." << endl;
+        cout << "Buah yang anda cari tidak ditemukan." << endl;
     }
     
     return 0;
@@ -375,10 +379,16 @@ int main() {
 ### Output Unguided 3 :  
 ![Screenshot Output Unguided 3_1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Output-Unguided3.png)
 
-kode diatas merupakan ...
+Kode diatas merupakan program yang dapat digunakan mengecek stok buah. Program ini menggunakan map Stok_151 untuk menyimpan nilai stok setiap buahnya. Key dalam map Stok_151 adalah nama buah (string), sedangkan valuenya adalah jumlah stok buah (integer). User diminta untuk memasukkan nama buah untuk dicek stoknya, kemudian program akan menampilkan stok dari buah tersebut dalam satuan kg. Apabila buah yang diinputkan tidak ada didalam map Stok_151, maka program akan menampilkan "Buah yang anda cari tidak ditemukan".
+
+Perbedaan antara array dan map antar lain :
+1. Array menggunakan tipe data integer (bilangan) sebagai indeksnya, sedangkan map dapat menggunakan tipe data selain integer sebagai indeksnya.
+2. Indeks dalam array harus berurutan dan dimulai dari 0, sedangkan indeks dalam map bersifat flexibel dan tidak harus berurutan.
+3. Ukuran array biasanya tetap dan harus ditentukan saat deklarasi, sedangkan ukuran map bisa berubah sesuai dengan jumlah elemen yang dimasukkan atau dihapus.
 
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] Indahyati, Uce., Rahmawati Yunianita. 2020. BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++. Sidoarjo: Umsida Press. 
+[2] Ahmad, Nazaruddin, et al. Analisa & Perancangan Sistem Informasi Berorientasi Objek. Penerbit Widina, 2022.
