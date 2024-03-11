@@ -381,7 +381,7 @@ int main() {
 
 Kode diatas merupakan program yang dapat digunakan mengecek stok buah. Program ini menggunakan map Stok_151 untuk menyimpan nilai stok setiap buahnya. Key dalam map Stok_151 adalah nama buah (string), sedangkan valuenya adalah jumlah stok buah (integer). User diminta untuk memasukkan nama buah untuk dicek stoknya, kemudian program akan menampilkan stok dari buah tersebut dalam satuan kg. Apabila buah yang diinputkan tidak ada didalam map Stok_151, maka program akan menampilkan "Buah yang anda cari tidak ditemukan".
 
-Perbedaan antara array dan map antar lain :
+Perbedaan antara array dan map antara lain :
 1. Array menggunakan tipe data integer (bilangan) sebagai indeksnya, sedangkan map dapat menggunakan tipe data selain integer sebagai indeksnya.
 2. Indeks dalam array harus berurutan dan dimulai dari 0, sedangkan indeks dalam map bersifat flexibel dan tidak harus berurutan.
 3. Ukuran array biasanya tetap dan harus ditentukan saat deklarasi, sedangkan ukuran map bisa berubah sesuai dengan jumlah elemen yang dimasukkan atau dihapus.
@@ -391,4 +391,4 @@ Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran
 
 ## Referensi
 [1] Indahyati, Uce., Rahmawati Yunianita. 2020. BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++. Sidoarjo: Umsida Press. 
-[2] Ahmad, Nazaruddin, et al. Analisa & Perancangan Sistem Informasi Berorientasi Objek. Penerbit Widina, 2022.
+<br>[2] Ahmad, Nazaruddin, et al. Analisa & Perancangan Sistem Informasi Berorientasi Objek. Penerbit Widina, 2022.
