@@ -5,18 +5,19 @@
 
 Tipe data merupakan sebuah jenis nilai atau berupa nilai apa yang akan ditampung  oleh  sebuah  variabel.  Tipe  data  ini  wajib  ada  ketika  akan membuat  sebuah  variabel  agar  variabel  tersebut  memiliki  nilai  yang  spesifik dan  jelas  ketika  digunakan  nantinya[3]. Berikut merupakan penjelasan dari macam-macam tipe data.
 
-1. Tipe Data Primitif
+1. Tipe Data Primitif<br/>
 Tipe data primitif adalah tipe data dasar yang tersedia dalam banyak bahasa pemrograman (sudah ditentukan oleh sistem) yang digunakan untuk menyimpan nilai sederhana seperti bilangan bulat, bilangan desimal, karakter, dan nilai boolean. Berikut merupakan contoh dari tipe data primitif.
-a. integer (int)
- Int merupakan tipe data primitif yang digunakan untuk menyimpan nilai berupa bilangan bulat. Tipe data ini memiliki keterurutan, artinya nilai sebelumnya (predecessor) dan nilai sesudahnya (successor) dapat diketahui. Contoh predecessor dari 10 adalah 9, dan successornya adalah 11. Jika x adalah variabel bertipe integer maka definisi keterurutan secara formalnya predecessor (a) = x – 1, dan successor (a) = x + 1[1].
-b. character (char)
- Char merupakan tipe data yang menyimpan Semua huruf dalam alfabet; tanda baca ‘.’ ‘,’ ‘?’ dan lainnya; simbol khusus seperti ‘&’ ‘%’ ‘#’ ‘@’ dan lainnya; operator aritmatik ; angka yang diapit tanda petik seperti ‘0’, ‘12’; dan karakter kosong (null) atau karakter yang panjangnya nol[1].
-c. floating point (float)
+- a. integer (int)
+Int merupakan tipe data primitif yang digunakan untuk menyimpan nilai berupa bilangan bulat. Tipe data ini memiliki keterurutan, artinya nilai sebelumnya (predecessor) dan nilai sesudahnya (successor) dapat diketahui. Contoh predecessor dari 10 adalah 9, dan successornya adalah 11. Jika x adalah variabel bertipe integer maka definisi keterurutan secara formalnya predecessor (a) = x – 1, dan successor (a) = x + 1[1].
+- b. character (char)
+Char merupakan tipe data yang menyimpan Semua huruf dalam alfabet; tanda baca ‘.’ ‘,’ ‘?’ dan lainnya; simbol khusus seperti ‘&’ ‘%’ ‘#’ ‘@’ dan lainnya; operator aritmatik ; angka yang diapit tanda petik seperti ‘0’, ‘12’; dan karakter kosong (null) atau karakter yang panjangnya nol[1].
+- c. floating point (float)
 Float merupakan tipe data yang menyimpan nilai berupa bilangan desimal seperti 1.3, 3.7, 7.5, dan sebagainya.
-d. Boolean 
+- d. Boolean 
 Boolean merupakan tipe data yang hanya mengenal dua nilai yaitu True (benar) dan False (salah). True dapat dinyatakan dengan angka 1, dan False dapat dinyatakan dengan angka 0.
 
-2. Tipe Data 
+2. Tipe Data Abstrak<br/>
+Tipe data abstrak atau abstrak data type (ADT) merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram. Didalam sebuah tipe data abstrak dapat terdiri dari banyak tipe data yang berbeda. Contoh dari tipe data abstrak adalah structure (struct), dan class. 
 
 ## Guided 
 
