@@ -3,15 +3,15 @@
 
 ## Dasar Teori
 
-Tipe data merupakan sebuah jenis nilai atau berupa nilai apa yang akan ditampung  oleh  sebuah  variabel.  Tipe  data  ini  wajib  ada  ketika  akan membuat  sebuah  variabel  agar  variabel  tersebut  memiliki  nilai  yang  spesifik dan  jelas  ketika  digunakan  nantinya[3]. Berikut merupakan penjelasan dari macam-macam tipe data.
+Tipe data merupakan sebuah jenis nilai atau berupa nilai apa yang akan ditampung oleh sebuah variabel. Tipe data ini wajib ada ketika akan membuat sebuah variabel agar variabel tersebut memiliki nilai yang spesifik dan jelas ketika digunakan nantinya[1]. Berikut merupakan penjelasan dari macam-macam tipe data.
 
 ### A. Tipe Data Primitif<br/>
 Tipe data primitif adalah tipe data dasar yang tersedia dalam banyak bahasa pemrograman (sudah ditentukan oleh sistem) yang digunakan untuk menyimpan nilai sederhana seperti bilangan bulat, bilangan desimal, karakter, dan nilai boolean. Berikut merupakan contoh dari tipe data primitif.
-#### 1. integer (int)
-Int merupakan tipe data primitif yang digunakan untuk menyimpan nilai berupa bilangan bulat. Tipe data ini memiliki keterurutan, artinya nilai sebelumnya (predecessor) dan nilai sesudahnya (successor) dapat diketahui. Contoh predecessor dari 10 adalah 9, dan successornya adalah 11. Jika x adalah variabel bertipe integer maka definisi keterurutan secara formalnya predecessor (a) = x – 1, dan successor (a) = x + 1[1].
-#### 2. character (char)
+#### 1. Integer (int)
+Int merupakan tipe data primitif yang digunakan untuk menyimpan nilai berupa bilangan bulat. Tipe data ini memiliki keterurutan, artinya nilai sebelumnya (predecessor) dan nilai sesudahnya (successor) dapat diketahui. Contoh predecessor dari 10 adalah 9, dan successornya adalah 11. Jika x adalah variabel bertipe integer maka definisi keterurutan secara formalnya predecessor (a) = x – 1, dan successor (a) = x + 1[2].
+#### 2. Character (char)
 Char merupakan tipe data yang menyimpan Semua huruf dalam alfabet; tanda baca ‘.’ ‘,’ ‘?’ dan lainnya; simbol khusus seperti ‘&’ ‘%’ ‘#’ ‘@’ dan lainnya; operator aritmatik ; angka yang diapit tanda petik seperti ‘0’, ‘12’;
-#### 3. floating point (float)
+#### 3. Floating point (float)
 Float merupakan tipe data yang menyimpan nilai berupa bilangan desimal seperti 1.3, 3.7, 7.5, dan sebagainya.
 #### 4. Boolean 
 Boolean merupakan tipe data yang hanya mengenal dua nilai yaitu True (benar) dan False (salah). True dapat dinyatakan dengan angka 1, dan False dapat dinyatakan dengan angka 0.
@@ -19,11 +19,11 @@ Boolean merupakan tipe data yang hanya mengenal dua nilai yaitu True (benar) dan
 ### B. Tipe Data Abstrak<br/>
 Tipe data abstrak atau abstrak data type (ADT) merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram. Didalam sebuah tipe data abstrak dapat terdiri dari banyak tipe data yang berbeda. Contoh dari tipe data abstrak adalah structure (struct), dan class. 
 #### 1. Struct 
-Struct atau struktur data dalam bahasa pemrograman C++ adalah sekumpulan data yang terdiri dari lebih dari satu variabel bertipe data sama maupun berbeda. Struct merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram (user defined data type)[1]. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda. Selain itu, penggunaan struct dapat memudahkan pengelolaan dan manipulasi data dengan mengakses atribut secara individu.
+Struct atau structure dalam bahasa pemrograman C++ adalah sekumpulan data yang terdiri dari lebih dari satu variabel bertipe data sama maupun berbeda. Struct merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram (user defined data type)[2]. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda. Selain itu, penggunaan struct dapat memudahkan pengelolaan dan manipulasi data dengan mengakses atribut secara individu.
 #### 2. Class
 Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Fitur class merupakan fitur Object Oriented Program(OOP) pada bahasa C++. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[2]. Sama seperti struct, class  digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
 
-### C. Tpe Data Koleksi<br/>
+### C. Tipe Data Koleksi<br/>
 Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur dan bersamaan. Berikut ini merupakan beberapa contoh tipe data koleksi yang sering digunakan dalam pemrograman.
 #### 1. Array
 Array atau larik adalah sebuah tipe data bentukan atau terstruktur yang terdiri dari sejumlah komponen dengan tipe yang sama. Jumlah komponen ditunjukkan dengan nilai indeks atau dimensi dari array. Indeks array dimulai dari 0. Array memiliki 3 dimensi antara lain :
@@ -363,10 +363,10 @@ int main(){
 Kode di atas merupakan program yang digunakan untuk merekap nilai siswa. Program ini menggunakan struct Student_151 untuk menyimpan biodata siswa berupa nama (Name_151), kelas (Class_151), dan NIS (NIS_151); serta menggunakan class Subject_151 dengan akses publik untuk menyimpan nilai matematika (Math_151), IPA (Science_151), dan bahasa indonesia (Indonesian_151). Program ini juga menggunakan fungsi RataRataNilai_151 untuk menghitung nilai rata-rata setip murid. User diminta untuk menginputkan biodata serta nilai masing-masing siswa, kemudian program akan menghasilkan output berupa rekapitulasi nilai siswa.
 
 ##### A. Struct 
-Struct atau struktur data dalam bahasa pemrograman C++ adalah sekumpulan data yang terdiri dari lebih dari satu variabel bertipe data sama maupun berbeda. Struct merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram (user defined data type)[1]. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda. Selain itu, penggunaan struct dapat memudahkan pengelolaan dan manipulasi data dengan mengakses atribut secara individu.
+Struct atau structure adalah tipe data yang memungkinkan pemrogram untuk mengelompokkan berbagai jenis data yang berbeda menjadi satu kesatuan yang lebih besar. Struct terdiri dari lebih dari satu variabel yang dapat memiliki tipe data yang sama atau berbeda. Dalam C++, struct merupakan tipe data yang didefinisikan oleh pengguna (user-defined data type). Struct berguna untuk mengelompokkan data dengan tipe data yang berbeda menjadi satu unit. Sehingga data tersebut dapat disimpan dan diakses dengan cara yang terstruktur. Dengan menggunakan struct, data dapat dikelola dan dimanipulasi dengan mudah dengan mengakses atribut atau anggota struct secara individu.
 
 ##### B. Class
-Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Fitur class merupakan fitur Object Oriented Program(OOP) pada bahasa C++. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[2]. Sama seperti struct, class  digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
+Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Class merupakan konsep yang fundamental dalam pemrograman berorientasi objek (OOP) pada bahasa pemrograman C++. Class dapat digunakan untuk membuat tipe data baru yang dapat digunakan untuk membuat objek. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[3]. Sama seperti struct, class digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
 
 ### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map!
 
@@ -418,9 +418,9 @@ Perbedaan antara array dan map antara lain :
 3. Ukuran array biasanya tetap dan harus ditentukan saat deklarasi, sedangkan ukuran map bisa berubah sesuai dengan jumlah elemen yang dimasukkan atau dihapus.
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Tipe data adalah sebuah pengklasifikasian data berdasarkan jenis data tersebut. Tipe data ini wajib ada ketika akan membuat sebuah variabel agar variabel tersebut memiliki nilai yang spesifik dan jelas ketika digunakan nantinya. Terdapat 3 jenis tipe data yaitu tipe data primitif atau tipe data dasar yang meliputi integer, char, float, dan boolen; tipe data abstrak atau tipe data yang dapat dibentuk sendiri yang meliputi struct dan class; dan tipe data koleksi atau tipe data yang digunakan untuk pengelompokan yang meliputi array, map, dan vector. Penting bagi seorang programmer untuk memahami dan menguasai materi tipe data agar program yang dibuat dapat berjalan dengan benar, efisien, dan terhindar dari kesalahan (error). 
 
 ## Referensi
-[1] Indahyati, Uce., Rahmawati Yunianita. 2020. BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++. Sidoarjo: Umsida Press. 
-<br>[2] Ahmad, Nazaruddin, et al. Analisa & Perancangan Sistem Informasi Berorientasi Objek. Penerbit Widina, 2022.
-<br>[3] Putra, M. T. D., Pradeka, D., & Yuniarti, A. R. (2022). BELAJAR DASAR PEMROGRAMAN DENGAN C++.
+[1] Putra, Muhammad Taufik D., et al. (2022). "BELAJAR DASAR PEMROGRAMAN DENGAN C++". Edited by Damayanti, Evi, CV WIDINA MEDIA UTAMA. Diakses pada 10 Maret 2024 melalui https://repository.penerbitwidina.com/publications/558527/belajar-dasar-pemrograman-dengan-c#cite.
+<br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
+<br>[3] Ahmad, Nazaruddin, et al. (2022). "Analisa & Perancangan Sistem Informasi Berorientasi Objek". Bandung: Penerbit Widina. ISBN 978-459-080-7.
