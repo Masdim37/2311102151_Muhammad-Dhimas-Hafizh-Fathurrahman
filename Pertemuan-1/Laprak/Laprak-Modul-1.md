@@ -7,17 +7,33 @@ Tipe data merupakan sebuah jenis nilai atau berupa nilai apa yang akan ditampung
 
 1. Tipe Data Primitif<br/>
 Tipe data primitif adalah tipe data dasar yang tersedia dalam banyak bahasa pemrograman (sudah ditentukan oleh sistem) yang digunakan untuk menyimpan nilai sederhana seperti bilangan bulat, bilangan desimal, karakter, dan nilai boolean. Berikut merupakan contoh dari tipe data primitif.
-- a. integer (int)
+##### a. integer (int)
 Int merupakan tipe data primitif yang digunakan untuk menyimpan nilai berupa bilangan bulat. Tipe data ini memiliki keterurutan, artinya nilai sebelumnya (predecessor) dan nilai sesudahnya (successor) dapat diketahui. Contoh predecessor dari 10 adalah 9, dan successornya adalah 11. Jika x adalah variabel bertipe integer maka definisi keterurutan secara formalnya predecessor (a) = x – 1, dan successor (a) = x + 1[1].
-- b. character (char)
+##### b. character (char)
 Char merupakan tipe data yang menyimpan Semua huruf dalam alfabet; tanda baca ‘.’ ‘,’ ‘?’ dan lainnya; simbol khusus seperti ‘&’ ‘%’ ‘#’ ‘@’ dan lainnya; operator aritmatik ; angka yang diapit tanda petik seperti ‘0’, ‘12’; dan karakter kosong (null) atau karakter yang panjangnya nol[1].
-- c. floating point (float)
+##### c. floating point (float)
 Float merupakan tipe data yang menyimpan nilai berupa bilangan desimal seperti 1.3, 3.7, 7.5, dan sebagainya.
-- d. Boolean 
+##### d. Boolean 
 Boolean merupakan tipe data yang hanya mengenal dua nilai yaitu True (benar) dan False (salah). True dapat dinyatakan dengan angka 1, dan False dapat dinyatakan dengan angka 0.
 
 2. Tipe Data Abstrak<br/>
 Tipe data abstrak atau abstrak data type (ADT) merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram. Didalam sebuah tipe data abstrak dapat terdiri dari banyak tipe data yang berbeda. Contoh dari tipe data abstrak adalah structure (struct), dan class. 
+##### a. Struct 
+Struct atau struktur data dalam bahasa pemrograman C++ adalah sekumpulan data yang terdiri dari lebih dari satu variabel bertipe data sama maupun berbeda. Struct merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram (user defined data type)[1]. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda. Selain itu, penggunaan struct dapat memudahkan pengelolaan dan manipulasi data dengan mengakses atribut secara individu.
+##### b. Class
+Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Fitur class merupakan fitur Object Oriented Program(OOP) pada bahasa C++. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[2]. Sama seperti struct, class  digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
+
+3. Tpe Data Koleksi<br/>
+Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur dan bersamaan. Berikut ini merupakan beberapa contoh tipe data koleksi yang sering digunakan dalam pemrograman.
+##### a. Array
+Array atau larik adalah sebuah tipe data bentukan atau terstruktur yang terdiri dari sejumlah komponen dengan tipe yang sama. Jumlah komponen ditunjukkan dengan nilai indeks atau dimensi dari array. Indeks array dimulai dari 0. Array memiliki 3 dimensi antara lain :
+- Array berdimensi satu (one-dimensional array) mewakili bentuk suatu vektor.
+- Array berdimensi dua (two-dimensional array) mewakili bentuk dari suatu matriks atau tabel
+- Array berdimensi tiga (three-dimensional array) mewakili bentuk suatu ruang.
+##### b. Map
+Map adalah jenis struktur data asosiatif yang termasuk dalam Standar Template Library (STL) yang memetakan kunci ke nilai (<key, value>). Map terasa seperti array namun dapat memiliki indeks (dalam map disebut sebagai key) berupa selain tipe data integer.
+##### c. Vector
+Vector adalah struktur data dinamis yang menyimpan elemen-elemen dalam urutan linier bersebelahan, mirip dengan array, tetapi dengan kemampuan untuk mengubah ukurannya secara dinamis. Vector termasuk kedalam Standard Template Library (STL). Ketika jumlah elemen dalam vector melebihi kapasitas yang saat ini dialokasikan, vector akan secara otomatis mengalokasikan lebih banyak memori dan menyalin elemen-elemen yang ada ke lokasi yang baru. Sehingga Vector sangat berguna pada program yang membutuhkan kumpulan elemen yang dapat tumbuh atau menyusut saat program berjalan. 
 
 ## Guided 
 
