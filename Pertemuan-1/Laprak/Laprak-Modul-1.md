@@ -21,7 +21,7 @@ Tipe data abstrak atau abstrak data type (ADT) merupakan tipe data yang dapat di
 #### 1. Struct 
 Struct atau structure dalam bahasa pemrograman C++ adalah sekumpulan data yang terdiri dari lebih dari satu variabel bertipe data sama maupun berbeda. Struct merupakan tipe data yang dapat dibentuk sendiri atau didefinisikan sendiri sesuai kebutuhan pemrogram (user defined data type)[2]. Struct digunakan apabila data yang ingin dikelompokkan memiliki tipe data yang berbeda. Selain itu, penggunaan struct dapat memudahkan pengelolaan dan manipulasi data dengan mengakses atribut secara individu.
 #### 2. Class
-Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Fitur class merupakan fitur Object Oriented Program(OOP) pada bahasa C++. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[2]. Sama seperti struct, class  digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
+Class adalah kumpulan dari objek-objek dengan karakterstik yang sama. Fitur class merupakan fitur Object Oriented Program(OOP) pada bahasa C++. Sebuah class memiliki sifat (atribut), kelakuan (operasi/method), hubungan (relationship), dan arti[3]. Sama seperti struct, class  digunakan untuk membungkus tipe data di dalamnya sebagai anggota.
 
 ### C. Tipe Data Koleksi<br/>
 Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur dan bersamaan. Berikut ini merupakan beberapa contoh tipe data koleksi yang sering digunakan dalam pemrograman.
