@@ -159,7 +159,7 @@ Kode diatas merupakan program yang digunakan untuk menginputkan elemen-elemen ar
 
 Deskripsi program unguided 2
 
-### 3. [Soal Unguided no 3]
+### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
 
 ```C++
 
