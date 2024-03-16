@@ -1,5 +1,5 @@
-# <h1 align="center">Laporan Praktikum Modul ... - ...</h1>
-<p align="center">[Nama] - [NIM]</p>
+# <h1 align="center">Laporan Praktikum Modul 2 - Array</h1>
+<p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
 
 ## Dasar Teori
 
@@ -94,7 +94,7 @@ Kode di atas adalah program yang digunakan untuk mencari nilai maksimum dalam se
 ## Unguided 
 
 ### 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
-![Dhimas_Soal-Unguided1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Soal-Unguided1_Modul2.png)
+![Dhimas_Soal-Unguided1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Soal-Unguided1_Modul2.png)
 
 ```C++
 #include <iostream>
@@ -145,7 +145,7 @@ int main(){
 }
 ```
 #### Output:
-![Dhimas_Output-Unguided1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Output-Unguided1_Modul2.png)
+![Dhimas_Output-Unguided1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided1_Modul2.png)
 
 Kode diatas merupakan program yang digunakan untuk menginputkan elemen-elemen array kemudian menampilkannya dan memisahkan bilangan yang merupakan bilangan genap dan bilangan ganjil. Program diatas mengguanakn array Data_151 yang panjang arraynya ditentukan berdasarkan inputan user. Kemudian user diminta untuk menginputkan nilai array Data_151 setiap indeksnya. Kemudian program akan menampilkan bilangan inputan user dan menampilkan bilangan genap dan ganjil berdasarkan bilangan inputan user.
 
