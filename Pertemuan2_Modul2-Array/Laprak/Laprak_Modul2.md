@@ -211,10 +211,10 @@ int main(){
 #### Output :
 
 ##### Output 1 :
-![Dhimas_Output-Unguided2-1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Output-Unguided2-1_Modul2.png)
+![Dhimas_Output-Unguided2-1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided2-1_Modul2.png)
 
 ##### Output 2 :
-![Dhimas_Output-Unguided2-2_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Output-Unguided2-2_Modul2.png)
+![Dhimas_Output-Unguided2-2_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided2-2_Modul2.png)
 
 Kode diatas merupakan program input dan output array 3 dimensi. Pada awal program, user diminta untuk memasukkan ukuran dimensi x (lapisan), y (baris), dan z (kolom) array 3 dimensi tersebut. Terdapat 3 pengulangan for pada program tersebut yang digunakan untuk user menginput nilai masing-masing elemen array, menampilkan data array yang telah diinput user, dan menampilkan array dalam bentuks matriks.
 
