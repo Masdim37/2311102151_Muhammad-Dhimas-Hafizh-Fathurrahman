@@ -147,7 +147,7 @@ int main(){
 #### Output:
 ![Dhimas_Output-Unguided1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided1_Modul2.png)
 
-Kode diatas merupakan program yang digunakan untuk menginputkan elemen-elemen array kemudian menampilkannya dan memisahkan bilangan yang merupakan bilangan genap dan bilangan ganjil. Program diatas mengguanakn array Data_151 yang panjang arraynya ditentukan berdasarkan inputan user. Kemudian user diminta untuk menginputkan nilai array Data_151 setiap indeksnya. Kemudian program akan menampilkan bilangan inputan user dan menampilkan bilangan genap dan ganjil berdasarkan bilangan inputan user.
+Kode diatas merupakan program yang digunakan untuk menginputkan elemen-elemen array kemudian menampilkannya dan memisahkan bilangan yang merupakan bilangan genap dan bilangan ganjil. Program diatas mengguanakn array Data_151 yang panjang arraynya ditentukan berdasarkan inputan user. Kemudian user diminta untuk menginputkan elemen-elemen array Data_151 setiap indeksnya. Kemudian program akan menampilkan bilangan inputan user dan menampilkan bilangan genap dan ganjil berdasarkan bilangan inputan user.
 
 ### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
 
@@ -216,7 +216,7 @@ int main(){
 ##### Output 2 :
 ![Dhimas_Output-Unguided2-2_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided2-2_Modul2.png)
 
-Kode diatas merupakan program input dan output array 3 dimensi. Pada awal program, user diminta untuk memasukkan ukuran dimensi x (lapisan), y (baris), dan z (kolom) array 3 dimensi tersebut. Terdapat 3 pengulangan for pada program tersebut yang digunakan untuk user menginput nilai masing-masing elemen array, menampilkan data array yang telah diinput user, dan menampilkan array dalam bentuks matriks.
+Kode diatas merupakan program input dan output array 3 dimensi. Pada awal program, user diminta untuk memasukkan ukuran dimensi x (lapisan), y (baris), dan z (kolom) array 3 dimensi tersebut. Terdapat 3 pengulangan for pada program tersebut yang digunakan untuk user menginput nilai masing-masing elemen array, menampilkan data array yang telah diinput user, dan menampilkan array dalam bentuks matriks. Sebagai contoh pada gambar output diatas, dimensi array yang diinputkan oleh user adalah 2x2x3 (2 lapisan, 2 baris, 3 kolom).
 
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
 
@@ -313,7 +313,7 @@ int main(){
 #### Output:
 
 ##### Output 1 :
-![Dhimas_Output-Unguided3-1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan-1/Laprak/Dhimas_Output-Unguided3-1_Modul2.png)
+![Dhimas_Output-Unguided3-1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided3-1_Modul2.png)
 
 ##### Output 2 :
 ![Dhimas_Output-Unguided3-2_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided3-2_Modul2.png)
