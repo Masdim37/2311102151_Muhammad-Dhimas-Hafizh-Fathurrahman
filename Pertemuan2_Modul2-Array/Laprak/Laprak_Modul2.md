@@ -2,6 +2,33 @@
 <p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
 
 ## Dasar Teori
+Array atau dalam bahasa Indonesia disebut larik, merupakan sebuah teknik pemrograman dimana array tersebut dianalogikan sebagai wadah untuk menyimpan data-data yang berjumlah banyak dan memiliki tipe data yang sama[1]. Dalam bahasa pemrograman C++, array dideklarasikan dengan tanda [ ] (kurung siku). Setiap data disimpan dalam alamat memori yang berbeda-beda yang disebut dengan elemen array. Setiap elemen mempunyai nilai indeks sesuai dengan urutannya. Nilai indeks mulai dari 0 dan berfungsi untuk mengakses data-data yang ada didalam array. Array digunakan jika kita memerlukan penyimpanan sementara untuk data-data yang bertipe sama didalam memori, untuk selanjutnya data-data tersebut dimanipulasi (dihitung atau diterapkan oleh proses lainnya)[2]. Array terbagi menjadi beberapa jenis, antara lain sebagai berikut.
+
+### A. Array 1 Dimensi <br/>
+Array 1 dimensi merupakan jenis yang paling dasar dalam array. Array jenis ini terdiri dari kumpulan data dengan tipe yang sama yang disusun dalam satu baris atau mewakili bentuk suatu vektor. Array 1 dimensi dideklarasikan sebagai berikut.
+<p align="center"> tipe_data nama_array[jumlah_elemen] </p>
+Sebagai contoh jika ingin mendeklarasikan array dengan tipe data integer dengan nama Arr dan mempunyai lima buah elemen atau dapat  menyimpan lima buah data bertipe sama yaitu integer dapat dituliskan sebagai berikut.
+<p align="center"> int Arr[5]; </p>
+Atau jika nilai setiap elemennya ingin diinisialisasikan manual saat pendeklarasian array dapat ditulis sebagai berikut.
+<p align="center"> int Arr[5] = {1, 2, 3, 4, 5}; </p>
+Contoh array diatas memiliki jumlah elemen sebanyak 5 dan indeksnya dimulai dari 0. Indeks 0 merujuk pada elemen pertama yaitu bilangan 1 dan berlanjut hingga indeks ke-4 yaitu bilangan 5.
+
+### B. Array 2 Dimensi
+Matriks pada umumnya dikenal dengan array berdimensi dua (array berindeks dua). Pada array berdimensi 2, terdapat 2 buah tanda kurung siku ([ ]) yang masing-masing kurung siku tersebut mendefinisikan baris dan kolom yang ada pada matriks. Berikut bentuk umum deklarasi array berdimensi dua (matriks).
+<p align="center"> tipe_data nama_array[jumlah elemen baris][jumlah elemen kolom]; </p>
+Sebagai contoh jika ingin mendeklarasikan array dengan tipe data integer dengan nama Arr yang di dalamnya terdapat 3 baris dan 4 kolom dapat dituliskan sebagai berikut.
+<p align="center"> int Arr[3][4]; </p>
+Sama seperti array 1 dimensi, inisialisasi nilai array 2 dimensi (matriks) tersebut dapat dibuat manual atau diinput oleh pengguna saat program dijalankan. Karena array 2 dimensi mempunyai lebih dari satu bentuk index array, maka dalam inisialisasinya perlu menggunakan tanda {} untuk membentuk baris array, contoh sebagai berikut :
+<p align="center"> int Arr[3][4] = {{3,4,8,0},{3,9,2,1},{6,3,0,2}}; </p>
+Berikut merupakan ilustrasi dari inisialisasi matriks tersebut.
+![Dhimas_Dasar-Teori_Ilustrasi-Array-2-Dimensi](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Dasar-Teori_Ilustrasi-Array-2-Dimensi.png)
+
+### C. Array Multidimensi
+Array multidimensi adalah array yang memiliki nilai ukuran lebih dari dua atau array yang memiliki lebih dari dua indeks, seperti array tiga dimensi, array empat dimensi, array lima dimensi, dan seterusnya, atau juga bisa disebut gabungan dari beberapa array satu dimensi[3]. Array 2 dimensi merupakan contoh sederhana dari array multidimensi. Array multidimensi memiliki kapasitas memori yang lebih besar daripada array 1 dimensi dan array 2 dimensi. Secara umum, Array multidimensi dapat dideklarasika sebagai berikut.
+<p align="center"> tipe_data nama_array[dimensi x][dimensi y][dimensi z] ... [dimensi n]; </p>
+Sebagai contoh, berikut merupakan pendeklarasian array 3 dimensi.
+<p align="center"> int Arr[2][3][3]; </p>
+Array 3 dimensi memiliki dimensi x (lapisan), dimensi y (baris), dan dimensi z (kolom). Pada array 3 dimensi diatas memiliki ukuran 2x3x3 atau 2 lapis, 3 baris, dan 3 kolom.
 
 ## Guided 
 
@@ -324,5 +351,10 @@ int main(){
 Kode diatas merupakan program array 1 dimensi yang dapat digunakan untuk mencari nilai maksimum, nilai minimum, dan menghitung nilai rata-rata dari elemen-elemen array. Pada awal program, user diminta untuk memasukkan panjang array serta elemen-elemen array tersebut. Kemudian program akan menampilkan pilihan menu yang bisa dipilih oleh user untuk mencari nilai maksimum, nilai minimum, atau menghitung nilai rata-rata dari elemen-elemen array yang telah diinputkan. Program ini juga menggunakan prosedur (void) untuk menampilkan data array yang telah tersimpan pada setiap menu-menu tersebut. Sebagai contoh jika user memilih menu 1 (mencari nilai maksimum), maka program akan menampilkan data array yang telah tersimpan, kemudian program akan menggunakan perulangan for untuk mencari nilai maksimum dari elemen-elemen array yang sebelumnya telah diinputkan oleh user dan menampilkannya.
 
 ## Kesimpulan
+Array atau larik adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai yang bertipe data sama dalam satu variabel. Pada bahasa C++, array dituliskan menggunakan tanda kurung siku ([ ]) dan terdiri dari sekumpulan elemen array yang diurutkan dengan nomor indeks. Indeks dalam array dimulai dari 0. Terdapat beberapa jenis array berdasarkan dimensinya, yaitu array 1 dimensi (one-dimensional array) yang mewakili 
+bentuk suatu vektor, array 2 dimensi (two-dimensional array) yang mewakili bentuk dari suatu matriks atau tabel, dan array multidimensi (multidimensional) yang mewakili bentuk suatu ruang. Pemahaman yang baik tentang array memungkinkan programmer untuk menulis kode yang lebih efisien, terstruktur, dan mudah dimengerti.
 
 ## Referensi
+[1] Putra, Muhammad Taufik D., et al. (2022). "BELAJAR DASAR PEMROGRAMAN DENGAN C++". Edited by Damayanti, Evi, CV WIDINA MEDIA UTAMA. Diakses pada 17 Maret 2024 melalui https://repository.penerbitwidina.com/publications/558527/belajar-dasar-pemrograman-dengan-c#cite. 
+<br>[2] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 17 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
+<br>[3] Tou, N., Kom, S., & Kom, M. (2022). Bahan ajar: dasar-dasar pemrograman. Universitas Bangka Belitung. Diakses pada 17 Maret 2024 melalui http://repository.ubb.ac.id/7104/1/Modul%20Dasar-Dasar%20Pemrograman.pdf.
