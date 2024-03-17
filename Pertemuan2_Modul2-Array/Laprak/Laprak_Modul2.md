@@ -93,6 +93,7 @@ int main(){
     return 0;
 }
 ```
+#### Deskripsi Program
 Kode di atas adalah program yang mengimplementasikan sebuah array tiga dimensi. Program tersebut meminta pengguna untuk memasukkan nilai ke dalam array tiga dimensi dengan ukuran 2x3x3. Setelah semua nilai dimasukkan, program tersebut kemudian mencetak nilai dari setiap elemen array dengan format matriks.
 
 ### 2. Program Mencari Nilai Maksimal pada Array
@@ -132,6 +133,7 @@ int main(){
     return 0;
 }
 ```
+#### Deskripsi Program
 Kode di atas adalah program yang digunakan untuk mencari nilai maksimum dalam sebuah array satu dimensi yang panjangnya serta nilai-nilai setiap indeksnya diinputkan oleh user. Setelah memasukkan nilai-nilai elemen array, program akan mencari nilai maksimum di antara elemen-elemen tersebut. Proses pencarian nilai maksimum dilakukan dengan menggunakan pendekatan linear, yaitu dengan membandingkan setiap elemen array satu per satu. Setelah menemukan nilai maksimum, program mencetak nilai maksimum beserta indeksnya.
 
 ## Unguided 
@@ -187,9 +189,10 @@ int main(){
     return 0;
 }
 ```
-#### Output:
+#### Output
 ![Dhimas_Output-Unguided1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided1_Modul2.png)
 
+#### Deskripsi Program
 Kode diatas merupakan program yang digunakan untuk menginputkan elemen-elemen array kemudian menampilkannya dan memisahkan bilangan yang merupakan bilangan genap dan bilangan ganjil. Program diatas mengguanakn array Data_151 yang panjang arraynya ditentukan berdasarkan inputan user. Kemudian user diminta untuk menginputkan elemen-elemen array Data_151 setiap indeksnya. Kemudian program akan menampilkan bilangan inputan user dan menampilkan bilangan genap dan ganjil berdasarkan bilangan inputan user.
 
 ### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
@@ -251,7 +254,7 @@ int main(){
     return 0;
 }
 ```
-#### Output :
+#### Output 
 
 ##### Output 1 :
 ![Dhimas_Output-Unguided2-1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided2-1_Modul2.png)
@@ -259,6 +262,7 @@ int main(){
 ##### Output 2 :
 ![Dhimas_Output-Unguided2-2_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided2-2_Modul2.png)
 
+#### Deskripsi Program
 Kode diatas merupakan program input dan output array 3 dimensi. Pada awal program, user diminta untuk memasukkan ukuran dimensi x (lapisan), y (baris), dan z (kolom) array 3 dimensi tersebut. Terdapat 3 pengulangan for pada program tersebut yang digunakan untuk user menginput nilai masing-masing elemen array, menampilkan data array yang telah diinput user, dan menampilkan array dalam bentuks matriks. Sebagai contoh pada gambar output diatas, dimensi array yang diinputkan oleh user adalah 2x2x3 (2 lapisan, 2 baris, 3 kolom).
 
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
@@ -353,7 +357,7 @@ int main(){
     return 0;
 }
 ```
-#### Output:
+#### Output
 
 ##### Output 1 :
 ![Dhimas_Output-Unguided3-1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided3-1_Modul2.png)
@@ -364,6 +368,7 @@ int main(){
 ##### Output 3 :
 ![Dhimas_Output-Unguided3-3_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided3-3_Modul2.png)
 
+#### Deskripsi Program
 Kode diatas merupakan program array 1 dimensi yang dapat digunakan untuk mencari nilai maksimum, nilai minimum, dan menghitung nilai rata-rata dari elemen-elemen array. Pada awal program, user diminta untuk memasukkan panjang array serta elemen-elemen array tersebut. Kemudian program akan menampilkan pilihan menu yang bisa dipilih oleh user untuk mencari nilai maksimum, nilai minimum, atau menghitung nilai rata-rata dari elemen-elemen array yang telah diinputkan. Program ini juga menggunakan prosedur (void) untuk menampilkan data array yang telah tersimpan pada setiap menu-menu tersebut. Sebagai contoh jika user memilih menu 1 (mencari nilai maksimum), maka program akan menampilkan data array yang telah tersimpan, kemudian program akan menggunakan perulangan for untuk mencari nilai maksimum dari elemen-elemen array yang sebelumnya telah diinputkan oleh user dan menampilkannya.
 
 ## Kesimpulan
