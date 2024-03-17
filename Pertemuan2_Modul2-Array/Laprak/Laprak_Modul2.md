@@ -32,8 +32,8 @@ Sama seperti array 1 dimensi, inisialisasi nilai array 2 dimensi (matriks) terse
 ```C++
 int Arr[3][4] = {{3,4,8,0},{3,9,2,1},{6,3,0,2}};
 ```
-Berikut merupakan ilustrasi dari inisialisasi matriks tersebut. </br>
-![Dhimas_Dasar-Teori_Ilustrasi-Array-2-Dimensi](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Dasar-Teori_Ilustrasi-Array-2-Dimensi.png)
+Berikut merupakan ilustrasi dari inisialisasi matriks tersebut.
+<br> ![Dhimas_Dasar-Teori_Ilustrasi-Array-2-Dimensi](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Dasar-Teori_Ilustrasi-Array-2-Dimensi.png)
 
 ### C. Array Multidimensi
 Array multidimensi adalah array yang memiliki nilai ukuran lebih dari dua atau array yang memiliki lebih dari dua indeks, seperti array tiga dimensi, array empat dimensi, array lima dimensi, dan seterusnya, atau juga bisa disebut gabungan dari beberapa array satu dimensi[3]. Array 2 dimensi merupakan contoh sederhana dari array multidimensi. Array multidimensi memiliki kapasitas memori yang lebih besar daripada array 1 dimensi dan array 2 dimensi. Secara umum, Array multidimensi dapat dideklarasika sebagai berikut.
