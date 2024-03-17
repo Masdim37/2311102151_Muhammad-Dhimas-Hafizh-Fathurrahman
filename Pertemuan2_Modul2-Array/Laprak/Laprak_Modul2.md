@@ -2,14 +2,14 @@
 <p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
 
 ## Dasar Teori
-Array atau dalam bahasa Indonesia disebut larik, merupakan sebuah teknik pemrograman dimana array tersebut dianalogikan sebagai wadah untuk menyimpan data-data yang berjumlah banyak dan memiliki tipe data yang sama[1]. Dalam bahasa pemrograman C++, array dideklarasikan dengan tanda [ ] (kurung siku). Setiap data disimpan dalam alamat memori yang berbeda-beda yang disebut dengan elemen array. Setiap elemen mempunyai nilai indeks sesuai dengan urutannya. Nilai indeks mulai dari 0 dan berfungsi untuk mengakses data-data yang ada didalam array. Array digunakan jika kita memerlukan penyimpanan sementara untuk data-data yang bertipe sama didalam memori, untuk selanjutnya data-data tersebut dimanipulasi (dihitung atau diterapkan oleh proses lainnya)[2]. Array terbagi menjadi beberapa jenis, antara lain sebagai berikut.
+Array atau dalam bahasa Indonesia disebut larik, merupakan sebuah teknik pemrograman dimana array tersebut dianalogikan sebagai wadah untuk menyimpan data-data yang berjumlah banyak dan memiliki tipe data yang sama[1]. Dalam bahasa pemrograman C++, array dideklarasikan dengan tanda [ ] (kurung siku). Setiap data disimpan dalam alamat memori yang berbeda-beda yang disebut dengan elemen array. Setiap elemen mempunyai nilai indeks sesuai dengan urutannya. Nilai indeks dimulai dari 0 dan berfungsi untuk mengakses data-data yang ada didalam array. Array digunakan jika kita memerlukan penyimpanan sementara untuk data-data yang bertipe sama didalam memori, untuk selanjutnya data-data tersebut dimanipulasi (dihitung atau diterapkan oleh proses lainnya)[2]. Array terbagi menjadi beberapa jenis, antara lain sebagai berikut.
 
 ### A. Array 1 Dimensi <br/>
 Array 1 dimensi merupakan jenis yang paling dasar dalam array. Array jenis ini terdiri dari kumpulan data dengan tipe yang sama yang disusun dalam satu baris atau mewakili bentuk suatu vektor. Array 1 dimensi dideklarasikan sebagai berikut.
 ```C++
 tipe_data nama_array[jumlah_elemen];
 ```
-Sebagai contoh jika ingin mendeklarasikan array dengan tipe data integer dengan nama Arr dan mempunyai lima buah elemen atau dapat  menyimpan lima buah data bertipe sama yaitu integer dapat dituliskan sebagai berikut.
+Sebagai contoh jika ingin mendeklarasikan array dengan tipe data integer dengan nama Arr dan mempunyai lima buah elemen atau dapat menyimpan lima buah data bertipe integer dapat dituliskan sebagai berikut.
 ```C++
 int Arr[5];
 ```
@@ -17,18 +17,18 @@ Atau jika nilai setiap elemennya ingin diinisialisasikan manual saat pendeklaras
 ```C++
 int Arr[5] = {1, 2, 3, 4, 5};
 ```
-Contoh array diatas memiliki jumlah elemen sebanyak 5 dan indeksnya dimulai dari 0. Indeks 0 merujuk pada elemen pertama yaitu bilangan 1 dan berlanjut hingga indeks ke-4 yaitu bilangan 5.
+Contoh array diatas memiliki 5 elemen yaitu 1, 2, 3, 4, dan 5. Elemen-elemen tersebut terurut sesuai indeksnya yang dimulai dari 0. Indeks 0 merujuk pada elemen pertama yaitu bilangan 1 dan berlanjut hingga indeks ke-4 yaitu bilangan 5.
 
 ### B. Array 2 Dimensi
-Matriks pada umumnya dikenal dengan array berdimensi dua (array berindeks dua). Pada array berdimensi 2, terdapat 2 buah tanda kurung siku ([ ]) yang masing-masing kurung siku tersebut mendefinisikan baris dan kolom yang ada pada matriks. Berikut bentuk umum deklarasi array berdimensi dua (matriks).
+Matriks pada umumnya dikenal dengan array 2 dimensi. Pada array 2 dimensi, terdapat 2 buah tanda kurung siku ([ ]) yang masing-masing kurung siku tersebut mendefinisikan baris dan kolom yang ada pada matriks. Berikut bentuk umum deklarasi array dua dimensi (matriks).
 ```C++
 tipe_data nama_array[jumlah elemen baris][jumlah elemen kolom];
 ```
-Sebagai contoh jika ingin mendeklarasikan array dengan tipe data integer dengan nama Arr yang di dalamnya terdapat 3 baris dan 4 kolom dapat dituliskan sebagai berikut.
+Sebagai contoh jika ingin mendeklarasikan array dengan tipe data integer dengan nama Arr yang didalamnya terdapat 3 baris dan 4 kolom dapat dituliskan sebagai berikut.
 ```C++
 int Arr[3][4];
 ```
-Sama seperti array 1 dimensi, inisialisasi nilai array 2 dimensi (matriks) tersebut dapat dibuat manual atau diinput oleh pengguna saat program dijalankan. Karena array 2 dimensi mempunyai lebih dari satu bentuk index array, maka dalam inisialisasinya perlu menggunakan tanda {} untuk membentuk baris array, contoh sebagai berikut :
+Sama seperti array 1 dimensi, inisialisasi nilai array 2 dimensi (matriks) tersebut dapat dibuat manual atau diinput oleh pengguna saat program dijalankan. Karena array 2 dimensi mempunyai lebih dari satu bentuk index array, maka dalam inisialisasinya perlu menggunakan tanda kurung kurawal ({ }) untuk membentuk baris array, contohnya sebagai berikut.
 ```C++
 int Arr[3][4] = {{3,4,8,0},{3,9,2,1},{6,3,0,2}};
 ```
@@ -49,6 +49,7 @@ Array 3 dimensi memiliki dimensi x (lapisan), dimensi y (baris), dan dimensi z (
 ## Guided 
 
 ### 1. Program Input Array Tiga Dimensi
+
 ```C++
 #include <iostream>
 
@@ -93,7 +94,7 @@ int main(){
     return 0;
 }
 ```
-#### Deskripsi Program
+#### Deskripsi Program :
 Kode di atas adalah program yang mengimplementasikan sebuah array tiga dimensi. Program tersebut meminta pengguna untuk memasukkan nilai ke dalam array tiga dimensi dengan ukuran 2x3x3. Setelah semua nilai dimasukkan, program tersebut kemudian mencetak nilai dari setiap elemen array dengan format matriks.
 
 ### 2. Program Mencari Nilai Maksimal pada Array
@@ -127,14 +128,14 @@ int main(){
         }
     }
 
-    //cetak nilai maksimum diatara elemen-elemen array
+    //cetak nilai maksimum diantara elemen-elemen array
     cout << "Nilai maksimum adalah " << maks << " berada di array ke " << lokasi << endl;
 
     return 0;
 }
 ```
-#### Deskripsi Program
-Kode di atas adalah program yang digunakan untuk mencari nilai maksimum dalam sebuah array satu dimensi yang panjangnya serta nilai-nilai setiap indeksnya diinputkan oleh user. Setelah memasukkan nilai-nilai elemen array, program akan mencari nilai maksimum di antara elemen-elemen tersebut. Proses pencarian nilai maksimum dilakukan dengan menggunakan pendekatan linear, yaitu dengan membandingkan setiap elemen array satu per satu. Setelah menemukan nilai maksimum, program mencetak nilai maksimum beserta indeksnya.
+#### Deskripsi Program :
+Kode di atas adalah program yang digunakan untuk mencari nilai maksimum dalam sebuah array satu dimensi yang panjangnya serta nilai-nilai setiap indeksnya diinputkan oleh user. Setelah memasukkan nilai-nilai elemen array, program akan mencari nilai maksimum diantara elemen-elemen array tersebut. Proses pencarian nilai maksimum dilakukan dengan menggunakan pendekatan linear, yaitu dengan membandingkan setiap elemen array satu per satu. Setelah menemukan nilai maksimum, program mencetak nilai maksimum beserta indeksnya.
 
 ## Unguided 
 
@@ -189,11 +190,11 @@ int main(){
     return 0;
 }
 ```
-#### Output
+#### Output :
 ![Dhimas_Output-Unguided1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided1_Modul2.png)
 
-#### Deskripsi Program
-Kode diatas merupakan program yang digunakan untuk menginputkan elemen-elemen array kemudian menampilkannya dan memisahkan bilangan yang merupakan bilangan genap dan bilangan ganjil. Program diatas mengguanakn array Data_151 yang panjang arraynya ditentukan berdasarkan inputan user. Kemudian user diminta untuk menginputkan elemen-elemen array Data_151 setiap indeksnya. Kemudian program akan menampilkan bilangan inputan user dan menampilkan bilangan genap dan ganjil berdasarkan bilangan inputan user.
+#### Deskripsi Program :
+Kode diatas merupakan program yang digunakan untuk menginputkan elemen-elemen array kemudian menampilkannya dan memisahkan bilangan yang merupakan bilangan genap dan bilangan ganjil. Program diatas menggunakan array Data_151 yang panjang arraynya ditentukan berdasarkan inputan user. Kemudian user diminta untuk menginputkan elemen-elemen array Data_151 setiap indeksnya. Kemudian program akan menampilkan bilangan inputan user dan menampilkan bilangan genap dan ganjil berdasarkan bilangan inputan user.
 
 ### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
 
@@ -254,7 +255,7 @@ int main(){
     return 0;
 }
 ```
-#### Output 
+#### Output :
 
 ##### Output 1 :
 ![Dhimas_Output-Unguided2-1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided2-1_Modul2.png)
@@ -262,7 +263,7 @@ int main(){
 ##### Output 2 :
 ![Dhimas_Output-Unguided2-2_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided2-2_Modul2.png)
 
-#### Deskripsi Program
+#### Deskripsi Program :
 Kode diatas merupakan program input dan output array 3 dimensi. Pada awal program, user diminta untuk memasukkan ukuran dimensi x (lapisan), y (baris), dan z (kolom) array 3 dimensi tersebut. Terdapat 3 pengulangan for pada program tersebut yang digunakan untuk user menginput nilai masing-masing elemen array, menampilkan data array yang telah diinput user, dan menampilkan array dalam bentuks matriks. Sebagai contoh pada gambar output diatas, dimensi array yang diinputkan oleh user adalah 2x2x3 (2 lapisan, 2 baris, 3 kolom).
 
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
@@ -322,7 +323,7 @@ int main(){
         break;
     case 2 : //Jika memilih 2, maka mencari nilai minimum
         OutputArray_151(PanjangArray_151, Array_151); //Tampilkan prosedur OutputArray_151
-        //Searching untuk mencari nilai maksimum
+        //Searching untuk mencari nilai minimum
         min_151 = Array_151[0];
         for(int i=0; i<PanjangArray_151; i++){
             if(Array_151[i] < min_151){
@@ -357,7 +358,7 @@ int main(){
     return 0;
 }
 ```
-#### Output
+#### Output :
 
 ##### Output 1 :
 ![Dhimas_Output-Unguided3-1_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided3-1_Modul2.png)
@@ -368,7 +369,7 @@ int main(){
 ##### Output 3 :
 ![Dhimas_Output-Unguided3-3_Modul2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan2_Modul2-Array/Laprak/Dhimas_Output-Unguided3-3_Modul2.png)
 
-#### Deskripsi Program
+#### Deskripsi Program :
 Kode diatas merupakan program array 1 dimensi yang dapat digunakan untuk mencari nilai maksimum, nilai minimum, dan menghitung nilai rata-rata dari elemen-elemen array. Pada awal program, user diminta untuk memasukkan panjang array serta elemen-elemen array tersebut. Kemudian program akan menampilkan pilihan menu yang bisa dipilih oleh user untuk mencari nilai maksimum, nilai minimum, atau menghitung nilai rata-rata dari elemen-elemen array yang telah diinputkan. Program ini juga menggunakan prosedur (void) untuk menampilkan data array yang telah tersimpan pada setiap menu-menu tersebut. Sebagai contoh jika user memilih menu 1 (mencari nilai maksimum), maka program akan menampilkan data array yang telah tersimpan, kemudian program akan menggunakan perulangan for untuk mencari nilai maksimum dari elemen-elemen array yang sebelumnya telah diinputkan oleh user dan menampilkannya.
 
 ## Kesimpulan
