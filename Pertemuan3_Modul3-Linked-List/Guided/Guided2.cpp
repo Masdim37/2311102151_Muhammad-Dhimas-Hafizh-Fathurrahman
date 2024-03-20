@@ -53,6 +53,16 @@ class doublelinkedlist{
         }
         return false;
     }
+    void deleteall(){
+        node* current = head;
+        while (current != nullptr) {
+            node* temp = current;
+            current = current->next;
+            delete temp;
+        }
+        head = nullptr;
+        tail = nullptr;
+    }
     void display(){
         node* current = head;
         while(current != nullptr){
@@ -61,17 +71,7 @@ class doublelinkedlist{
         }
         cout << endl;
     }
-    void deleteall(){
-        Node* current = head;
-        while (current != nullptr) {
-            Node* temp = current;
-            current = current->next;
-            delete temp;
-        }
-        head = nullptr;
-        tail = nullptr;
-        }
-    }
+    
 };
 
 int main(){
@@ -86,17 +86,20 @@ int main(){
         int choice;
         cout << "Enter your choice: ";
         cin >> choice;
+
         switch(choice){
-            case 1 : 
+            case 1 : {
                 int data;
                 cout << "enter data to add : ";
                 cin >> data;
                 list.push(data);
                 break;
-            case 2 :
+            }
+            case 2 : {
                 list.pop();
                 break;
-            case 3 :
+            }
+            case 3 : {
                 int olddata, newdata;
                 cout << "enter old data : ";
                 cin >> olddata;
@@ -107,17 +110,22 @@ int main(){
                     cout << "data not found" << endl;
                 }
                 break;
-            case 4 :
+            }
+            case 4 : {
                 list.deleteall();
                 break;
-            case 5 : 
+            }
+            case 5 : {
                 list.display();
                 break;
-            case 6 : 
+            }
+            case 6 : {
                 return 0;
-            default : 
+            }
+            default : {
                 cout << "invalid choice" << endl;
                 break;
+            }
         }
     }
 
