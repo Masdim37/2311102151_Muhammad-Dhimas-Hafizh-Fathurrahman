@@ -413,8 +413,10 @@ Deskripsi program unguided 1
 
 ### 2. Soal mengenai Double Linked List
 Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga. </br>
+
 ![Dhimas_Soal-Unguided2-1-Modul3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Soal-Unguided2-1-Modul3.png)
-Case :</br>
+
+Case :
 1. Tambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific.
 2. Hapus produk wardah.
 3. Update produk Hanasui menjadi Cleora dengan harga 55.000.
