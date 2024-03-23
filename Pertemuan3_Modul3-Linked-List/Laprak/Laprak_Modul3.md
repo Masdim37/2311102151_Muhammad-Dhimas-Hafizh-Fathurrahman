@@ -399,7 +399,8 @@ Deskripsi guided 2
 ## Unguided 
 
 ### 1. Soal mengenai Single Linked List
-Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user. Lakukan operasi berikut:
+Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan usia mahasiswa, dengan menggunakan inputan dari user. Lakukan operasi berikut: </br>
+
 ![Dhimas_Soal-Unguided1-Modul3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Soal-Unguided1-Modul3.png)
 
 ```C++
@@ -411,28 +412,22 @@ Buatlah program menu Single Linked List Non-Circular untuk menyimpan Nama dan us
 Deskripsi program unguided 1
 
 ### 2. Soal mengenai Double Linked List
-Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
+Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga. </br>
 ![Dhimas_Soal-Unguided2-1-Modul3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Soal-Unguided2-1-Modul3.png)
-Case :
+Case :</br>
 1. Tambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific.
 2. Hapus produk wardah.
 3. Update produk Hanasui menjadi Cleora dengan harga 55.000.
 4. Tampilkan menu seperti dibawah ini.
 ```C++
-#include<iostream>
-
-using namespace std;
-
-int main(){
-    cout << "1. Tambah data" << endl;
-    cout << "2. Hapus data" << endl;
-    cout << "3. Update data" << endl;
-    cout << "4. Tambah data urutan tertentu" << endl;
-    cout << "5. Hapus data urutan tertentu" << endl;
-    cout << "6. Hapus seluruh data" << endl;
-    cout << "7. Tampilkan data" << endl;
-    cout << "8. Exit" << endl;
-}
+1. Tambah data
+2. Hapus data
+3. Update data
+4. Tambah data urutan tertentu
+5. Hapus data urutan tertentu
+6. Hapus seluruh data
+7. Tampilkan data
+8. Exit
 ```
 Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah ini :
 ![Dhimas_Soal-Unguided2-2-Modul3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Soal-Unguided2-2-Modul3.png)
