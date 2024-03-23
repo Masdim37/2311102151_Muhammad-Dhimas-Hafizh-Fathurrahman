@@ -432,6 +432,7 @@ Case :
 8. Exit
 ```
 Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah ini :
+
 ![Dhimas_Soal-Unguided2-2-Modul3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Soal-Unguided2-2-Modul3.png)
 
 ```C++
