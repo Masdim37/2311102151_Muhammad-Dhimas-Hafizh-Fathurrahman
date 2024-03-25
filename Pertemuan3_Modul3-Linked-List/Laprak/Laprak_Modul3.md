@@ -952,22 +952,27 @@ int main(){
 
 ##### Output 1 :
 Tampilan menu utama.
+
 ![Dhimas_Output-Unguided2-1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided2-1.png)
 
 ##### Output 2 :
 Menambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific.
+
 ![Dhimas_Output-Unguided2-2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided2-2.png)
 
 ##### Output 3 :
 Hapus produk wardah.
+
 ![Dhimas_Output-Unguided2-3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided2-3.png)
 
 ##### Output 4 :
 Update produk Hanasui menjadi Cleora dengan harga 55.000.
+
 ![Dhimas_Output-Unguided2-4](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided2-4.png)
 
 ##### Output 5 :
 Tampilan akhir data yang tersimpan.
+
  ![Dhimas_Output-Unguided2-5](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided2-5.png)
 
 Deskripsi program unguided 2
