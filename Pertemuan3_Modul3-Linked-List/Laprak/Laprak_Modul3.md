@@ -4,6 +4,17 @@
 ## Dasar Teori
 
 ## Guided 
+Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk struktur data yang berisi kumpulan data yang tersusun secara sekuensial, saling bersambungan, dinamis, dan terbatas[1]. Linked list terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer. Suatu simpul atau node harus mempunyai satu atau lebih elemen struktur atau class yang berisi data. Pada suatu linked list, terdiri dari 2 elemen yaitu elemen pada awal list (head) dan elemen pada akhir list (tail). Terdapat 2 jenis linked list, diantaranya adalah :
+
+### A. Single Linked list
+Umumnya "linked list" berarti single linked list. Single linked list adalah daftar terhubung yang setiap simpul pembentuknya mempunyai satu rantai(link) ke simpul lainnya. Single linked list terdiri dari sejumlah node dimana setiap node memiliki pointer yang merujuk ke elemen berikut (*next). Pointer next pada node terakhir akan menunjuk ke NULL. Ini menandakan akhir dari list. 
+Berikut meupakan ilustrasi dari sebuah single linked list.
+
+![Dhimas_Ilustrasi-single-linked-list](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Ilustrasi-single-linked-list.png)
+
+### B. Double Linked List
+Berbeda dengan single linked list, double linked list adalah linked list yang memiliki dua rantai(link); yaitu satu link atau pointer yang merujuk ke node berikutnya (*next), dan satu link atau pointer yang merujuk ke node sebelumnya (*prev)[2]. 
+
 
 ### 1. Latihan Single Linked List
 
@@ -973,10 +984,12 @@ Update produk Hanasui menjadi Cleora dengan harga 55.000.
 ##### Output 5 :
 Tampilan akhir data yang tersimpan.
 
- ![Dhimas_Output-Unguided2-5](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided2-5.png)
+![Dhimas_Output-Unguided2-5](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided2-5.png)
 
 Deskripsi program unguided 2
 
 ## Kesimpulan
 
 ## Referensi
+[1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN.
+<br>[2] Harihayati Mardzuki, Tati. (2020). Double Linked List. [Teaching Resource]. Diakses pada 26 Maret 2024 melalui http://repository.unikom.ac.id/id/eprint/64221.
