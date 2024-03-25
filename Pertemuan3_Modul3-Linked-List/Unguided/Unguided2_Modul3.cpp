@@ -1,4 +1,4 @@
-#include<iostream>
+ji#include<iostream>
 
 using namespace std;
 
@@ -81,6 +81,12 @@ void HapusNode(int posisi_151){
     }
 }
 
+
+//prosedur edit node
+void EditNode(){
+
+
+}
 int main(){
 
     
