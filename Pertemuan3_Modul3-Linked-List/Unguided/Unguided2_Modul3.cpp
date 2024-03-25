@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 #include<iostream>
 #include<iomanip>
-=======
-ji#include<iostream>
->>>>>>> 599d5f1418f3114fffbcefa21d92c64d1d494e7f
 
 using namespace std;
 
@@ -85,7 +81,6 @@ void HapusNode_151(int posisi_151){
     }
 }
 
-<<<<<<< HEAD
 //fungsi update data
 bool UpdateData_151(string ProdukLama_151, string ProdukBaru_151, int HargaBaru_151){
     node *current = head;
@@ -99,15 +94,6 @@ bool UpdateData_151(string ProdukLama_151, string ProdukBaru_151, int HargaBaru_
     }
     return false;
 }
-=======
-
-//prosedur edit node
-void EditNode(){
-
-
-}
-int main(){
->>>>>>> 599d5f1418f3114fffbcefa21d92c64d1d494e7f
 
 //prosedur hapus semua data
 void HapusSemua_151(){
