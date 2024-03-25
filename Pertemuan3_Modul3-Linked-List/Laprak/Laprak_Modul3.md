@@ -13,7 +13,10 @@ Berikut meupakan ilustrasi dari sebuah single linked list.
 ![Dhimas_Ilustrasi-single-linked-list](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Ilustrasi-single-linked-list.png)
 
 ### B. Double Linked List
-Berbeda dengan single linked list, double linked list adalah linked list yang memiliki dua rantai(link); yaitu satu link atau pointer yang merujuk ke node berikutnya (*next), dan satu link atau pointer yang merujuk ke node sebelumnya (*prev)[2]. 
+Berbeda dengan single linked list, double linked list adalah linked list yang memiliki dua rantai(link); yaitu satu link atau pointer yang merujuk ke node berikutnya (*next) dan satu link atau pointer yang merujuk ke node sebelumnya (*prev)[2]. Keuntungan dari double linked list adalah bahwa dengan adanya 2 buah pointer, kita dapat menavigasi ke dua arah. 
+
+Secara garis besar, linked list memiliki kelebihan dan kekurangan. Kelebihan dari linked list antara lain :
+- 
 
 
 ### 1. Latihan Single Linked List
