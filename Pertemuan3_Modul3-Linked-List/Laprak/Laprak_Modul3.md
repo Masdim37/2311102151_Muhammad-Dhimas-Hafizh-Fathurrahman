@@ -1000,6 +1000,7 @@ Tampilan akhir data yang tersimpan.
 Deskripsi program unguided 2
 
 ## Kesimpulan
+Linked list adalah struktur data yang terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer. terdapat 2 jenis linked list, yaitu single linked list dan double linked list. Pada single linked list, setiap nodenya terdiri dari 2 bagian, yaitu nilai yang ditampung dan pointer next. Sedangkan pada double linked list, setiap nodenya terdiri dari 3 bagian, yaitu nilai yang ditampung, pointer prev, dan pointer next. Masing-masing jenis Linked List ini memiliki kelebihan dalam hal penyisipan dan penghapusan elemen yang lebih efisien dibandingkan array. Namun, Linked List juga membutuhkan lebih banyak memori karena setiap nodenya memakai lebih dari 1 blok memori dan umumnya memiliki akses data yang lebih lambat.
 
 ## Referensi
 [1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN.
