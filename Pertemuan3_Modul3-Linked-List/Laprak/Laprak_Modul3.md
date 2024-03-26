@@ -277,7 +277,7 @@ int main(){
     return 0;
 }
 ```
-Deskripsi guided 1
+Kode diatas merupakan program untuk memanipulasi single linked list. Terdapat beberapa fungsi yang digunakan untuk memanipulasi single linked list, antara lain fungsi untuk tambah node (depan, tangah, belakang), hapus node (depan, tengah, belakang, semua), ubah node (depan, tengah, belakang), hitung jumlah node/list, dan tampilkan list. Pada awal program terdapat struct node yang digunakan untuk mendeklarasikan sebuah node. Node tersebut berisi 2 blok memori yang terdiri dari nilai yang disimpan dan pointer next. Kemudian juga terdapat prosedur init untuk inisialisasi head dan tail bernilai NULL serta terdapat fungsi isEmpty yang digunakan untuk memeriksa apakah linked list kosong atau tidak. Pada bagian int main(), dilakukan beberapa aksi yang berkaitan dengan linked list, seperti menambah data, mengubah data, menghapus data, dan menampilkan data.
 
 ### 2. Latihan Double Linked List
 
@@ -286,21 +286,28 @@ Deskripsi guided 1
 
 using namespace std;
 
+//deklarasi class node
 class node{
     public:
+    //node berisi data, pointer prev, dan pointer next
     int data;
     node* prev;
     node* next;
 };
 
+//deklarasi class doublelinkedist
 class doublelinkedlist{
     public:
     node* head;
     node* tail;
+
+    //inisialisasi head dan tail
     doublelinkedlist(){
         head == nullptr;
         tail = nullptr;
     }
+
+    //prosedur menambah node
     void push(int data){
         node* newnode = new node;
         newnode->data = data;
@@ -313,6 +320,8 @@ class doublelinkedlist{
         }
         head = newnode;
     }
+
+    //prosedur menghapus node
     void pop(){
         if(head == nullptr){
             return;
@@ -326,6 +335,8 @@ class doublelinkedlist{
         }
         delete temp;
     }
+
+    //prosedur mengupdate atau mengubah data suatu node
     bool update(int olddata, int newdata){
         node* current = head;
         while(current != nullptr){
@@ -337,6 +348,8 @@ class doublelinkedlist{
         }
         return false;
     }
+
+    //prosedur menghapus semua node
     void deleteall(){
         node* current = head;
         while (current != nullptr) {
@@ -347,6 +360,8 @@ class doublelinkedlist{
         head = nullptr;
         tail = nullptr;
     }
+
+    //prosedur menampilkan list
     void display(){
         node* current = head;
         while(current != nullptr){
@@ -361,6 +376,7 @@ class doublelinkedlist{
 int main(){
     doublelinkedlist list;
     while(true){
+        //menu manipulasi double linked list
         cout << "1. add data" << endl;
         cout << "2. Delete data" << endl;
         cout << "3. Update data" << endl;
@@ -372,18 +388,18 @@ int main(){
         cin >> choice;
 
         switch(choice){
-            case 1 : {
+            case 1 : { //jika menginput 1, maka tambah node didepan
                 int data;
                 cout << "enter data to add : ";
                 cin >> data;
                 list.push(data);
                 break;
             }
-            case 2 : {
+            case 2 : { //jika menginput 2, maka hapus node didepan
                 list.pop();
                 break;
             }
-            case 3 : {
+            case 3 : { //jika menginput 3, maka ubah node didepan
                 int olddata, newdata;
                 cout << "enter old data : ";
                 cin >> olddata;
@@ -395,18 +411,18 @@ int main(){
                 }
                 break;
             }
-            case 4 : {
+            case 4 : { //jika memilih 4, maka hapus semua node
                 list.deleteall();
                 break;
             }
-            case 5 : {
+            case 5 : { //jika memilih 5, maka tampilkan list
                 list.display();
                 break;
             }
-            case 6 : {
+            case 6 : { //jika memilih 6, maka keluar dari program
                 return 0;
             }
-            default : {
+            default : { //output jika menginput selain 1-6
                 cout << "invalid choice" << endl;
                 break;
             }
@@ -416,7 +432,7 @@ int main(){
     return 0;
 }
 ```
-Deskripsi guided 2
+Kode diatas merupakan program untuk memanipulasi double linked list. Terdapat beberapa fungsi yang digunakan untuk memanipulasi double linked list, antara lain fungsi untuk tambah node, hapus suatu node, update atau ubah data suatu node, hapus semua node, dan tampilkan list. 
 
 ## Unguided 
 
