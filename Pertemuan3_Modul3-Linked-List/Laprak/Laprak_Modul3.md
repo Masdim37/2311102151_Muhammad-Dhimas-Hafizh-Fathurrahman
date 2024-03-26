@@ -13,10 +13,19 @@ Berikut meupakan ilustrasi dari sebuah single linked list.
 ![Dhimas_Ilustrasi-single-linked-list](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Ilustrasi-single-linked-list.png)
 
 ### B. Double Linked List
-Berbeda dengan single linked list, double linked list adalah linked list yang memiliki dua rantai(link); yaitu satu link atau pointer yang merujuk ke node berikutnya (*next) dan satu link atau pointer yang merujuk ke node sebelumnya (*prev)[2]. Keuntungan dari double linked list adalah bahwa dengan adanya 2 buah pointer, kita dapat menavigasi ke dua arah. 
+Berbeda dengan single linked list, double linked list adalah linked list yang memiliki dua rantai(link); yaitu satu link atau pointer yang merujuk ke node berikutnya (*next) dan satu link atau pointer yang merujuk ke node sebelumnya (*prev)[2]. Keuntungan dari double linked list adalah bahwa dengan adanya 2 buah pointer, programmer dapat melakukan operasi penghapusan dan penambahan pada simpul mana saja secara efisien. Berikut merupakan ilustrasi dari double linked list.
 
-Secara garis besar, linked list memiliki kelebihan dan kekurangan. Kelebihan dari linked list antara lain :
-- 
+![Dhimas_Ilustrasi-double-linked-list](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Ilustrasi-double-linked-list.png)
+
+Secara garis besar, linked list memiliki kelebihan dan kekurangan. 
+Kelebihan dari linked list antara lain :
+- Memiliki ukuran yang dinamis, sehingga ukurannya dapat disesuaikan dengan kebutuhan
+- Penambahan dan penghapusan elemen di tengah linked list bisa dilakukan dengan mudah dan efisien, tanpa memerlukan penggeseran elemen-elemen lainnya.
+- Dapat digunakan sebagai dasar untuk struktur data lainnya seperti stack, queue, dan hash table.
+
+Kekurangan dan linked list antara lain :
+- Penggunaan Memori Tambahan untuk Pointer (*next dan *prev)
+- Data didalam list tidak terurut
 
 
 ### 1. Latihan Single Linked List
