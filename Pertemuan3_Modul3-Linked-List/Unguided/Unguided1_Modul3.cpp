@@ -234,42 +234,93 @@ void TampilList_151(){
 }
 
 int main(){
-    inisialisasi_151();
-    //jawaban poin a
-    cout << "--- Menambahkan List ---" << endl;
-    TambahDepan_151("Karin", 18);
-    TambahDepan_151("Hoshino", 18);
-    TambahDepan_151("Akechi", 20);
-    TambahDepan_151("Yusuke", 19);
-    TambahDepan_151("Michael", 18);
-    TambahDepan_151("Jane", 20);
-    TambahDepan_151("John", 19);
-    TambahDepan_151("Dhimas", 19);
-    TampilList_151();
+    int Posisi_151, umur_151;
+    char Yakin_151, Pilihan_151;
+    string nama_151;
+    MenuJawaban:
+    cout << "--- MENU JAWABAN ---" << endl;
+    cout << "a. Jawab poin a" << endl;
+    cout << "b. Jawab poin b" << endl;
+    cout << "c. Jawab poin c" << endl;
+    cout << "d. Jawab poin d" << endl;
+    cout << "e. Jawab poin e" << endl;
+    cout << "f. Jawab poin f" << endl;
+    cout << "g. exit" << endl;
+    cout << "Pilihan anda = "; cin >> Pilihan_151;
+    cout << endl;
 
-    //Jawaban poin b
-    cout << "--- Menghapus data 'Akechi' ---" << endl; 
-    HapusTengah_151(6);
-    TampilList_151();
-
-    //Jawaban poin c
-    cout << "--- Tambahkan data 'Futaba, 18' diantara John dan Jane ---" << endl;
-    TambahTengah_151("Futaba", 18, 3);
-    TampilList_151();
-
-    //Jawaban poin d
-    cout << "--- Tambahkan data 'Igor, 20' diawal ---" << endl;
-    TambahDepan_151("Igor", 20);
-    TampilList_151();
-
-    //Jawaban poin e
-    cout << "--- Ubah data 'Michael' menjadi 'Reyn, 18' ---" << endl;
-    UbahTengah_151("Reyn", 18, 6);
-    TampilList_151();
-
-    //jawaban poin f
-    cout << "--- Tampilkan Seluruh Data ---" << endl;
-    TampilList_151();
-
-    return 0;
+    switch(Pilihan_151){
+        case 'a' :
+            //Jawaban poin a
+            inisialisasi_151();
+            cout << "- Masukkan Data Sesuai Urutan -" << endl;
+            for(int i=1; i <= 8; i++){
+                cout << "Masukkan data nama ke-" << i << " = ";
+                cin >> nama_151;
+                cout << "Masukkan umur data ke-" << i << " = ";
+                cin >> umur_151;
+                TambahBelakang_151(nama_151, umur_151);
+            }
+            cout << endl;
+            TampilList_151();
+            goto MenuJawaban;
+            break;
+        case 'b' :
+            cout << "--- Menghapus data 'Akechi' ---" << endl;
+            cout << "Masukkan posisi data Akechi = "; cin >> Posisi_151;
+            cout << "Apakah anda yakin ingin menghapus data 'Akechi' yang berada di posisi ke-" << Posisi_151 << "? [y/n] = "; cin >> Yakin_151;
+            if(Yakin_151 == 'y' || Yakin_151 == 'Y'){
+                HapusTengah_151(6);
+                cout << "Data telah dihapus" << endl;
+                cout << endl;
+            } else if(Yakin_151 =='n' || Yakin_151 == 'N'){
+                cout << "Aksi dibatalkan" << endl;
+                cout << endl;
+            }
+            TampilList_151();
+            goto MenuJawaban;
+            break;
+        case 'c' :
+            cout << "--- Tambahkan data 'Futaba, 18' diantara John dan Jane ---" << endl;
+            cout << "Masukkan data nama = "; cin >> nama_151;
+            cout << "Masukkan umur = "; cin >> umur_151;
+            cout << "Masukkan posisi data yang ingin ditambahkan = "; cin >> Posisi_151;
+            TambahTengah_151(nama_151, umur_151, Posisi_151);
+            cout << endl;
+            TampilList_151();
+            goto MenuJawaban;
+            break;
+        case 'd' : 
+            cout << "--- Tambahkan data 'Igor, 20' diawal ---" << endl;
+            cout << "Masukkan data nama = "; cin >> nama_151;
+            cout << "Masukkan umur = "; cin >> umur_151;
+            TambahDepan_151(nama_151, umur_151);
+            cout << endl;
+            TampilList_151();
+            goto MenuJawaban;
+            break;
+        case 'e' :
+            cout << "--- Ubah data 'Michael' menjadi 'Reyn, 18' ---" << endl;
+            cout << "Masukkan nama data baru = "; cin >> nama_151;
+            cout << "Masukkan umur = "; cin >> umur_151;
+            cout << "Masukkan posisi data lama yang ingin diubah = "; cin >> Posisi_151;
+            UbahTengah_151(nama_151, umur_151, Posisi_151);
+            cout << endl;
+            TampilList_151();
+            goto MenuJawaban;
+            break;
+        case 'f' :
+            cout << "--- Tampilkan Seluruh Data ---" << endl;
+            TampilList_151();
+            goto MenuJawaban;
+            break;
+        case 'g' :
+            cout << "Anda keluar dari program" << endl;
+            return 0;
+            break;
+        default :
+            cout << "Pilihan yang anda masukkan tidak tersedia" << endl;
+            goto MenuJawaban;
+            break;
+    }
 }
