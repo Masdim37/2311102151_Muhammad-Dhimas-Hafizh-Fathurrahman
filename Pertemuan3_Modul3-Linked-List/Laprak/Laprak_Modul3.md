@@ -277,6 +277,7 @@ int main(){
     return 0;
 }
 ```
+#### Deskripsi Program :
 Kode diatas merupakan program untuk memanipulasi single linked list. Terdapat beberapa fungsi yang digunakan untuk memanipulasi single linked list, antara lain fungsi untuk tambah node (depan, tangah, belakang), hapus node (depan, tengah, belakang, semua), ubah node (depan, tengah, belakang), hitung jumlah node/list, dan tampilkan list. Pada awal program terdapat struct node yang digunakan untuk mendeklarasikan sebuah node. Node tersebut berisi 2 blok memori yang terdiri dari nilai yang disimpan dan pointer next. Kemudian juga terdapat prosedur init untuk inisialisasi head dan tail bernilai NULL serta terdapat fungsi isEmpty yang digunakan untuk memeriksa apakah linked list kosong atau tidak. Pada bagian int main(), dilakukan beberapa aksi yang berkaitan dengan linked list, seperti menambah data, mengubah data, menghapus data, dan menampilkan data.
 
 ### 2. Latihan Double Linked List
@@ -432,7 +433,9 @@ int main(){
     return 0;
 }
 ```
-Kode diatas merupakan program untuk memanipulasi double linked list. Terdapat beberapa fungsi yang digunakan untuk memanipulasi double linked list, antara lain fungsi untuk tambah node, hapus suatu node, update atau ubah data suatu node, hapus semua node, dan tampilkan list. 
+
+#### Deskripsi Program :
+Kode diatas merupakan program untuk memanipulasi double linked list. Terdapat beberapa fungsi yang digunakan untuk memanipulasi double linked list, antara lain fungsi untuk tambah node, hapus suatu node, update atau ubah data suatu node, hapus semua node, dan tampilkan list. Pada awal program terdapat deklarasi class node yang digunakan untuk mendeklarasikan sebuah node. Node tersebut berisi 3 blok memori yang terdiri dari pointer prev, nilai yang disimpan, dan pointer next. Kemudian juga terdapat class public doublelinkedlist yang berisi Node* head dan Node* tail serta terdapat juga fungsi doublelinkedlist() untuk mendeklarasikan head & node sebagai nullptr. Pada bagian int main(), terdapat sebuah menu yang menggunakan percabangan switch case. Pada opsi 1 akan menjalankan fungsi push(), opsi 2 menjalankan fungsi pop(), opsi 3 menjalankan fungsi update(), opsi 4 menjalankan fungsi deleteAll(), opsi 5 menjalankan fungsi display(), dan opsi 6 akan mengakhiri program.
 
 ## Unguided 
 
@@ -791,7 +794,10 @@ int main(){
 ##### Output Poin f
 ![Dhimas_Output-Unguided1-6](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided1-6.png)
 
-Deskripsi program unguided 1
+#### Deskripsi Program :
+Kode diatas merupakan program single linked list yang berisi biodata berupa nama dan umur. Pada awal program terdapat 'struct node' yang digunakan untuk mendeklarasikan node yang berisi data nama, data umur, dan pointer next. Kemudian terdapat prosedur 'inisialisasi_151' yang digunakan untuk inisialisasi node head dan tail yang bernilai NULL. Ada juga fungsi 'kosong_151' yang digunakan untuk mengecek apakah linked list tersebut kosong atau tidak. Kemudian terdapat beberapa fungsi dan prosedur yang digunakan untuk memanipulasi linked list, antara lain prosedur untuk menambahkan node (void 'TambahDepan_151()', void 'TambahBelakang_151()', void 'TambahTengah_151()'), prosedur untuk menghapus node (void 'HapusDepan_151()', void 'HapusTengah_151()', dan void 'HapusBelakang_151()'), prosedur untuk mengubah isi node (void 'UbahDepan_151()', void 'UbahTengah_151()', void 'UbahBelakang_151()'), fungsi untuk menghitung node (int 'HitungNode_151()'), prosedur hapus list (void 'HapusList_151()'), dan prosedur untuk menampilkan list (void 'TampilList_151()').
+
+Pada bagian int main(), terdapat menu yang setiap opsinya menjawab poin-poin yang telah diberikan di soal. Opsi a digunakan untuk menginput data sesuai urutan yang telah ditentukan, opsi b digunakan untuk menghapus data Akechi, opsi c digunakan untuk menambahkan data 'Futaba, 18' diantara John dan Jane, opsi d digunakan untuk menambahkan data 'Igor, 20' diawal, opsi e digunakan untuk mengubah data 'Michael' menjadi 'Reyn, 18', opsi f digunakan untuk menampilkan hasil akhir list, dan terakhir opsi g digunakan untuk mengakhiri program.
 
 ### 2. Soal mengenai Double Linked List
 Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga. </br>
@@ -1067,7 +1073,10 @@ Tampilan akhir data yang tersimpan.
 
 ![Dhimas_Output-Unguided2-5](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan3_Modul3-Linked-List/Laprak/Dhimas_Output-Unguided2-5.png)
 
-Deskripsi program unguided 2
+#### Deskripsi Program :
+Kode diatas merupakan program double linked list yang berisi nama produk skincare beserta harganya. pada awal program terdapat 'struct node' yang digunakan untuk mendeklarasikan node yang berisi data nama barang, data harga, pointer prev, dan pinter next. Kemudian terdapat prosedur 'inisialisasi_151' yang digunakan untuk inisialisasi node head dan tail yang bernilai nullptr. Kemudian terdapat beberapa fungsi dan prosedur yang digunakan untuk memanipulasi double linked list, antara lain prosedur untuk menambahkan node (void 'TambahNode_151()'), prosedur untuk menghapus node (void 'HapusNode_151()'), fungsi untuk mengupdate atau mengubah data suatu node (bool 'UpdateData_151()'), prosedur untuk menghapus semua data (void 'HapusSemua_151()'), dan prosedur untuk menampilkan list (void 'TampilData_151()').
+
+Pada bagian int main(), terdapat menu toko skincare purwokerto. Opsi 1 digunakan untuk menambah data, opsi 2 digunakan untuk menghapus data, opsi 3 digunakan untuk mengupdate data, opsi 4 digunakan untuk menambah data pada urutan tertentu, opsi 5 digunakan untuk menghapus data pada urutan tertentu, opsi 6 digunakan untuk menghapus seluruh data, opsi 7 digunakan untuk menampilkan data, dan terakhir opsi 8 digunakan untuk mengakhiri program.
 
 ## Kesimpulan
 Linked list adalah struktur data yang terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer. terdapat 2 jenis linked list, yaitu single linked list dan double linked list. Pada single linked list, setiap nodenya terdiri dari 2 bagian, yaitu nilai yang ditampung dan pointer next. Sedangkan pada double linked list, setiap nodenya terdiri dari 3 bagian, yaitu nilai yang ditampung, pointer prev, dan pointer next. Masing-masing jenis Linked List ini memiliki kelebihan dalam hal penyisipan dan penghapusan elemen yang lebih efisien dibandingkan array. Namun, Linked List juga membutuhkan lebih banyak memori karena setiap nodenya memakai lebih dari 1 blok memori dan umumnya memiliki akses data yang lebih lambat.
