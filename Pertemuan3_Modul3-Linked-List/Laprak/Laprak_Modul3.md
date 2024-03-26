@@ -2,8 +2,6 @@
 <p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
 
 ## Dasar Teori
-
-## Guided 
 Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk struktur data yang berisi kumpulan data yang tersusun secara sekuensial, saling bersambungan, dinamis, dan terbatas[1]. Linked list terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer. Suatu simpul atau node harus mempunyai satu atau lebih elemen struktur atau class yang berisi data. Pada suatu linked list, terdiri dari 2 elemen yaitu elemen pada awal list (head) dan elemen pada akhir list (tail). Terdapat 2 jenis linked list, diantaranya adalah :
 
 ### A. Single Linked list
@@ -27,6 +25,7 @@ Kekurangan dan linked list antara lain :
 - Penggunaan Memori Tambahan untuk Pointer (*next dan *prev)
 - Data didalam list tidak terurut
 
+## Guided 
 
 ### 1. Latihan Single Linked List
 
