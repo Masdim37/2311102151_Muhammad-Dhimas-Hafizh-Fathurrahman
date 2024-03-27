@@ -12,7 +12,7 @@ struct node{
     node *head;
     node *tail;
 
-//inisialisasi node
+//inisialisasi node head & tail
 void init(){
     head = NULL;
     tail = NULL;
