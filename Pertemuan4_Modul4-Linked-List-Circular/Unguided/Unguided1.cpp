@@ -6,7 +6,7 @@ using namespace std;
 //deklarasi struct node
 struct node{
     string Nama_151;
-    int NIM_151;
+    long int NIM_151;
     node *next;
 };
     node *head;
@@ -39,7 +39,7 @@ int HitungNode_151(){
 }
 
 //prosedur tambah depan
-void TambahDepan_151(string Name_151, int NIM_151){
+void TambahDepan_151(string Name_151, long int NIM_151){
     node *baru = new node;
     baru->Nama_151 = Name_151;
     baru->NIM_151 = NIM_151;
@@ -54,7 +54,7 @@ void TambahDepan_151(string Name_151, int NIM_151){
 }
 
 //prosedur tambah belakang
-void TambahBelakang_151(string Name_151, int NIM_151){
+void TambahBelakang_151(string Name_151, long int NIM_151){
     node *baru = new node;
     baru->Nama_151 = Name_151;
     baru->NIM_151 = NIM_151;
@@ -69,7 +69,7 @@ void TambahBelakang_151(string Name_151, int NIM_151){
 }
 
 //prosedur tambah tengah
-void TambahTengah_151(string Name_151, int NIM_151, int Position_151){
+void TambahTengah_151(string Name_151, long int NIM_151, int Position_151){
     if(Position_151 < 1 || Position_151 > HitungNode_151()){
         cout << "Node yang ingin ditambah diluar jangkauan!" << endl;
     } else if(Position_151 == 1){
@@ -190,7 +190,7 @@ string TampilTengah_151(int Position_151){
 }
 
 //prosedur Ubah depan
-void UbahDepan_151(string NewName_151, int NewNIM_151){
+void UbahDepan_151(string NewName_151, long int NewNIM_151){
     if(isEmpty_151() == true){
         cout << "List masih kosong!" << endl;
     } else {
@@ -200,7 +200,7 @@ void UbahDepan_151(string NewName_151, int NewNIM_151){
 }
 
 //prosedur ubah belakang
-void UbahBelakang_151(string NewName_151, int NewNIM_151){
+void UbahBelakang_151(string NewName_151, long int NewNIM_151){
     if(isEmpty_151() == true){
         cout << "List masih kosong!" << endl;
     } else {
@@ -210,7 +210,7 @@ void UbahBelakang_151(string NewName_151, int NewNIM_151){
 }
 
 //prosedur ubah tengah
-void UbahTengah_151(string NewName_151, int NewNIM_151, int Position_151){
+void UbahTengah_151(string NewName_151, long int NewNIM_151, int Position_151){
     if(isEmpty_151() == true){
         cout << "List masih kosong!" << endl;
     } else {
@@ -267,7 +267,8 @@ void TampilList_151(){
 }
 
 int main(){
-    int NIM_151, OldNIM_151, Position_151, Choose_151;
+    long int NIM_151, OldNIM_151; 
+    int Position_151, Choose_151;
     string Name_151, OldName_151;
     char Yakin_151;
     MenuUtama:
