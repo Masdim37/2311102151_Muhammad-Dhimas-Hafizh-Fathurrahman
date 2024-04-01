@@ -1003,7 +1003,7 @@ int main(){
 ##### Output 11 (Tampilan Menu Hapus List)
 ![Dhimas_Output-Unguided1-11](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Output-Unguided1-11.png)
 
-##### Output 12 (Tampilan Menu Hapus List)
+##### Output 12 (Tampilan Menu Tampil List)
 ![Dhimas_Output-Unguided1-12](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Output-Unguided1-12.png)
 
 ##### Output 13 (Tampilan Menu Keluar)
@@ -1525,7 +1525,7 @@ int main(){
 ##### Output 10 (Tambah Data Budi)
 ![Dhimas_Output-Unguided2-10](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Output-Unguided2-10.png)
 
-##### Output 11 (Tampil Semua Data)
+##### Output 11 (Tampilkan Semua Data)
 ![Dhimas_Output-Unguided2-11](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Output-Unguided2-11.png)
 
 #### Deskripsi Program
