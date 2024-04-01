@@ -259,7 +259,7 @@ void TampilList_151(){
         cout << "|         NAMA         |       NIM       |" << endl;
         cout << "------------------------------------------" << endl;
         while(bantu != NULL){
-            cout << "|" << setw(22) << left << bantu->Nama_151 << "|" << right << setw(17) << bantu->NIM_151 << "|" << endl;
+            cout << "|" << setw(22) << left << bantu->Nama_151 << "|" << setw(17) << left << bantu->NIM_151 << "|" << endl;
             bantu = bantu->next;
         }
         cout << "------------------------------------------" << endl;
