@@ -31,7 +31,7 @@ bool isEmpty_151(){
 int HitungNode_151(){
     node *hitung = head;
     int jumlah_151 = 0;
-    while (head != NULL){
+    while (hitung != NULL){
         hitung = hitung->next;
         jumlah_151++;
     }
@@ -75,13 +75,12 @@ void TambahTengah_151(string Name_151, string NIM_151, int Position_151){
     } else if(Position_151 == 1){
         cout << "Node yang ingin ditambah bukan ditengah!"<< endl;
     } else {
-        node *baru = new node;
         node *bantu = head;
+        node *baru = new node;
         baru->Nama_151 = Name_151;
         baru->NIM_151 = NIM_151;
-        baru->next = NULL;
         int hitung_151 = 1;
-        while(hitung_151 < Position_151){
+        while(hitung_151 < Position_151 - 1){
             bantu = bantu->next;
             hitung_151++;
         }
@@ -98,7 +97,7 @@ void HapusDepan_151(){
     } else {
         if(head->next != NULL){
             hapus = head;
-            head->next = head;
+            head = head->next;
             delete hapus;
         } else {
             head = tail = NULL;
@@ -151,21 +150,25 @@ string TampilBelakang_151(){
 
 
 //prosedur hapus tengah
-void HapusTengah_151(int Position_151){
-    if(Position_151 < 1 || Position_151 > HitungNode_151()){
-        cout << "Node yang ingin dihapus diluar jangkauan!" << endl;
-    } else if(Position_151 == 1){
-        cout << "Node yang ingin dihapus bukan di tengah!" << endl;
+void HapusTengah_151(int posisi_151){
+    if(posisi_151 < 1 || posisi_151 > HitungNode_151()){ 
+        cout << "Posisi node yang akan dihapus offside" << endl;
+    } else if(posisi_151 == 1){
+        cout << "Node yang ingin dihapus bukan node tengah" << endl;
     } else {
-        node *hapus, *bantu;
-        int nomor_151 = 1;
+        node *hapus, *bantu, *bantu2;
         bantu = head;
-        while (nomor_151 < Position_151){
+        int nomor_151 = 1;
+        while(nomor_151 <= posisi_151){
+            if(nomor_151 == posisi_151 - 1){
+                bantu2 = bantu;
+            } else if(nomor_151 == posisi_151){
+                hapus = bantu;
+            }
             bantu = bantu->next;
-            nomor_151++;
+            nomor_151++; 
         }
-        hapus = bantu->next;
-        bantu->next = hapus->next;
+        bantu2->next = bantu;
         delete hapus;
     }
 }
@@ -173,15 +176,18 @@ void HapusTengah_151(int Position_151){
 //fungsi tampil data tengah
 string TampilTengah_151(int Position_151){
     string NamaYangDihapus_151 = "";
-    node *bantu = head;
-    node *tampil;
+    node *tampil = head;
+    node *bantu;
     if(isEmpty_151() == false){
         int nomor_151 = 1;
-        while (nomor_151 < Position_151){
-            bantu = bantu->next;
+        while (nomor_151 <= Position_151 - 1){
+            if(nomor_151 == Position_151 - 1){
+                bantu = tampil;
+            }
+            tampil = tampil->next;
             nomor_151++;
         }
-        tampil = bantu->next;
+        bantu->next = tampil;
         NamaYangDihapus_151 = tampil->Nama_151;       
     } else {
         cout << "List masih kosong" << endl;
@@ -221,8 +227,8 @@ void UbahTengah_151(string NewName_151, string NewNIM_151, int Position_151){
         } else {
             node *bantu;
             bantu = head;
-            int nomor_151;
-            while(nomor_151 <= Position_151){
+            int nomor_151 = 1;
+            while(nomor_151 < Position_151){
                 bantu = bantu->next;
                 nomor_151++;
             }
@@ -239,13 +245,12 @@ void HapusList_151(){
     if(isEmpty_151() == true){
         cout << "List masih kosong!" << endl;
     } else {
-        while(head != NULL){
+        while(bantu != NULL){
             hapus = bantu;
             bantu = bantu->next;
             delete hapus;   
         }
         head = tail = NULL;
-        cout << "List telah terhapus!" << endl; 
     }
 }
 
@@ -270,6 +275,7 @@ int main(){
     int Position_151, Choose_151;
     string Name_151, OldName_151, NIM_151, OldNIM_151;
     char Yakin_151;
+    Inisialisasi_151();
     MenuUtama:
     cout << "------- PROGRAM SINGLE LINKED LIST -------" << endl;
     cout << "-------------- NON-CIRCULAR --------------" << endl; 
@@ -351,7 +357,7 @@ int main(){
             cout << "--- Data Baru ---" << endl;
             cout << "Nama mahasiswa baru = "; 
             cin >> Name_151;
-            cout << "NIM mahasiswa baru =";
+            cout << "NIM mahasiswa baru = ";
             cin >> NIM_151;
             UbahDepan_151(Name_151, NIM_151);
             cout << "Data mahasiswa " << OldName_151 << " (" << OldNIM_151 << ") telah diganti dengan data mahasiswa baru " << Name_151 << " (" << NIM_151 << ")" << endl;
@@ -369,7 +375,7 @@ int main(){
             cout << "--- Data Baru ---" << endl;
             cout << "Nama mahasiswa baru = "; 
             cin >> Name_151;
-            cout << "NIM mahasiswa baru =";
+            cout << "NIM mahasiswa baru = ";
             cin >> NIM_151;
             UbahBelakang_151(Name_151, NIM_151);
             cout << "Data mahasiswa " << OldName_151 << " (" << OldNIM_151 << ") telah diganti dengan data mahasiswa baru " << Name_151 << " (" << NIM_151 << ")" << endl;
@@ -389,10 +395,10 @@ int main(){
             cout << "--- Data Baru ---" << endl;
             cout << "Nama mahasiswa baru = "; 
             cin >> Name_151;
-            cout << "NIM mahasiswa baru =";
+            cout << "NIM mahasiswa baru = ";
             cin >> NIM_151;
             UbahTengah_151(Name_151, NIM_151, Position_151);
-            cout << "Data mahasiswa " << OldName_151 << " (" << OldNIM_151 << ") pada posisi ke-" << Position_151 << "  telah diganti dengan data mahasiswa baru " << Name_151 << " (" << NIM_151 << ")" << endl;
+            cout << "Data mahasiswa " << OldName_151 << " (" << OldNIM_151 << ") pada posisi ke-" << Position_151 << " telah diganti dengan data mahasiswa baru " << Name_151 << " (" << NIM_151 << ")" << endl;
             cout << endl;
             goto MenuUtama;
             break;
@@ -443,7 +449,7 @@ int main(){
             cin >> Yakin_151;
             if(Yakin_151 == 'y' || Yakin_151 == 'Y'){
                 HapusList_151();
-                cout << "List telah terhapus" << endl;
+                cout << "List telah terhapus" << endl; 
             } else if(Yakin_151 == 'n' || Yakin_151 == 'N'){
                 cout << "Aksi dibatalkan" << endl;
             }
