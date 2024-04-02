@@ -2,6 +2,12 @@
 <p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
 
 ## Dasar Teori
+Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk struktur data yang berisi kumpulan data yang tersusun secara sekuensial, saling bersambungan, dinamis, dan terbatas[1]. Linked list terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer. Suatu simpul atau node harus mempunyai satu atau lebih elemen struktur atau class yang berisi data. Pada suatu linked list, terdiri dari 2 elemen yaitu elemen pada awal list (head) dan elemen pada akhir list (tail). Berdasarkan cara hubungan antar elemennya, linked list terbagi menjadi 2 yaitu linked list circular dan linked list non-circular. 
+
+### A. Linked List Non-Circular
+Linked List Non-Circular merupakan linked list yang terdiri dari sejumlah node di mana setiap node memiliki pointer berikutnya ke elemen berikut. Node berikutnya dari node terakhir atau tail suatu linked list non-circular adalah NULL, yang menunjukkan akhir list[2]. Pada linked list non-circular tidak ada siklus atau lingkaran dalam struktur linked list. Dengan kata lain, tidak ada elemen yang menunjuk kembali ke elemen sebelumnya. Proses traversal dari awal hingga akhir linked list akan mencapai elemen terakhir dan kemudian berakhir.
+Berikut merupakan ilustrasi dari linked list non-circular.
+
 
 ## Guided 
 
@@ -2050,3 +2056,5 @@ Deskripsi program unguided 3
 ## Kesimpulan
 
 ## Referensi
+[1] Triase. (2020). "Diktat Edisi Revisi : STRUKTUR DATA". Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
+<br> [2] Santoso, Joseph Teguh. 2021. "Struktur Data dan Algoritma : Bagian 1". Semarang : Yayasan Prima Agus Teknik.
