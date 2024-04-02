@@ -246,7 +246,7 @@ void Clearlist(){
     cout << "List berhasil terhapus!" << endl;
 }
 
-//Prosedur tampilka list
+//Prosedur tampilkan list
 void TampilList(){
     node *bantu;
     bantu = head;
@@ -290,7 +290,22 @@ int main(){
 }
 ```
 #### Deskripsi Program
-Deskripsi guided 1
+Kode diatas merupakan penerapan dari single linked list non-circular. Pada program ini terdapat beberapa fungsi dan prosedur yang digunakan untuk memanipulasi list antara lain menambah data, menghapus data, dan mengubah isi data. Berikut adalah nama-nama fungsi dan prosedur yang ada beserta kegunaannya.
+- void init(); digunakan untuk inisialisasi node head dan tail linked list sebagai NULL.
+- bool isEmpty(); digunakan untuk memeriksa apakah linked list kosong atau tidak.
+- void TambahDepan(int nilai); digunakan untuk menambahkan elemen baru di depan linked list dengan nilai tertentu.
+- void TambahBelakang(int nilai); digunakan untuk menambahkan elemen baru di belakang linked list dengan nilai tertentu.
+- int HitungList(); digunakan untuk menghitung jumlah elemen dalam linked list.
+- void TambahTengah(int nilai, int posisi); digunakan untuk menambahkan elemen baru di tengah linked list pada posisi tertentu.
+- void HapusDepan(); digunakan untuk menghapus elemen pertama dari linked list.
+- void HapusBelakang(); digunakan untuk menghapus elemen terakhir dari linked list.
+- void HapusTengah(int posisi); digunakan untuk menghapus elemen pada posisi tertentu dari linked list.
+- void UbahDepan(int nilai); digunakan untuk mengubah nilai elemen pertama dari linked list.
+- void UbahTengah(int nilai, int posisi); digunakan untuk mengubah nilai elemen pada posisi tertentu dari linked list.
+- void UbahBelakang(int nilai); digunakan untuk mengubah nilai elemen terakhir dari linked list.
+- void Clearlist(); digunakan untuk menghapus seluruh elemen dari linked list.
+- void TampilList(); digunakan untuk menampilkan seluruh elemen dalam linked list.
+Kemudian pada int main(), operasi-operasi ini dipanggil untuk menguji fungsi-fungsi tersebut dalam program.
 
 ### 2. Linked List Circular
 
@@ -514,7 +529,20 @@ int main(){
 }
 ```
 #### Deskripsi Program
-Deskripsi guided 2
+Kode diatas merupakan penerapan dari single linked list circular. Sama seperti guided 1, pada program ini terdapat beberapa fungsi dan prosedur yang digunakan untuk memanipulasi list antara lain menambah data, menghapus data, dan mengubah isi data. Berikut adalah nama-nama fungsi dan prosedur yang ada beserta kegunaannya.
+- void init(); digunakan untuk inisialisasi node head dan tail linked list sebagai NULL.
+- bool isEmpty(); digunakan untuk memeriksa apakah linked list kosong atau tidak.
+- void buatNode(string data); digunakan untuk membuat node baru.
+- int hitungList(); digunakan untuk menghitung jumlah elemen dalam linked list.
+- void insertDepan(string data); digunakan untuk menambahkan elemen baru di depan linked list.
+- void insertBelakang(string data); digunakan untuk menambahkan elemen baru di belakang linked list.
+- void insertTengah(string data, int posisi); digunakan untuk menambahkan elemen baru di tengah linked list pada posisi tertentu.
+- void hapusDepan(); digunakan untuk menghapus elemen pertama dari linked list.
+- void hapusBelakang(); digunakan untuk menghapus elemen terakhir dari linked list.
+- void hapusTengah(int posisi); digunakan untuk menghapus elemen pada posisi tertentu dari linked list.
+- void clearList(); digunakan untuk menghapus seluruh elemen dari linked list.
+- void tampil(); digunakan untuk menampilkan seluruh elemen dalam linked list.
+Kemudian pada int main(), operasi-operasi ini dipanggil untuk menguji fungsi-fungsi tersebut dalam program.
 
 ## Unguided 
 Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user.
