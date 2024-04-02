@@ -5,9 +5,37 @@
 Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk struktur data yang berisi kumpulan data yang tersusun secara sekuensial, saling bersambungan, dinamis, dan terbatas[1]. Linked list terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer. Suatu simpul atau node harus mempunyai satu atau lebih elemen struktur atau class yang berisi data. Pada suatu linked list, terdiri dari 2 elemen yaitu elemen pada awal list (head) dan elemen pada akhir list (tail). Berdasarkan cara hubungan antar elemennya, linked list terbagi menjadi 2 yaitu linked list circular dan linked list non-circular. 
 
 ### A. Linked List Non-Circular
-Linked List Non-Circular merupakan linked list yang terdiri dari sejumlah node di mana setiap node memiliki pointer berikutnya ke elemen berikut. Node berikutnya dari node terakhir atau tail suatu linked list non-circular adalah NULL, yang menunjukkan akhir list[2]. Pada linked list non-circular tidak ada siklus atau lingkaran dalam struktur linked list. Dengan kata lain, tidak ada elemen yang menunjuk kembali ke elemen sebelumnya. Proses traversal dari awal hingga akhir linked list akan mencapai elemen terakhir dan kemudian berakhir.
+Linked List Non-Circular merupakan linked list yang terdiri dari sejumlah node di mana setiap node memiliki pointer berikutnya ke elemen berikut. Node berikutnya dari node terakhir atau tail suatu linked list non-circular adalah NULL, yang menunjukkan akhir list[2]. Pada linked list non-circular tidak ada siklus atau lingkaran dalam struktur linked list. Dengan kata lain, tidak ada elemen yang menunjuk kembali ke elemen sebelumnya. Proses traversal dari awal hingga akhir linked list akan mencapai elemen terakhir dan kemudian berakhir. Operasi yang bisa dilakukan untuk memanipulasi linked list non-circular antara lain deklarasi node, inisialisasi node head dan tail, mengecek isi node, menambah node (depan, belakang, tengah), mengubah isi node (depan, belakang, tengah), menghapus node (depan, belakang, tengah), menghapus list, dan menampilkan list.
 Berikut merupakan ilustrasi dari linked list non-circular.
 
+- Ilustrasi Single Linked List Non-Circular (SLLNC)
+
+![Dhimas_Ilustrasi-SLLNC](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Ilustrasi-SLLNC.png)
+
+Pada single linked list non-circular, suatu node terdiri dari data yang disimpan dan pointer next yang merujuk pada node selanjutnya. Proses ini berlanjut hingga node terakhir atau tail. Pointer next dari tail merujuk pada NULL atau kosong. 
+
+- Ilustrasi Double Linked List Non-Circular (DLLNC)
+
+![Dhimas_Ilustrasi-DLLNC](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Ilustrasi-DLLNC.png)
+
+Pada double linked list non-circular, suatu node terdiri dari data yang disimpan, pointer next yang merujuk pada node selanjutnya, dan pointer prev yang merujuk pada node sebelumnya. Pointer prev dari node pertama atau head merujuk pada NULL atau kosong dan pointer next dari node terakhir atau tail merujuk pada NULL atau kosong.
+
+### B. Linked List Circular
+Berbeda dengan linked list non-circular, linked list circular merupakan variasi dari linked list di mana elemen terakhir ditautkan ke elemen pertama, sehingga membentuk lingkaran melingkar[3]. Pada linked list circular, terdapat siklus dalam struktur linked list, di mana elemen terakhir menunjuk kembali ke elemen pertama, dan iterasi melalui linked list akan terus berputar mengelilingi siklus.
+Pada linked list circular juga tidak ada elemen yang menunjuk ke null, karena seluruh linked list membentuk siklus tertutup. Sama seperti linked list non-circular, operasi yang bisa dilakukan untuk memanipulasi linked list circular antara lain deklarasi node, inisialisasi node head dan tail, mengecek isi node, menambah node (depan, belakang, tengah), mengubah isi node (depan, belakang, tengah), menghapus node (depan, belakang, tengah), menghapus list, dan menampilkan list.
+Berikut merupakan ilustrasi dari linked list non-circular.
+
+- Ilustrasi Single Linked List Circular (SLLC)
+
+![Dhimas_Ilustrasi-SLLC](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Ilustrasi-SLLC.png)
+
+Pada single linked list circular, suatu node terdiri dari data yang disimpan dan pointer next yang merujuk pada node selanjutnya. Proses ini berlanjut hingga node terakhir atau tail. Pointer next dari tail merujuk pada node pertama atau head.
+
+- Ilustrasi Double Linked List Circular (DLLC)
+
+![Dhimas_Ilustrasi-DLLC](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Ilustrasi-DLLC.png)
+
+Pada double linked list circular, suatu node terdiri dari data yang disimpan, pointer next yang merujuk pada node selanjutnya, dan pointer prev yang merujuk pada node sebelumnya. Pointer prev dari node pertama atau head merujuk node terakhir atau tail dan pointer next dari node terakhir atau tail merujuk pada node pertama atau head.
 
 ## Guided 
 
@@ -2056,5 +2084,6 @@ Deskripsi program unguided 3
 ## Kesimpulan
 
 ## Referensi
-[1] Triase. (2020). "Diktat Edisi Revisi : STRUKTUR DATA". Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
-<br> [2] Santoso, Joseph Teguh. 2021. "Struktur Data dan Algoritma : Bagian 1". Semarang : Yayasan Prima Agus Teknik.
+[1] Triase. 2020. "Diktat Edisi Revisi : STRUKTUR DATA". Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
+<br>[2] Santoso, Joseph Teguh. 2021. "Struktur Data dan Algoritma : Bagian 1". Semarang : Yayasan Prima Agus Teknik.
+<br>[3] Musiafa, Zayid. 2022. "Struktur Data dan Implementasi Algoritma (SDIA): Pemrograman Python C C++ Java". (n.p.): ZAYID MUSIAFA.
