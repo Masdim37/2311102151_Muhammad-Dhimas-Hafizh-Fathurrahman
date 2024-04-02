@@ -26,7 +26,6 @@ Pada linked list circular juga tidak ada elemen yang menunjuk ke null, karena se
 Berikut merupakan ilustrasi dari linked list non-circular.
 
 - Ilustrasi Single Linked List Circular (SLLC)
-
 ![Dhimas_Ilustrasi-SLLC](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Ilustrasi-SLLC.png)
 
 Pada single linked list circular, suatu node terdiri dari data yang disimpan dan pointer next yang merujuk pada node selanjutnya. Proses ini berlanjut hingga node terakhir atau tail. Pointer next dari tail merujuk pada node pertama atau head.
