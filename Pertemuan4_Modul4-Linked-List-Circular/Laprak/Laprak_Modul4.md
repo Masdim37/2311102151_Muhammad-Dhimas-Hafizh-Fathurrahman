@@ -26,6 +26,7 @@ Pada linked list circular juga tidak ada elemen yang menunjuk ke null, karena se
 Berikut merupakan ilustrasi dari linked list non-circular.
 
 - Ilustrasi Single Linked List Circular (SLLC)
+
 ![Dhimas_Ilustrasi-SLLC](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Ilustrasi-SLLC.png)
 
 Pada single linked list circular, suatu node terdiri dari data yang disimpan dan pointer next yang merujuk pada node selanjutnya. Proses ini berlanjut hingga node terakhir atau tail. Pointer next dari tail merujuk pada node pertama atau head.
@@ -34,7 +35,7 @@ Pada single linked list circular, suatu node terdiri dari data yang disimpan dan
 
 ![Dhimas_Ilustrasi-DLLC](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Ilustrasi-DLLC.png)
 
-Pada double linked list circular, suatu node terdiri dari data yang disimpan, pointer next yang merujuk pada node selanjutnya, dan pointer prev yang merujuk pada node sebelumnya. Pointer prev dari node pertama atau head merujuk node terakhir atau tail dan pointer next dari node terakhir atau tail merujuk pada node pertama atau head.
+Pada double linked list circular, suatu node terdiri dari data yang disimpan, pointer next yang merujuk pada node selanjutnya, dan pointer prev yang merujuk pada node sebelumnya. Pointer prev dari node pertama atau head merujuk node terakhir atau tail dan pointer next dari node terakhir atau tail merujuk pada node pertama atau head. 
 
 ## Guided 
 
@@ -304,7 +305,7 @@ Kode diatas merupakan penerapan dari single linked list non-circular. Pada progr
 - void UbahBelakang(int nilai); digunakan untuk mengubah nilai elemen terakhir dari linked list.
 - void Clearlist(); digunakan untuk menghapus seluruh elemen dari linked list.
 - void TampilList(); digunakan untuk menampilkan seluruh elemen dalam linked list.
-Kemudian pada int main(), operasi-operasi ini dipanggil untuk menguji fungsi-fungsi tersebut dalam program.
+<br>Kemudian pada int main(), operasi-operasi ini dipanggil untuk menguji fungsi-fungsi tersebut dalam program.
 
 ### 2. Linked List Circular
 
@@ -541,7 +542,7 @@ Kode diatas merupakan penerapan dari single linked list circular. Sama seperti g
 - void hapusTengah(int posisi); digunakan untuk menghapus elemen pada posisi tertentu dari linked list.
 - void clearList(); digunakan untuk menghapus seluruh elemen dari linked list.
 - void tampil(); digunakan untuk menampilkan seluruh elemen dalam linked list.
-Kemudian pada int main(), operasi-operasi ini dipanggil untuk menguji fungsi-fungsi tersebut dalam program.
+<br>Kemudian pada int main(), operasi-operasi ini dipanggil untuk menguji fungsi-fungsi tersebut dalam program.
 
 ## Unguided 
 Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user.
@@ -1089,7 +1090,7 @@ Kode diatas merupakan program implementasi dari single linked list non-circular 
 - void UbahTengah_151(string NewName_151, string NewNIM_151, int Position_151); digunakan untuk mengubah isi data pada urutan tertentu.
 - void HapusList_151(); digunakan untuk menghapus list yang tersimpan.
 - void TampilList_151(); digunakan untuk menampilkan list yang tersimpan.
-Kemudian pada int main() terdapat percabangan switchcase yang setiap menunya merepresentasikan kegunaan fungsi dan prosedur yang ada.  
+<br>Kemudian pada int main() terdapat percabangan switchcase yang setiap menunya merepresentasikan kegunaan fungsi dan prosedur yang ada.  
 
 ### 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan! (Gunakan insert depan, belakang atau tengah)
 
