@@ -2138,6 +2138,11 @@ Program pada unguided 3 merupakan program yang sama dengan yang ada pada unguide
 - Menampilkan seluruh data yang tersimpan.
 
 ## Kesimpulan
+Linked list adalah struktur data yang terdiri dari sejumlah node atau simpul yang dihubungkan secara linier dengan bantuan pointer. Berdasarkan cara hubungan antar elemennya, linked list terbagi menjadi 2 yaitu linked list non-circular dan linked list circular. 
+
+Linked list non-circular adalah linked list yang tidak terdapat siklus lingkaran atau dengan kata lain proses traversal dari awal hingga akhir linked list akan mencapai elemen terakhir dan kemudian berakhir. Linked list non-circular terbagi menjadi 2, yaitu Single Linked List Non-Circular (SLLNC) dan Double Linked List Non-Circular (DLLNC). Pada SLLNC node selanjutnya dari tail adalah NULL dan pada DLLNC node sebelum head dan node setelah tail adalah NULL.
+
+Linked list circular adalah linked list yang membentuk siklus lingkaran karena elemen terakhir menunjuk kembali ke elemen pertama, sehingga tidak ada elemen yang menunjuk ke NULL. Iterasi melalui linked list akan terus berputar mengelilingi siklus. Linked list circular terbagi menjadi 2, yaitu Single Linked List Circular (SLLC) dan Double Linked List Circular (DLLC). Pada SLLC node selanjutnya dari tail adalah head dan pada DLLC node sebelum head adalah tail dan node setelah tail adalah head.
 
 ## Referensi
 [1] Triase. 2020. "Diktat Edisi Revisi : STRUKTUR DATA". Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN. 
