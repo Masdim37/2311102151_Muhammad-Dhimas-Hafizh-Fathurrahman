@@ -1072,7 +1072,25 @@ int main(){
 ![Dhimas_Output-Unguided1-13](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Output-Unguided1-13.png)
 
 ### Deskripsi Program
-Deskripsi program unguided 1
+Kode diatas merupakan program implementasi dari single linked list non-circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user. Pada program ini terdapat beberapa fungsi dan prosedur yang digunakan untuk memanipulasi list, antara lain :
+- void Inisialisasi_151(); digunakan untuk inisialisasi node head & tail sebagai NULL.
+- bool isEmpty_151(); digunakan untuk mengecek isi list kosong atau tidak.
+- int HitungNode_151(); digunakan untuk menghitung jumlah node yang tersimpan.
+- void TambahDepan_151(string Name_151, string NIM_151); digunakan untuk menambah node pada awal list.
+- void TambahBelakang_151(string Name_151, string NIM_151); digunakan untun menambah node pada akhir list.
+- void TambahTengah_151(string Name_151, string NIM_151, int Position_151); digunakan untuk menambah node pada urutan tertentu.
+- void HapusDepan_151(); digunakan untuk menghapus node pertama pada list.
+- string TampilDepan_151(); digunakan untuk menampilkan data pertama pada list.
+- void HapusBelakang_151(); digunakan untuk menghapus node terakhir pada list.
+- string TampilBelakang_151(); digunakan untuk menampilkan data terakhir pada list.
+- void HapusTengah_151(int posisi_151); digunakan untuk menghapus node urutan tertentu pada list.
+- string TampilTengah_151(int Position_151); digunakan untuk menampilkan data urutan tertentu pada list.
+- void UbahDepan_151(string NewName_151, string NewNIM_151); digunakan untuk mengubah isi data pada urutan pertama.
+- void UbahBelakang_151(string NewName_151, string NewNIM_151); digunakan untuk mengubah isi data pada urutan terakhir.
+- void UbahTengah_151(string NewName_151, string NewNIM_151, int Position_151); digunakan untuk mengubah isi data pada urutan tertentu.
+- void HapusList_151(); digunakan untuk menghapus list yang tersimpan.
+- void TampilList_151(); digunakan untuk menampilkan list yang tersimpan.
+Kemudian pada int main() terdapat percabangan switchcase yang setiap menunya merepresentasikan kegunaan fungsi dan prosedur yang ada.  
 
 ### 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan! (Gunakan insert depan, belakang atau tengah)
 
@@ -1591,7 +1609,7 @@ int main(){
 ![Dhimas_Output-Unguided2-11](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Output-Unguided2-11.png)
 
 #### Deskripsi Program
-Deskripsi program unguided 2
+Program pada unguided 2 merupakan program yang sama dengan yang ada pada unguided 1. Pada unguided 2 praktikan diminta untuk menginputkan atau menambahkan beberapa data nama mahasiswa dan NIM menggunakan prosedur TambahDepan_151(), TambahBelakang_151(), ataupun TambahTengah_151(). Pada urutan kedua, praktikan diminta mengisi data nama dan NIM masing-masing. Setelah itu praktikan diminta untuk menampilkan semua data yang telah diinputkan menggunakan prosedur TampilList_151(). 
 
 ### 3. Lakukan perintah berikut!
 
@@ -2107,7 +2125,17 @@ int main(){
 ![Dhimas_Output-Unguided3-10](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan4_Modul4-Linked-List-Circular/Laprak/Dhimas_Output-Unguided3-10.png)
 
 #### Deskripsi Program
-Deskripsi program unguided 3
+Program pada unguided 3 merupakan program yang sama dengan yang ada pada unguided 1. Setelah menginputkan data nama mahasiswa dan NIM pada unguided 2, kali ini praktikan diminta untuk melakukan operasi tertentu, antara lain :
+- Menambahkan data Wati - 23300004 diantara Farrel dan Denis.
+- Menghapus data Denis.
+- Menambah data Owi - 2330000 pada awal list.
+- Menambah data David - 23300100 pada akhir list.
+- Mengubah data Udin menjadi Idin - 23300045.
+- Mengubah data terakhir pada list menjadi Lucy - 23300101.
+- Menghapus data pertama pada list.
+- Mengubah data pertaama pada list menjadi Bagas - 23300002.
+- Menghapus data terakhir pada list.
+- Menampilkan seluruh data yang tersimpan.
 
 ## Kesimpulan
 
