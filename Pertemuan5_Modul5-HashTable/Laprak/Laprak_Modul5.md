@@ -542,7 +542,7 @@ int main(){
 ![Dhimas_Output-Unguided1-6](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan5_Modul5-HashTable/Laprak/Dhimas_Output-Unguided1-6.png)
 
 #### Deskripsi Program
-Program diatas merupakan implementasi dari struktur data hash table yang digunakan untuk menyimpan data mahasiswa, yang terdiri dari nama, NIM, dan nilai. Tabel yang digunakan memiliki ukuran 100 Pada program ini, terdapat 2 tipe data class, berikut penjelasannya :
+Program diatas merupakan implementasi dari struktur data hash table yang digunakan untuk menyimpan data mahasiswa, yang terdiri dari nama, NIM, dan nilai. Tabel yang digunakan memiliki ukuran 100. Pada program ini, terdapat 2 tipe data class, berikut penjelasannya :
 - class HashNode_151; merepresentasikan setiap node dalam tabel hash. Setiap node memiliki atribut nama, NIM, dan nilai.
 - class HashMap_151; digunakan untuk mengelola tabel hash. tabel ini berupa array yang berisi vektor dari pointer ke HashNode_151 yang digunakan sebagai wadah untuk menyimpan data secara terorganisir berdasarkan hasil hashing dari kunci (key). Pada class HashMap_151 ini terdapat beberapa operasi yang digunakan untuk mengelola tabel hash, antara lain sebagai berikut.
   -  int hashFunc_151(string key_151); digunakan untuk menghitung nilai hash dari sebuah string key_151
@@ -553,7 +553,7 @@ Program diatas merupakan implementasi dari struktur data hash table yang digunak
   - void SearchByNIM_151(string NIM_151); digunakan untuk mencari data mahasiswa berdasarkan NIM
   - void SearchByGrade_151(int min_151, int max_151); digunakan untuk mencari data mahasiswa berdasarkan rentang nilai
   - void TampilData_151(); digunakan untuk menampilkan data yang tersimpan didalam tabel
-<br>Kemudian pada int main(), terdapat menu DATA MAHASISWA yang dibuat menggunakan perulangan switchcase. Jika user memilih 1, maka masuk ke menu Tambah Data; jika user memilih 2, maka masuk ke menu Hapus Data; jika user memilih 3, maka masuk ke menu Cari Data Berdasarkan NIM; jika user memilih 4, maka masuk ke menu Cari Data Berdasarkan Nilai; jika user memilih 5, maka masuk ke menu Tampilkan Data; dan jika user memilih 6, maka keluar dari program.
+Kemudian pada int main(), terdapat menu DATA MAHASISWA yang dibuat menggunakan perulangan switchcase. Jika user memilih 1, maka masuk ke menu Tambah Data; jika user memilih 2, maka masuk ke menu Hapus Data; jika user memilih 3, maka masuk ke menu Cari Data Berdasarkan NIM; jika user memilih 4, maka masuk ke menu Cari Data Berdasarkan Nilai; jika user memilih 5, maka masuk ke menu Tampilkan Data; dan jika user memilih 6, maka keluar dari program.
 
 ## Kesimpulan
 
