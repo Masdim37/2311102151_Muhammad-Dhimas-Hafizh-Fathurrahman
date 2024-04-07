@@ -553,6 +553,7 @@ Program diatas merupakan implementasi dari struktur data hash table yang digunak
   - void SearchByNIM_151(string NIM_151); digunakan untuk mencari data mahasiswa berdasarkan NIM
   - void SearchByGrade_151(int min_151, int max_151); digunakan untuk mencari data mahasiswa berdasarkan rentang nilai
   - void TampilData_151(); digunakan untuk menampilkan data yang tersimpan didalam tabel
+  
 <br>Kemudian pada int main(), terdapat menu DATA MAHASISWA yang dibuat menggunakan perulangan switchcase. Jika user memilih 1, maka masuk ke menu Tambah Data; jika user memilih 2, maka masuk ke menu Hapus Data; jika user memilih 3, maka masuk ke menu Cari Data Berdasarkan NIM; jika user memilih 4, maka masuk ke menu Cari Data Berdasarkan Nilai; jika user memilih 5, maka masuk ke menu Tampilkan Data; dan jika user memilih 6, maka keluar dari program.
 
 ## Kesimpulan
