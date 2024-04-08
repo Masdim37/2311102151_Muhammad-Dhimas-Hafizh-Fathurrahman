@@ -3,41 +3,41 @@
 
 ## Dasar Teori
 
-### Teknik Hashing
+### A. Teknik Hashing
 Sebelum memahami apa itu tabel hash atau hash table, kita perlu mengetahui apa itu teknik hashing. Teknik hashing adalah proses penggunaan fungsi hash untuk mengonversi kunci (key) menjadi hash value berupa indeks dalam array (tabel hash), di mana nilai tersebut akan disimpan. Proses ini memungkinkan akses cepat ke nilai yang terkait dengan kunci tertentu. Teknik hashing memiliki empat komponen utama, antara lain sebagai berikut.
 
-1. Tabel Hash 
-Tabel hash atau peta hash adalah struktur data yang digunakan untuk menyimpan kunci (key) dan nilai (value) terkaitnya[1]. Tabel Hash terdiri dari sebuah array di mana setiap elemen dalam array tersebut disebut sebagai "bucket". Setiap bucket dapat menampung satu atau lebih item data yang memiliki nilai hash yang sama (setelah diterapkan teknik resolusi collision). Untuk memetakan key dan value pada tabel hash, diperlukan sebuah fungsi yang disebut sebagai fungsi hash.
+#### 1. Tabel Hash 
+<br>Tabel hash atau peta hash adalah struktur data yang digunakan untuk menyimpan kunci (key) dan nilai (value) terkaitnya[1]. Tabel Hash terdiri dari sebuah array di mana setiap elemen dalam array tersebut disebut sebagai "bucket". Setiap bucket dapat menampung satu atau lebih item data yang memiliki nilai hash yang sama (setelah diterapkan teknik resolusi collision). Untuk memetakan key dan value pada tabel hash, diperlukan sebuah fungsi yang disebut sebagai fungsi hash.
 
 Berikut merupakan ilustrasi dari hash table.
 ![Dhimas_Ilustrasi-HashTable](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan5_Modul5-HashTable/Laprak/Dhimas_Ilustrasi-HashTable.png)
 
 Pada tabel hash dapat dilakukan beberapa operasi antara lain insertion (menambahkan data baru kedalam hash table), deletion (menghapus data tertentu pada hash table), searching (mencari data tertentu berdasarkan inputan key), update (memperbarui data yang tersimpan didalam hash table), dan transversal (menelusuri seluruh hash table untuk memproses semua data yang ada dalam tabel).
 
-2. Fungsi Hash
-Fungsi hash adalah sebuah function yang digunakan untuk mengubah suatu key yang diinputkan user menjadi nilai indeks array yang ada pada tabel hash sehingga memungkinkan akses cepat dan efisien ke data yang terkait dengan key tersebut. Fungsi hash yang baik akan menghasilkan nilai hash yang berbeda untuk setiap kunci yang berbeda, sehingga data dapat tersimpan secara merata di seluruh ruang penyimpanan (tabel hash). Fungsi hash merupakan komponen kunci dalam teknik hashing sehingga perlu dirancang dengan baik. Jika tidak, maka data tidak dapat disimpan pada index yang sesuai, sehingga memungkinkan terjadinya tabrakan data (collision).
+#### 2. Fungsi Hash
+<br>Fungsi hash adalah sebuah function yang digunakan untuk mengubah suatu key yang diinputkan user menjadi nilai indeks array yang ada pada tabel hash sehingga memungkinkan akses cepat dan efisien ke data yang terkait dengan key tersebut. Fungsi hash yang baik akan menghasilkan nilai hash yang berbeda untuk setiap kunci yang berbeda, sehingga data dapat tersimpan secara merata di seluruh ruang penyimpanan (tabel hash). Fungsi hash merupakan komponen kunci dalam teknik hashing sehingga perlu dirancang dengan baik. Jika tidak, maka data tidak dapat disimpan pada index yang sesuai, sehingga memungkinkan terjadinya tabrakan data (collision).
 
-3. Tabrakan Data (Collision)
-Tabrakan data atau collision adalah suatu kondisi dimana dua atau lebih key menghasilkan nilai hash yang sama, sehingga data yang ingin disimpan dimuat dalam 1 bucket yang sama. Collision bisa terjadi karena fungsi hash yang telah dibuat tidak efisien sehingga tidak dapat menghasilkan nilai hash yang unik untuk setiap key yang berbeda. Hal ini merupakan masalah yang umum terjadi dalam implementasi tabel hash sehingga diperlukan teknik resolusi tabrakan
+#### 3. Tabrakan Data (Collision)
+<br>Tabrakan data atau collision adalah suatu kondisi dimana dua atau lebih key menghasilkan nilai hash yang sama, sehingga data yang ingin disimpan dimuat dalam 1 bucket yang sama. Collision bisa terjadi karena fungsi hash yang telah dibuat tidak efisien sehingga tidak dapat menghasilkan nilai hash yang unik untuk setiap key yang berbeda. Hal ini merupakan masalah yang umum terjadi dalam implementasi tabel hash sehingga diperlukan teknik resolusi tabrakan
 
-4. Teknik Resolusi Tabrakan
-Untuk mengatasi collision, diperlukan teknik resolusi tabrakan, antara lain sebagai berikut[2].
-- Open Hashing (Separate Chaining)
-Open hashing atau separate chaining dilakukan dengan membuat tabel hash menjadi sebuah array of pointer yang masing-masing pointernya diikuti oleh sebuah linked list. Dalam pendekatan ini, setiap elemen array (bucket) mengandung sebuah linked list. Chain atau rantai pertama terletak pada array of pointer itu sendiri, sedangkan chain-chain berikutnya berhubungan dengan chain pertama secara memanjang. Kelemahan metode ini yaitu terjadi linked list yang panjang apabila data menumpuk pada satu atau sedikit indeks.
-- Closed Hashing (Open Addressing)
-Closed Hashing dilakukan dengan menggunakan memori yang masih ada tanpa menggunakan memori di luar array yang dipakai. Dalam closed hashing, ketika terjadi tabrakan atau collision di suatu indeks dalam array, algoritma akan mencari alamat lain untuk menyimpan data yang bertabrakan tanpa meninggalkan array yang sudah ada. Terdapat tiga metode dalam closed hashing, antara lain :
-  - Linear Probing (Metode Pembagian); dilakukan dengan mencari posisi yang kosong dengan bergeser satu indeks dari indeks sebelumnya hingga ditemukan alamat yang belum terisi data.
-  - Quadratic Probing (Metode Midsquare/Nilai Tengah); dilakukan dengan mencari alamat baru untuk ditempati dengan proses perhitungan kuadratik yang lebih kompleks. 
-  - Double Hashing (Metode Penjumlahan Digit); dilakukan dengan melakukan hashing ulang sehingga tercipta hash value yang baru.
+#### 4. Teknik Resolusi Tabrakan
+<br>Untuk mengatasi collision, diperlukan teknik resolusi tabrakan, antara lain sebagai berikut[2].
+  - Open Hashing (Separate Chaining)
+  <br>Open hashing atau separate chaining dilakukan dengan membuat tabel hash menjadi sebuah array of pointer yang masing-masing pointernya diikuti oleh sebuah linked list. Dalam pendekatan ini, setiap elemen array (bucket) mengandung sebuah linked list. Chain atau rantai pertama terletak pada array of pointer itu sendiri, sedangkan chain-chain berikutnya berhubungan dengan chain pertama secara memanjang. Kelemahan metode ini yaitu terjadi linked list yang panjang apabila data menumpuk pada satu atau sedikit indeks.
+  - Closed Hashing (Open Addressing)
+  <br>Closed Hashing dilakukan dengan menggunakan memori yang masih ada tanpa menggunakan memori di luar array yang dipakai. Dalam closed hashing, ketika terjadi tabrakan atau collision di suatu indeks dalam array, algoritma akan mencari alamat lain untuk menyimpan data yang bertabrakan tanpa meninggalkan array yang sudah ada. Terdapat tiga metode dalam closed hashing, antara lain :
+    - Linear Probing (Metode Pembagian); dilakukan dengan mencari posisi yang kosong dengan bergeser satu indeks dari indeks sebelumnya hingga ditemukan alamat yang belum terisi data.
+    - Quadratic Probing (Metode Midsquare/Nilai Tengah); dilakukan dengan mencari alamat baru untuk ditempati dengan proses perhitungan kuadratik yang lebih kompleks. 
+    - Double Hashing (Metode Penjumlahan Digit); dilakukan dengan melakukan hashing ulang sehingga tercipta hash value yang baru.
 
 Metode closed hashing memiliki kelemahan yaitu ukuran array yang disediakan harus lebih besar dari jumlah data. Selain itu, dibutuhkan memori yang lebih besar untuk meminimalkan collision.
 
 ### Kelebihan dan Kekurangan Hash Table
-1. Kelebihan hash table antara lain :
+#### 1. Kelebihan hash table antara lain :
    - Dapat mengakses data dengan cepat; hal ini dikarenakan penggunaan fungsi hash untuk memetakan kunci ke indeks dalam array, yang memungkinkan pencarian, penyisipan, dan penghapusan data dengan waktu eksekusi yang konstan atau mendekati konstan (O(1)).
    - Hash table dapat menyimpan data dengan efisien; hal ini karena hash table hanya menggunakan memori yang diperlukan untuk menyimpan data, tanpa memerlukan alokasi memori tambahan untuk mengakomodasi pertumbuhan data.
    - fleksibel; sehingga cocok untuk diterapkan dalam berbagai macam aplikasi dan struktur data, seperti basis data, kamus, caching, dan lainnya.
-2. Kekurangan hash table antara lain :
+#### 2. Kekurangan hash table antara lain :
    - Dapat terjadi tabrakan data (collision); sehingga diperlukan implementasi teknik resolusi collision yang baik.
    - Memerlukan fungsi hash yang tepat dan efisien; sehingga k dapat menghasilkan nilai hash yang berbeda untuk setiap key yang berbeda.
    - pengimplementasian hash table cukup kompleks, apalagi jika diperlukan penanganan collision.
