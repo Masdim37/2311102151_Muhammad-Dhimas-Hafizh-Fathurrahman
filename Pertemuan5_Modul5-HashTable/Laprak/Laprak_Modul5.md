@@ -2,12 +2,45 @@
 <p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
 
 ## Dasar Teori
-Hashing adalah teknik yang digunakan untuk menyimpan dan mengambil informasi secepat mungkin. Ini digunakan untuk melakukan pencarian yang optimal dan berguna dalam mengimplementasikan tabel simbol.
-Tabel hash atau peta hash adalah struktur data yang digunakan untuk menyimpan kunci dan nilai terkaitnya. Tabel hash menggunakan fungsi hash untuk memetakan kunci ke nilai terkaitnya. Fungsi hash ini mengambil input (biasanya kunci) dan menghasilkan indeks, yang kemudian digunakan untuk menyimpan atau mengakses nilai yang terkait dengan kunci tersebut[1]. Berikut merupakan ilustrasi dari hash table.
 
+### Teknik Hashing
+Sebelum memahami apa itu tabel hash atau hash table, kita perlu mengetahui apa itu teknik hashing. Teknik hashing adalah proses penggunaan fungsi hash untuk mengonversi kunci (key) menjadi hash value berupa indeks dalam array (tabel hash), di mana nilai tersebut akan disimpan. Proses ini memungkinkan akses cepat ke nilai yang terkait dengan kunci tertentu. Teknik hashing memiliki empat komponen utama, antara lain sebagai berikut.
+
+1. Tabel Hash 
+Tabel hash atau peta hash adalah struktur data yang digunakan untuk menyimpan kunci (key) dan nilai (value) terkaitnya[1]. Tabel Hash terdiri dari sebuah array di mana setiap elemen dalam array tersebut disebut sebagai "bucket". Setiap bucket dapat menampung satu atau lebih item data yang memiliki nilai hash yang sama (setelah diterapkan teknik resolusi collision). Untuk memetakan key dan value pada tabel hash, diperlukan sebuah fungsi yang disebut sebagai fungsi hash.
+
+Berikut merupakan ilustrasi dari hash table.
 ![Dhimas_Ilustrasi-HashTable](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan5_Modul5-HashTable/Laprak/Dhimas_Ilustrasi-HashTable.png)
 
+Pada tabel hash dapat dilakukan beberapa operasi antara lain insertion (menambahkan data baru kedalam hash table), deletion (menghapus data tertentu pada hash table), searching (mencari data tertentu berdasarkan inputan key), update (memperbarui data yang tersimpan didalam hash table), dan transversal (menelusuri seluruh hash table untuk memproses semua data yang ada dalam tabel).
 
+2. Fungsi Hash
+Fungsi hash adalah sebuah function yang digunakan untuk mengubah suatu key yang diinputkan user menjadi nilai indeks array yang ada pada tabel hash sehingga memungkinkan akses cepat dan efisien ke data yang terkait dengan key tersebut. Fungsi hash yang baik akan menghasilkan nilai hash yang berbeda untuk setiap kunci yang berbeda, sehingga data dapat tersimpan secara merata di seluruh ruang penyimpanan (tabel hash). Fungsi hash merupakan komponen kunci dalam teknik hashing sehingga perlu dirancang dengan baik. Jika tidak, maka data tidak dapat disimpan pada index yang sesuai, sehingga memungkinkan terjadinya tabrakan data (collision).
+
+3. Tabrakan Data (Collision)
+Tabrakan data atau collision adalah suatu kondisi dimana dua atau lebih key menghasilkan nilai hash yang sama, sehingga data yang ingin disimpan dimuat dalam 1 bucket yang sama. Collision bisa terjadi karena fungsi hash yang telah dibuat tidak efisien sehingga tidak dapat menghasilkan nilai hash yang unik untuk setiap key yang berbeda. Hal ini merupakan masalah yang umum terjadi dalam implementasi tabel hash sehingga diperlukan teknik resolusi tabrakan
+
+4. Teknik Resolusi Tabrakan
+Untuk mengatasi collision, diperlukan teknik resolusi tabrakan, antara lain sebagai berikut[2].
+- Open Hashing (Separate Chaining)
+Open hashing atau separate chaining dilakukan dengan membuat tabel hash menjadi sebuah array of pointer yang masing-masing pointernya diikuti oleh sebuah linked list. Dalam pendekatan ini, setiap elemen array (bucket) mengandung sebuah linked list. Chain atau rantai pertama terletak pada array of pointer itu sendiri, sedangkan chain-chain berikutnya berhubungan dengan chain pertama secara memanjang. Kelemahan metode ini yaitu terjadi linked list yang panjang apabila data menumpuk pada satu atau sedikit indeks.
+- Closed Hashing (Open Addressing)
+Closed Hashing dilakukan dengan menggunakan memori yang masih ada tanpa menggunakan memori di luar array yang dipakai. Dalam closed hashing, ketika terjadi tabrakan atau collision di suatu indeks dalam array, algoritma akan mencari alamat lain untuk menyimpan data yang bertabrakan tanpa meninggalkan array yang sudah ada. Terdapat tiga metode dalam closed hashing, antara lain :
+  - Linear Probing (Metode Pembagian); dilakukan dengan mencari posisi yang kosong dengan bergeser satu indeks dari indeks sebelumnya hingga ditemukan alamat yang belum terisi data.
+  - Quadratic Probing (Metode Midsquare/Nilai Tengah); dilakukan dengan mencari alamat baru untuk ditempati dengan proses perhitungan kuadratik yang lebih kompleks. 
+  - Double Hashing (Metode Penjumlahan Digit); dilakukan dengan melakukan hashing ulang sehingga tercipta hash value yang baru.
+
+Metode closed hashing memiliki kelemahan yaitu ukuran array yang disediakan harus lebih besar dari jumlah data. Selain itu, dibutuhkan memori yang lebih besar untuk meminimalkan collision.
+
+### Kelebihan dan Kekurangan Hash Table
+1. Kelebihan hash table antara lain :
+   - Dapat mengakses data dengan cepat; hal ini dikarenakan penggunaan fungsi hash untuk memetakan kunci ke indeks dalam array, yang memungkinkan pencarian, penyisipan, dan penghapusan data dengan waktu eksekusi yang konstan atau mendekati konstan (O(1)).
+   - Hash table dapat menyimpan data dengan efisien; hal ini karena hash table hanya menggunakan memori yang diperlukan untuk menyimpan data, tanpa memerlukan alokasi memori tambahan untuk mengakomodasi pertumbuhan data.
+   - fleksibel; sehingga cocok untuk diterapkan dalam berbagai macam aplikasi dan struktur data, seperti basis data, kamus, caching, dan lainnya.
+2. Kekurangan hash table antara lain :
+   - Dapat terjadi tabrakan data (collision); sehingga diperlukan implementasi teknik resolusi collision yang baik.
+   - Memerlukan fungsi hash yang tepat dan efisien; sehingga k dapat menghasilkan nilai hash yang berbeda untuk setiap key yang berbeda.
+   - pengimplementasian hash table cukup kompleks, apalagi jika diperlukan penanganan collision.
 
 ## Guided 
 
@@ -590,9 +623,9 @@ int main(){
 Program diatas merupakan implementasi dari struktur data hash table yang digunakan untuk menyimpan data mahasiswa, yang terdiri dari nama, NIM, dan nilai. Tabel yang digunakan memiliki ukuran 100. Pada program ini, terdapat 2 tipe data class, berikut penjelasannya :
 - class HashNode_151; merepresentasikan setiap node dalam tabel hash. Setiap node memiliki atribut nama, NIM, dan nilai.
 - class HashMap_151; digunakan untuk mengelola tabel hash. tabel ini berupa array yang berisi vektor dari pointer ke HashNode_151 yang digunakan sebagai wadah untuk menyimpan data secara terorganisir berdasarkan hasil hashing dari kunci (key). Pada class HashMap_151 ini terdapat beberapa operasi yang digunakan untuk mengelola tabel hash, antara lain sebagai berikut.
-  -  int hashFunc_151(string key_151); digunakan untuk menghitung nilai hash dari sebuah string key_151
+  - int hashFunc_151(string key_151); digunakan untuk menghitung nilai hash dari sebuah string key_151
   - void Tambah_151(string name_151, string NIM_151, int grade_151); digunakan untuk Menambahkan data mahasiswa baru ke dalam tabel hash
-  -  bool CekData_151(string name_151); digunakan untuk mengecek ada atau tidaknya data mahasiswa tertentu didalam tabel
+  - bool CekData_151(string name_151); digunakan untuk mengecek ada atau tidaknya data mahasiswa tertentu didalam tabel
   - bool IsEmpty_151(); digunakan untuk mengecek kosong atau tidaknya isi tabel
   - void Hapus_151(string name_151); digunakan untuk menghapus data tertentu yang ada didalam tabel
   - void SearchByNIM_151(string NIM_151); digunakan untuk mencari data mahasiswa berdasarkan NIM
@@ -602,6 +635,9 @@ Program diatas merupakan implementasi dari struktur data hash table yang digunak
 <br>Kemudian pada int main(), terdapat menu DATA MAHASISWA yang dibuat menggunakan perulangan switchcase. Jika user memilih 1, maka masuk ke menu Tambah Data; jika user memilih 2, maka masuk ke menu Hapus Data; jika user memilih 3, maka masuk ke menu Cari Data Berdasarkan NIM; jika user memilih 4, maka masuk ke menu Cari Data Berdasarkan Nilai; jika user memilih 5, maka masuk ke menu Tampilkan Data; dan jika user memilih 6, maka keluar dari program.
 
 ## Kesimpulan
+Tabel Hash atau hash table adalah sebuah struktur data yang digunakan untuk menyimpan pasangan key-value, di mana key digunakan sebagai indeks atau alamat untuk mengakses nilai terkait (value). Hash table terdiri dari sebuah array di mana setiap elemen dalam array tersebut disebut sebagai bucket. Untuk memetakan suatu key pada sebuah value, diperlukan sebuah teknik hashing. Teknik hashing ini melibatkan penggunaan fungsi hash yang mengonversi key menjadi sebuah hash value, yang kemudian digunakan sebagai indeks dalam array untuk menentukan lokasi penyimpanan data (value) tersebut dalam hash table.
+Pada implementasi hash table, dapat terjadi collision atau tabrakan data, yaitu kondisi dimana terdapat 2 atau lebih key yang menghasilkan hash value yang sama, sehingga data-data tersebut tersimpan dalam 1 bucket yang sama. Untuk mengatasi hal tersebut, diperlukan teknik resolusi collision antara lain open hashing (separate chaining) dan closed hashing (open addressing) yang terdiri dari linear probing (metode pembagian), quadratic probing (metode midsquare atau nilai tengah), dan double hashing (metode penjumlahan digit).
 
 ## Referensi
 [1] Joseph Teguh Santoso. (2021). "STRUKTUR DATA dan ALGORITMA (Bagian 2)". Penerbit Yayasan Prima Agus Teknik, 7(1), 1-352. Retrieved from https://penerbit.stekom.ac.id/index.php/yayasanpat/article/view/284. 
+<br>[2] Mulyana, Ade. (2023). "E-Books Cara Mudah Mempelajari Algoritma dan Struktur Data". Ade Mulyana. Diakses pada 8 April 2024 melalui https://repository.mercubuana.ac.id/id/eprint/80729. 
