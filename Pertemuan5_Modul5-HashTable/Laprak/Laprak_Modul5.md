@@ -29,7 +29,8 @@ Untuk mengatasi collision, diperlukan teknik resolusi tabrakan, antara lain seba
   - Linear Probing (Metode Pembagian); dilakukan dengan mencari posisi yang kosong dengan bergeser satu indeks dari indeks sebelumnya hingga ditemukan alamat yang belum terisi data.
   - Quadratic Probing (Metode Midsquare/Nilai Tengah); dilakukan dengan mencari alamat baru untuk ditempati dengan proses perhitungan kuadratik yang lebih kompleks. 
   - Double Hashing (Metode Penjumlahan Digit); dilakukan dengan melakukan hashing ulang sehingga tercipta hash value yang baru.
-<br>Metode closed hashing memiliki kelemahan yaitu ukuran array yang disediakan harus lebih besar dari jumlah data. Selain itu, dibutuhkan memori yang lebih besar untuk meminimalkan collision.
+
+Metode closed hashing memiliki kelemahan yaitu ukuran array yang disediakan harus lebih besar dari jumlah data. Selain itu, dibutuhkan memori yang lebih besar untuk meminimalkan collision.
 
 ### B. Kelebihan dan Kekurangan Hash Table
 #### 1. Kelebihan hash table antara lain :
@@ -631,7 +632,7 @@ Program diatas merupakan implementasi dari struktur data hash table yang digunak
   - void SearchByGrade_151(int min_151, int max_151); digunakan untuk mencari data mahasiswa berdasarkan rentang nilai
   - void TampilData_151(); digunakan untuk menampilkan data yang tersimpan didalam tabel
   
-<br>Kemudian pada int main(), terdapat menu DATA MAHASISWA yang dibuat menggunakan perulangan switchcase. Jika user memilih 1, maka masuk ke menu Tambah Data; jika user memilih 2, maka masuk ke menu Hapus Data; jika user memilih 3, maka masuk ke menu Cari Data Berdasarkan NIM; jika user memilih 4, maka masuk ke menu Cari Data Berdasarkan Nilai; jika user memilih 5, maka masuk ke menu Tampilkan Data; dan jika user memilih 6, maka keluar dari program.
+Kemudian pada int main(), terdapat menu DATA MAHASISWA yang dibuat menggunakan perulangan switchcase. Jika user memilih 1, maka masuk ke menu Tambah Data; jika user memilih 2, maka masuk ke menu Hapus Data; jika user memilih 3, maka masuk ke menu Cari Data Berdasarkan NIM; jika user memilih 4, maka masuk ke menu Cari Data Berdasarkan Nilai; jika user memilih 5, maka masuk ke menu Tampilkan Data; dan jika user memilih 6, maka keluar dari program.
 
 ## Kesimpulan
 Tabel Hash atau hash table adalah sebuah struktur data yang digunakan untuk menyimpan pasangan key-value, di mana key digunakan sebagai indeks atau alamat untuk mengakses nilai terkait (value). Hash table terdiri dari sebuah array di mana setiap elemen dalam array tersebut disebut sebagai bucket. Untuk memetakan suatu key pada sebuah value, diperlukan sebuah teknik hashing. Teknik hashing ini melibatkan penggunaan fungsi hash yang mengonversi key menjadi sebuah hash value, yang kemudian digunakan sebagai indeks dalam array untuk menentukan lokasi penyimpanan data (value) tersebut dalam hash table.
