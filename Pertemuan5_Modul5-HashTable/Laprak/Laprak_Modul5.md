@@ -2,7 +2,12 @@
 <p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
 
 ## Dasar Teori
-Tabel hash atau peta hash adalah struktur data yang digunakan untuk menyimpan kunci dan nilai terkaitnya. Tabel hash menggunakan fungsi hash untuk memetakan kunci ke nilai terkaitnya. Fungsi hash ini mengambil input (biasanya kunci) dan menghasilkan indeks, yang kemudian digunakan untuk menyimpan atau mengakses nilai yang terkait dengan kunci tersebut[1]. 
+Hashing adalah teknik yang digunakan untuk menyimpan dan mengambil informasi secepat mungkin. Ini digunakan untuk melakukan pencarian yang optimal dan berguna dalam mengimplementasikan tabel simbol.
+Tabel hash atau peta hash adalah struktur data yang digunakan untuk menyimpan kunci dan nilai terkaitnya. Tabel hash menggunakan fungsi hash untuk memetakan kunci ke nilai terkaitnya. Fungsi hash ini mengambil input (biasanya kunci) dan menghasilkan indeks, yang kemudian digunakan untuk menyimpan atau mengakses nilai yang terkait dengan kunci tersebut[1]. Berikut merupakan ilustrasi dari hash table.
+
+![Dhimas_Ilustrasi-HashTable](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan5_Modul5-HashTable/Laprak/Dhimas_Ilustrasi-HashTable.png)
+
+
 
 ## Guided 
 
