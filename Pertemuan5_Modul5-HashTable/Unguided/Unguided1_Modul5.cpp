@@ -30,7 +30,7 @@ class HashMap_151{
     vector<HashNode_151*> table[TableSize_151];
 
     public:
-    //menghitung nilai hash dari sebuah string key_151
+    //Fungsi hashFunc_151 untuk menghitung nilai hash dari sebuah string key_151
     int hashFunc_151(string key_151){
         int hashValue_151 = 0;
         for(char c : key_151){

@@ -2,6 +2,7 @@
 <p align="center">Muhammad Dhimas Hafizh Fathurrahman - 2311102151</p>
 
 ## Dasar Teori
+Tabel hash atau peta hash adalah struktur data yang digunakan untuk menyimpan kunci dan nilai terkaitnya. Tabel hash menggunakan fungsi hash untuk memetakan kunci ke nilai terkaitnya. Fungsi hash ini mengambil input (biasanya kunci) dan menghasilkan indeks, yang kemudian digunakan untuk menyimpan atau mengakses nilai yang terkait dengan kunci tersebut[1]. 
 
 ## Guided 
 
@@ -130,7 +131,18 @@ int main(){
 ```
 
 #### Deskripsi Program
-Deskripsi guided 1
+Program diatas merupakan implementasi dari hash table sederhana. Pada program ini terdapat pasangan kunci-nilai (key-value) yang di mana setiap key dipetakan ke value tertentu menggunakan fungsi hash. Pada awal program ini, dideklarasikan ukuran table sebanyak 10, kemudian terdapat fungsi hash_func, struct node, dan class HashTable. Berikut merupakan penjelasan setiap bagiannya.
+1. int hash_func(int key); berfungsi sebagai fungsi hash sederhana yang menggunakan operasi key modulus MAX_SIZE untuk memastikan nilai hash tetap dalam rentang yang sesuai dengan ukuran tabel hash.
+2. struct Node; berfungsi untuk mendeklarasikan node yang terdiri dari key, value, dan pointer next.
+3. class HashTable; berfungsi sebagai implementasi dari hash table yang teridir dari :
+   - kontruktor HashTable(); berfungsi untuk menginisialisasi tabel hash dengan ukuran MAX_SIZE.
+   - destruktor ~HashTable(); berfungsi untuk membersihkan atau menghapus memori yang dialokasikan secara dinamis untuk tabel hash.
+   - void insert(int key, int value); digunakan untuk menambahkan node baru kedalam tabel hash. Jika kunci sudah ada, maka nilai yang terkait diperbarui.
+   - int get(int key); digunakan untuk mencari nilai yang terkait dengan suatu kunci dalam tabel hash.
+   - void remove(int key); digunakan untuk menghapus elemen yang terkait dengan kunci tertentu dari tabel hash.
+   - void transverse(); digunakan untuk menampilkan semua pasangan key-value yang disimpan.
+
+Kemudian pada int main(), dideklarasikan objek ht dari kelas HashTable, kemudian dilakukan operasi menambah dengan pasangan key-value antara lain 1-10, 2-20, 3-30. Kemudian dilakukan pencarian key 1 dan key 4 menggunakan ht.get(). Kemudian dilakukan penghapusan key 4 menggunakan ht.remove(). Kemudian menampilkan semua data yang disimpan menggunakan ht.transverse().
 
 ### 2. Implementasi Hash Table Untuk Penyimpanan dan Pencarian Data Nama dan Nomor Telepon
 
@@ -141,25 +153,33 @@ Deskripsi guided 1
 
 using namespace std;
 
+//Deklarasi isi tabel sebanyak 11
 const int TABLE_SIZE = 11;
 
 string name;
 string phone_number;
+
+//Deklarasi class HashNode
 class HashNode{
     public:
     string name;
     string phone_number;
 
+    //deklarasi konstruktor HashNode yang digunakan untuk membuat objek HashNode dengan parameter nama dan nomor telepon
     HashNode(string name, string phone_number){
         this->name = name;
         this->phone_number = phone_number;
     }
 };
 
+//Deklarasi class HashMap
 class HashMap{
     private:
+    //inisialisasi array table dengan ukuran TABLE_SIZE yang setiap elemen dari array tersebut merupakan sebuah vektor yang menyimpan pointer ke HashNode.
     vector<HashNode*> table[TABLE_SIZE];
+
     public:
+    //fungsi hashFunc untuk menghitung nilai hash dari sebuah string key_151
     int hashFunc(string key){
         int hash_val = 0;
         for(char c : key){
@@ -168,6 +188,7 @@ class HashMap{
     return hash_val % TABLE_SIZE;
     }
 
+    //Prosedur insert untuk menambahkan data 
     void insert(string name, string phone_number){
         int hash_val = hashFunc(name);
 
@@ -180,6 +201,7 @@ class HashMap{
         table[hash_val].push_back(new HashNode(name, phone_number));
     }
 
+    //Prosedur remove untuk menghapus data tertentu berdasarkan key nama yang diinputkan user.
     void remove(string name){
         int hash_val = hashFunc(name);
 
@@ -191,6 +213,7 @@ class HashMap{
         }
     }
 
+    //fungsi searchByName untuk mencari data nomor telepon berdasarkan key nama yang diinputkan user.
     string searchByName(string name){
         int hash_val = hashFunc(name);
         for(auto node : table[hash_val]){
@@ -201,6 +224,7 @@ class HashMap{
         return "";
     }
 
+    //prosedur print() untuk menampilkan data yang tersimpan dalam tabel 
     void print(){
         for(int i = 0; i < TABLE_SIZE; i++){
             cout << i << ": ";
@@ -215,19 +239,25 @@ class HashMap{
 };
 
 int main(){
+    //deklarasik objek employee_map dari kelas HashMap
     HashMap employee_map;
 
+    //insertion
     employee_map.insert("Mistah", "1234");
     employee_map.insert("Pastah", "5678");
     employee_map.insert("Ghana", "91011");
 
+    //Search by name
     cout << "Nomor HP Mistah : " << employee_map.searchByName("Mistah") << endl;
     cout << "Nomor HP Pastah : " << employee_map.searchByName("Pastah") << endl;
 
+    //remove
     employee_map.remove("Mistah");
 
+    //search by name
     cout << "Nomor HP Mistah setelah dihapus : " << employee_map.searchByName("Mistah") << endl << endl;
 
+    //print
     employee_map.print();
 
     return 0;
@@ -235,7 +265,17 @@ int main(){
 ```
 
 #### Deksripsi Program
-Deskripsi guided 2
+Program diatas merupakan program implementasi hash table untuk penyimpanan dan pencarian data nama dan nomor telepon. Pada program ini key yang digunakan adalah nama sedangkan valuenya adalah nomor telepon sehingga pasangan key-value yang digunakan adalah nama-nomor telepon. Pada awal program ini, dideklarasikan ukuran table sebanyak 11, kemudian terdapat class HashNode dan class HashMap yang terdiri dari int hashFunc(), void insert(), void remove(), string searchByName(), dan void print(). Berikut merupakan penjelasan masing-masing bagian tersebut
+1. class HashNode; digunakan untuk mendeklarasikan node yang terdiri dari name dan phone_number
+2. class HashMap; berfungsi sebagai implementasi dari hash table yang teridir dari :
+   - vector<HashNode*> table[TABLE_SIZE]; digunakan untuk menginisialisasi array table dengan ukuran TABLE_SIZE yang setiap elemen dari array tersebut merupakan sebuah vektor yang menyimpan pointer ke HashNode.
+   - int hashFunc(string key); digunakan untuk menghitung nilai hash dari string key yang diinputkan user.
+   - void insert(string name, string phone_number); digunakan untuk menambahkan data kedalam hash table. Jika ditemukan node dengan nama yang sama, nomor teleponnya diperbarui. Jika tidak ada node dengan nama yang sama, sebuah node baru dibuat menggunakan konstruktor HashNode dan ditambahkan ke vektor di indeks hash_val.
+   - void remove(string name); digunakan untuk menghapus data tertentu berdasarkan key nama yang diinputkan user.
+   - string searchByName(string name); digunakan untuk mencari data nomor telepon berdasarkan key nama yang diinputkan user.
+   - void print(); digunakan untuk menampilkan atau mencetak isi dari tabel hash.
+
+Kemudian pada int main(), dideklarasikan objek employee_map dari kelas HashMap, kemudian dilakukan operasi penambahan data key-value antara lain Mistah-1234, Pastah-5678, Ghana-91011. Kemudian dilakukan pencarian data nomor telepon Mistah dan Pastah menggunakan employee_map.searchByName(). Kemudian menghapus data nomor telepon Mistah menggunakan employee_map.remove(). Kemudian menampilkan data nomor telepon Mistah setelah dihapus menggunakan employee_map.searchByName(). Kemudian menampilkan semua data yang tersimpan dalan tabel hash menggunakan employee_map.print().
 
 ## Unguided 
 
@@ -559,3 +599,4 @@ Program diatas merupakan implementasi dari struktur data hash table yang digunak
 ## Kesimpulan
 
 ## Referensi
+[1] Joseph Teguh Santoso. (2021). "STRUKTUR DATA dan ALGORITMA (Bagian 2)". Penerbit Yayasan Prima Agus Teknik, 7(1), 1-352. Retrieved from https://penerbit.stekom.ac.id/index.php/yayasanpat/article/view/284. 
