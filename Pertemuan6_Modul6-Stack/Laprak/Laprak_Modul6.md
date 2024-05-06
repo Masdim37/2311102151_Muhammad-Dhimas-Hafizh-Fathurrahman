@@ -155,10 +155,10 @@ Palindrom adalah kalimat yang dibaca dari depan dan belakang sama. Jelaskan baga
 contoh = 
 
 Kalimat = ini
-Kalimat tersebut adalah palindrom
+<br>Kalimat tersebut adalah palindrom
 
 Kalimat = telkom
-Kalimat tersebut adalah bukan palindrom
+<br>Kalimat tersebut adalah bukan palindrom
 
 ![Dhimas_Soal-Unguided1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan6_Modul6-Stack/Laprak/Dhimas_Soal-Unguided1.png)
 
@@ -175,10 +175,10 @@ Deskripsi program unguided 1
 ### 2. Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata.
 Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?
 
-Contoh = 
+contoh = 
 
 Kalimat = Telkom Purwokerto
-Hasil = otrekowruP mokleT
+<br>Hasil = otrekowruP mokleT
 
 ![Dhimas_Soal-Unguided2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan6_Modul6-Stack/Laprak/Dhimas_Soal-Unguided2.png)
 
