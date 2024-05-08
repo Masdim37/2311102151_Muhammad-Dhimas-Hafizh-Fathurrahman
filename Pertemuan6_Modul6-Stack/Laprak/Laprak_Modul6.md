@@ -269,7 +269,7 @@ int main(){
 #### Output:
 ![Dhimas_Output-Unguided1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan6_Modul6-Stack/Laprak/Dhimas_Output-Unguided1.png)
 
-### Deskripsi Program
+#### Deskripsi Program
 Kode diatas merupakan program untuk menentukan kalimat yang diinputkan user merupakan kalimat palindrom atau bukan. Kalimat palindrom adalah kalimat yang pembacaannya sama jika dibaca dari depan maupun belakang. Program ini menggunakan stack yang diimplementasikan menggunakan array bertipe data char yang bernama `Kata_151` yang ukurannya diambil dari integer konstanta `Max_151` bernilai 100. Pada awal program dideklarasikan variabel integer konstanta `Max_151` bernilai 100, array bertipe data char bernama `Kata_151`, serta variabel `Top_151` bernilai -1. Pada program ini juga terdapat beberapa fungsi dan prosedur yang digunakan untuk mencapai tujuan program, fungsi dan prosedur tersebut antara lain :
 - void PushHuruf_151(char Huruf_151); digunakan untuk menambahkan Huruf yang tersimpan pada variabel `Huruf_151` pada stack
 - char PeekHurufPertama_151(); digunakan untuk melihat huruf pertama yang tersimpan pada stack
@@ -415,7 +415,7 @@ int main(){
 #### Output:
 ![Dhimas_Output-Unguided2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan6_Modul6-Stack/Laprak/Dhimas_Output-Unguided2.png)
 
-### Deskripsi Program
+#### Deskripsi Program
 Kode diatas merupakan program untuk membalik urutan kata dan huruf dari kalimat yang diinputkan oleh user. Program ini menggunakan stack yang diimplementasikan menggunakan array bertipe data string yang bernama `ArrayKalimat_151` yang ukurannya diambil dari integer konstanta `Max_151` bernilai 100. Pada awal program dideklarasikan variabel integer konstanta `Max_151` bernilai 100, array bertipe data string bernama `ArrayKalimat_151` serta variabel `Top_151` bernilai 0. Pada program ini juga terdapat beberapa fungsi dan prosedur yang digunakan untuk mencapai tujuan program, fungsi dan prosedur tersebut antara lain :
 - bool isEmpty(); digunakan untuk memeriksa apakah stack kosong atau tidak
 - void PushKata_151(string InputKata_151); digunakan untuk menambahkan kata yang sudah dibalik kedalam stack
