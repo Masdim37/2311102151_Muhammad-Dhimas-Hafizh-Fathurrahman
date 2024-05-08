@@ -162,7 +162,7 @@ int main(){
 }
 ```
 
-### Deskripsi Program
+#### Deskripsi Program
 Kode diatas merupakan program latihan stack sederhana. Implementasi stack pada program ini menggunakan array yang bernama `arrayBuku` dengan ukuran 5. Pada awal program dideklarasikan array bertipe data string dengan nama `arrayBuku` berukuran 5, variabel bertipe data integer bernama `maksimal` dengan nilai 5, serta variabel bertipe data integer bernama `top` dengan nilai 0. Variabel `top` akan digunakan sebagai indeks dari elemen teratas yang tersimpan pada stack. Pada program ini juga terdapat beberapa fungsi dan prosedur yang digunakan untuk memanipulasi stack, fungsi dan prosedur tersebut antara lain :
 - bool isFull(); digunakan untuk memeriksa apakah stack kosong atau tidak
 - bool isEmpty(); digunakan untuk memeriksa apakah stack penuh atau tidak
