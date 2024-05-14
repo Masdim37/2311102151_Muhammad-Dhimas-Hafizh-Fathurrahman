@@ -7,10 +7,10 @@
 Queue (antrian) adalah daftar berurutan di mana penyisipan dilakukan di satu ujung (belakang) dan penghapusan dilakukan di ujung lain (depan)[1]. Queue menggunakan konsep FIFO (First In First Out) yang artinya data atau elemen pertama yang ditambahkan adalah data atau elemen yang pertama kali dikeluarkan. Contoh penerapan queue dalam kehidupan sehari-hari adalah antrian pada kasir supermarket, antrian pada bank, dan sebagainya dimana pelanggan atau costumer pertama yang mengantri adalah yang pertama kali dilayani. Queue dapat diimplementasikan menggunakan array maupun linked list. Berikut merupakan gambar penjelasan konsep FIFO pada queue.
 
 - Konsep FIFO pada queue dengan implementasi array
-![Dhimas_Konsep-FIFO-Queue](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan7_Modul7-Queue/Laprak/Dhimas_Konsep-FIFO-Queue-Array.jpg)
+![Dhimas_Konsep-FIFO-Queue-Array](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan7_Modul7-Queue/Laprak/Dhimas_Konsep-FIFO-Queue-Array.png)
 
 - Konsep FIFO pada queue dengan implementasi linked list
-![Dhimas_Konsep-FIFO-LinkedList](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan7_Modul7-Queue/Laprak/Dhimas_Konsep-FIFO-Queue-LinkedList.png)
+![Dhimas_Konsep-FIFO-Queue-LinkedList](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan7_Modul7-Queue/Laprak/Dhimas_Konsep-FIFO-Queue-LinkedList.png)
 
 Pada implementasi queue menggunakan array dan linked list, terdapat penanda front atau head dan penanda back atau tail atau rear. Front menandakan elemen atau data pertama pada queue dan back menandakan data atau elemen terakhir pada queue. 
 
@@ -274,6 +274,7 @@ int main(){
     //menampilkan data setelah dihapus
     LihatAntrian_151();
     
+    return 0;
 }
 ```
 

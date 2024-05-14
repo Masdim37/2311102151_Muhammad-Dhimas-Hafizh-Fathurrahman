@@ -118,4 +118,5 @@ int main(){
     //menampilkan data setelah dihapus
     LihatAntrian_151();
     
+    return 0;
 }
