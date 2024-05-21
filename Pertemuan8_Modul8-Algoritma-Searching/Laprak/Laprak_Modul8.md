@@ -9,14 +9,14 @@ Searching (pencarian) pada struktur data mengacu pada proses algoritmik untuk me
 #### 1. Sequential Seacrh
 Sequential search adalah algoritma pencarian yang paling sederhana. Sequential search disebut juga sebagai linear search (pencarian linear). Sequential search bekerja dengan cara membandingkan setiap elemen yang tersimpan dalam suatu struktur data (misal : array) secara berurutan, dimulai dari elemen pertama, sampai elemen yang diinginkan ditemukan atau semua elemen telah dibandingkan[2]. Sequential search dapat dilakukan pada elemen data yang tidak diurutkan maupun pada elemen data yang diurutkan. Proses pencarian sequential akan singkat jika data yang diolah sedikit. Apabila data yang diolah banyak, prosesnya akan memakan waktu yang lama, sehingga algoritma sequential search hanya direkomendasikan untuk struktur data yang memuat jumlah data yang sedikit.
 
-Berikut ilustrasi sequential search pada array
+Berikut ilustrasi sequential search pada array =
 
 ![Dhimas_Ilustrasi-Sequential-Search-Array](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Ilustrasi-Sequential-Search-Array.png)
 
 #### 2. Binary Search
 Binary Search adalah algoritma pencarian data pada suatu struktur data (misal : array) yang telah terurut, metode ini lebih efisien daripada metode pencarian linier (sequential search) karena membutuhkan waktu komputasi yang lebih sedikit[3]. Binary search bekerja dengan membagi separuh dari jumlah data yang dicari (membagi jumlah data keseluruhan menjadi 2 bagian, yaitu bagian kanan dan kiri) sehingga memperkecil lokasi pencarian sampai menjadi satu data. Dengan teknik ini data akan dibuang setengah dari jumlah data seluruhnya. Apabila ditemukan kecocokan data maka program akan mengembalikan output, jika tidak pencarian akan terus berlanjut hingga akhir dari pembagian jumlah data tersebut[4]. Algoritma binary search memerlukan data yang sudah terurut sehingga diperlukan metode sorting data (mengurutkan data) seperti bubble sort, selection sort, insertion sort, dll sebelum mencari data menggunakan metode binary search. Dikarenakan algoritma binary search hanya membutuhkan waktu komputasi yang lebih sedikit, algoritma ini sangat direkomendasikan untuk diimplementasikan pada struktur data dengan jumlah data yang besar. Hal ini karena binary search memiliki kompleksitas waktu O(log n), yang jauh lebih efisien dibandingkan dengan sequential search yang memiliki kompleksitas waktu O(n). Dengan demikian, binary search dapat mengoptimalkan kinerja program secara signifikan, terutama ketika berhadapan dengan dataset yang besar.
 
-Berikut ilustrasi binary search pada array
+Berikut ilustrasi binary search pada array =
 
 ![Dhimas_Ilustrasi-Binary-Search-Array](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Ilustrasi-Binary-Search-Array.png)
 
@@ -303,20 +303,20 @@ using namespace std;
 
 //Prosedur sequential search untuk mencari huruf vokal 
 void SequentialSearch_151(char ArrayKalimat_151[], int PanjangKalimat_151){
-    int JumlahHurufVokal = 0; //deklarasi variabel JumlahHurufVokal dengan nilai 0
-    char HurufVokal[PanjangKalimat_151]; //deklarasi array HurufVokal dengan ukuran PanjangKalimat_151 untuk menyimpan huruf vokal yang ditemukan dalam kalimat
+    int JumlahHurufVokal_151 = 0; //deklarasi variabel JumlahHurufVokal dengan nilai 0
+    char HurufVokal_151[PanjangKalimat_151]; //deklarasi array HurufVokal dengan ukuran PanjangKalimat_151 untuk menyimpan huruf vokal yang ditemukan dalam kalimat
     for(int i = 0; i < PanjangKalimat_151; i++){ //perulangan untuk memeriksa setiap huruf didalm kalimat
         //jika dalam ArrayKalimat_151[] index ke i ditemukan huruf vokal (a, A, i, I, u, U, e, E, o, O), maka 
         if(ArrayKalimat_151[i] == 'a' || ArrayKalimat_151[i] == 'A' || ArrayKalimat_151[i] == 'i' || ArrayKalimat_151[i] == 'I' || ArrayKalimat_151[i] == 'u' || ArrayKalimat_151[i] == 'U' || ArrayKalimat_151[i] == 'e' || ArrayKalimat_151[i] == 'E' || ArrayKalimat_151[i] == 'o' || ArrayKalimat_151[i] == 'O'){
-            HurufVokal[JumlahHurufVokal] = ArrayKalimat_151[i]; //masukkan huruf vokal tersebut kedalam array HurufVokal[] 
-            JumlahHurufVokal++; //variabel JumlahHurufVokal bertambah nilainya
+            HurufVokal_151[JumlahHurufVokal_151] = ArrayKalimat_151[i]; //masukkan huruf vokal tersebut kedalam array HurufVokal[] 
+            JumlahHurufVokal_151++; //variabel JumlahHurufVokal bertambah nilainya
         }
     }
-    if(JumlahHurufVokal != 0){ //jika nilai variabel JumlahHurufVokal bukan sama dengan 0 (ditemukan huruf vokal), maka tampilkan jumlah huruf vokal yang ditemukan beserta huruf-hurufnya
-        cout << "Kalimat ini memiliki " << JumlahHurufVokal << " huruf vokal, yaitu : ";
-        for(int i = 0; i < JumlahHurufVokal; i++){
-            cout << HurufVokal[i];
-            if(i < JumlahHurufVokal - 1){
+    if(JumlahHurufVokal_151 != 0){ //jika nilai variabel JumlahHurufVokal bukan sama dengan 0 (ditemukan huruf vokal), maka tampilkan jumlah huruf vokal yang ditemukan beserta huruf-hurufnya
+        cout << "Kalimat ini memiliki " << JumlahHurufVokal_151 << " huruf vokal, yaitu : ";
+        for(int i = 0; i < JumlahHurufVokal_151; i++){
+            cout << HurufVokal_151[i];
+            if(i < JumlahHurufVokal_151 - 1){
                 cout << ", ";
             }
         }
@@ -337,14 +337,14 @@ int main(){
     PanjangKalimat_151 = InputKalimat_151.length();
 
     //memasukkan karakter dalam kalimat kedalam array
-    char ArrayKalimat[PanjangKalimat_151]; //deklarasi array char ArrayKalimat[] dengan ukuran PanjangKalimat_151
+    char ArrayKalimat_151[PanjangKalimat_151]; //deklarasi array char ArrayKalimat[] dengan ukuran PanjangKalimat_151
     //perulangan for-each yang memecah kalimat dalam InputKalimat_151 mejadi huruf-huruf penyusunnya, kemudian masukkan huruf-huruf tersebut kedalam ArrayKalimat[]
     for(int i = 0; i < PanjangKalimat_151; i++){
-        ArrayKalimat[i] = InputKalimat_151[i];
+        ArrayKalimat_151[i] = InputKalimat_151[i];
     }
 
     //pemanggilan prosedur SequentialSearch_151() untuk mencari huruf vokal, menghitung jumlahnya, dan menampilkan huruf-hurufnya
-    SequentialSearch_151(ArrayKalimat, PanjangKalimat_151);
+    SequentialSearch_151(ArrayKalimat_151, PanjangKalimat_151);
 
     return 0;
 }
@@ -364,11 +364,11 @@ Kode diatas merupakan program untuk menghitung jumlah huruf vokal yang ada dalam
 Berikut cara kerja program :
 - User menginputkan kalimat yang ingin dihitung jumlah huruf vokalnya. Kalimat tersebut akan disimpan dalam variabel `InputKalimat_151`
 - Program akan menghitung panjang kalimat tersebut dan menyimpannya dalam variabel `PanjangKalimat_151`
-- Program mendeklarasikan array bernama `ArrayKalimat` dengan panjang nilai variabel `PanjangKalimat_151`, array ini digunakan untuk menyimpan huruf-huruf penyusun kalimat yang telah diinputkan user
-- Program akan memecah kalimat tersebut menjadi huruf-huruf penyusunnya, kemudian huruf-huruf tersebut akan disimpan pada `ArrayKalimat[]`
-- Program memanggil prosedur `SequentialSearch_151()` untuk mencari huruf vokal diantara huruf-huruf penyusun kalimat tersebut, menghitung jumlahnya, dan menampilkan huruf-hurufnya. Prosedur ini bekerja dengan memeriksa setiap huruf yang tersimpan apabila terdapat huruf vokal (a, A, i, I, u, U, e, E, o, O), maka simpan huruf vokal tersebut dalam array `HurufVokal[]` dan jumlah huruf vokal tersebut disimpan pada variabel `JumlahHurufVokal`.
-- Jika nilai variabel `JumlahHurufVokal` bukan sama dengan 0 (ditemukan huruf vokal), maka tampilkan jumlahnya beserta huruf-hurufnya
-- Jika nilai variabel `JumlahHurufVokal` sama dengan 0 (tidak ditemukan huruf vokal), maka tampilkan "Kalimat ini tidak memiliki huruf vokal".
+- Program mendeklarasikan array bernama `ArrayKalimat_151` dengan panjang nilai variabel `PanjangKalimat_151`, array ini digunakan untuk menyimpan huruf-huruf penyusun kalimat yang telah diinputkan user
+- Program akan memecah kalimat tersebut menjadi huruf-huruf penyusunnya, kemudian huruf-huruf tersebut akan disimpan pada `ArrayKalimat_151[]`
+- Program memanggil prosedur `SequentialSearch_151()` untuk mencari huruf vokal diantara huruf-huruf penyusun kalimat tersebut, menghitung jumlahnya, dan menampilkan huruf-hurufnya. Prosedur ini bekerja dengan memeriksa setiap huruf yang tersimpan apabila terdapat huruf vokal (a, A, i, I, u, U, e, E, o, O), maka simpan huruf vokal tersebut dalam array `HurufVokal_151[]` dan jumlah huruf vokal tersebut disimpan pada variabel `JumlahHurufVokal_151`.
+- Jika nilai variabel `JumlahHurufVokal_151` bukan sama dengan 0 (ditemukan huruf vokal), maka tampilkan jumlahnya beserta huruf-hurufnya
+- Jika nilai variabel `JumlahHurufVokal_151` sama dengan 0 (tidak ditemukan huruf vokal), maka tampilkan "Kalimat ini tidak memiliki huruf vokal".
 
 ### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 
