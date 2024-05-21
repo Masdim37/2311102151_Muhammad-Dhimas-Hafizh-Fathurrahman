@@ -10,12 +10,14 @@ Searching (pencarian) pada struktur data mengacu pada proses algoritmik untuk me
 Sequential search adalah algoritma pencarian yang paling sederhana. Sequential search disebut juga sebagai linear search (pencarian linear). Sequential search bekerja dengan cara membandingkan setiap elemen yang tersimpan dalam suatu struktur data (misal : array) secara berurutan, dimulai dari elemen pertama, sampai elemen yang diinginkan ditemukan atau semua elemen telah dibandingkan[2]. Sequential search dapat dilakukan pada elemen data yang tidak diurutkan maupun pada elemen data yang diurutkan. Proses pencarian sequential akan singkat jika data yang diolah sedikit. Apabila data yang diolah banyak, prosesnya akan memakan waktu yang lama, sehingga algoritma sequential search hanya direkomendasikan untuk struktur data yang memuat jumlah data yang sedikit.
 
 Berikut ilustrasi sequential search pada array
+
 ![Dhimas_Ilustrasi-Sequential-Search-Array](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Ilustrasi-Sequential-Search-Array.png)
 
 #### 2. Binary Search
 Binary Search adalah algoritma pencarian data pada suatu struktur data (misal : array) yang telah terurut, metode ini lebih efisien daripada metode pencarian linier (sequential search) karena membutuhkan waktu komputasi yang lebih sedikit[3]. Binary search bekerja dengan membagi separuh dari jumlah data yang dicari (membagi jumlah data keseluruhan menjadi 2 bagian, yaitu bagian kanan dan kiri) sehingga memperkecil lokasi pencarian sampai menjadi satu data. Dengan teknik ini data akan dibuang setengah dari jumlah data seluruhnya. Apabila ditemukan kecocokan data maka program akan mengembalikan output, jika tidak pencarian akan terus berlanjut hingga akhir dari pembagian jumlah data tersebut[4]. Algoritma binary search memerlukan data yang sudah terurut sehingga diperlukan metode sorting data (mengurutkan data) seperti bubble sort, selection sort, insertion sort, dll sebelum mencari data menggunakan metode binary search. Dikarenakan algoritma binary search hanya membutuhkan waktu komputasi yang lebih sedikit, algoritma ini sangat direkomendasikan untuk diimplementasikan pada struktur data dengan jumlah data yang besar. Hal ini karena binary search memiliki kompleksitas waktu O(log n), yang jauh lebih efisien dibandingkan dengan sequential search yang memiliki kompleksitas waktu O(n). Dengan demikian, binary search dapat mengoptimalkan kinerja program secara signifikan, terutama ketika berhadapan dengan dataset yang besar.
 
 Berikut ilustrasi binary search pada array
+
 ![Dhimas_Ilustrasi-Binary-Search-Array](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Ilustrasi-Binary-Search-Array.png)
 
 ## Guided 
@@ -277,7 +279,9 @@ int main(){
 ![Dhimas_Output-Unguided1-2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Output-Unguided1-2.png)
 
 #### Deskripsi Program
-Kode diatas merupakan program untuk mencari sebuah huruf pada sebuah kalimat yang diinputkan user kemudian menampilkan indexnya. Program ini menggunakan algoritma binary search untuk mencari huruf yang dimaksud. Dikarenakan syarat untuk menggunakan binary search adalah data atau huruf harus sudah dalam bentuk terurut, maka pada program ini juga disertakan algoritma bubble sort untuk mengurutkan huruf secara ascending (dari terkecil ke terbesar). Berikut cara kerja program :
+Kode diatas merupakan program untuk mencari sebuah huruf pada sebuah kalimat yang diinputkan user kemudian menampilkan indexnya. Program ini menggunakan algoritma binary search untuk mencari huruf yang dimaksud. Dikarenakan syarat untuk menggunakan binary search adalah data atau huruf harus sudah dalam bentuk terurut, maka pada program ini juga disertakan algoritma bubble sort untuk mengurutkan huruf secara ascending (dari terkecil ke terbesar). 
+
+Berikut cara kerja program :
 - Pada awal int main(), program mendeklarasikan variabel `InputKalimat_151`, `KalimatTanpaSpasi_151`, `PanjangKalimat_151`, dan `HurufYangDicari_151`.
 - user menginputkan kalimat yang ingin dicari hurufnya, kalimat ini dimasukkan kedalam variabel `InputKalimat_151`
 - Program melakukan perulangan for-each yang memecah kalimat yang diinputkan menjadi elemen atau huruf-huruf penyusunnya. Kemudian jika elemen yang saat ini diperiksa bukan sama dengan spasi, maka masukkan elemen atau huruf tersebut ke variabel `KalimatTanpaSpasi_151`
@@ -355,7 +359,9 @@ int main(){
 ![Dhimas_Output-Unguided2-2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Output-Unguided2-2.png)
 
 #### Deskripsi Program
-Kode diatas merupakan program untuk menghitung jumlah huruf vokal yang ada dalam kalimat yang diinputkan user. Program ini menggunakan algoritma sequential search untuk mencari huruf vokal yang ada, menghitung jumlahnya, dan menampilkan huruf-hurufnya. Berikut cara kerja program :
+Kode diatas merupakan program untuk menghitung jumlah huruf vokal yang ada dalam kalimat yang diinputkan user. Program ini menggunakan algoritma sequential search untuk mencari huruf vokal yang ada, menghitung jumlahnya, dan menampilkan huruf-hurufnya. 
+
+Berikut cara kerja program :
 - User menginputkan kalimat yang ingin dihitung jumlah huruf vokalnya. Kalimat tersebut akan disimpan dalam variabel `InputKalimat_151`
 - Program akan menghitung panjang kalimat tersebut dan menyimpannya dalam variabel `PanjangKalimat_151`
 - Program mendeklarasikan array bernama `ArrayKalimat` dengan panjang nilai variabel `PanjangKalimat_151`, array ini digunakan untuk menyimpan huruf-huruf penyusun kalimat yang telah diinputkan user
