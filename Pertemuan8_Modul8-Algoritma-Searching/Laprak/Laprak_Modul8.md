@@ -347,7 +347,12 @@ int main(){
 ```
 
 #### Output:
-![Dhimas_Output-Unguided2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Output-Unguided2.png)
+
+##### Output Jika Kalimat Memiliki Huruf Vokal
+![Dhimas_Output-Unguided2-1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Output-Unguided2-1.png)
+
+##### Output Jika Kalimat Tidak Memiliki Huruf Vokal
+![Dhimas_Output-Unguided2-2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan8_Modul8-Algoritma-Searching/Laprak/Dhimas_Output-Unguided2-2.png)
 
 #### Deskripsi Program
 Kode diatas merupakan program untuk menghitung jumlah huruf vokal yang ada dalam kalimat yang diinputkan user. Program ini menggunakan algoritma sequential search untuk mencari huruf vokal yang ada, menghitung jumlahnya, dan menampilkan huruf-hurufnya. Berikut cara kerja program :
