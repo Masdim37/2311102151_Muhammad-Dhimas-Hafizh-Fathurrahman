@@ -1,4 +1,4 @@
-# Repository Praktikum Algoritma Dan Struktur Data
+# Repository Praktikum Struktur Data Dan Algoritma
 
 Nama : Muhammad Dhimas Hafizh Fathurrahman
 <br>NIM : 2311102151
