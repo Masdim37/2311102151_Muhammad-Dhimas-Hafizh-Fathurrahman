@@ -3,7 +3,7 @@
 
 ## Dasar Teori
 ### A. Graph
-Graf adalah sekumpulan simpul/vertex/titik/node didalam bidang 2 dimemnsi yang dihubungkan dengan sekumpulan garis atau sisi. Teori graf lahir pada tahun 1736 melalui tulisan Euler yang berisi tentang upaya pemecahan masalah jembatan Konigsberg yang sangat terkenal di Eropa. Graph dapat digunakan untuk merepresentasikan objek-objek diskrit dan hubungan antara objek-objek tersebut. Secara matematis, Graph dinyatakan dengan :
+Graf adalah sekumpulan simpul/vertex/titik/node didalam bidang 2 dimemnsi yang dihubungkan dengan sekumpulan garis atau sisi[1]. Graf merupakan suatu sistem yang terdiri atas suatu himpunan objek V = {v1, v2, …} yang disebut himpunan titik dan sebuah koleksi E = {ei, e2, …} yang merupakan koleksi sisi sedemikian hingga tiap sisi ek dikaitkan dengan suatu pasangan tak-terurut (v1, vj)[2]. Teori graf lahir pada tahun 1736 melalui tulisan Euler yang berisi tentang upaya pemecahan masalah jembatan Konigsberg yang sangat terkenal di Eropa. Graph dapat digunakan untuk merepresentasikan objek-objek diskrit dan hubungan antara objek-objek tersebut. Secara matematis, Graph dinyatakan dengan :
 <br>G = (V, E)
 <br>Dengan G menyatakan graph, V menyatakan simpul (vertex), dan E menyatakan sisi (edge)
 <br>Simpul pada graf dapat dinomori dengan huruf seperti a, b, c, d, dst atau bisa dengan bilangan asli 1, 2, 3, dst atau gabungan keduanya. Sedangkan sisi yang menghubungkan simpul a dan b dinyatakan dalam sepasang (a,b) atau dinyatakan dalam lambang e1, e2, e3, dst. Berikut merupakan contoh graf.
@@ -11,7 +11,7 @@ Graf adalah sekumpulan simpul/vertex/titik/node didalam bidang 2 dimemnsi yang d
 ![Dhimas_Contoh-Graph](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph.png)
 
 Dalam kehidupan sehari-hari, graph digunakan untuk mencari rute terpendek pada GPS, memodelkan struktur internet dan routing data, perencanaan rute dan jadwal transportasi umum, dll.
-<br>Terdapat beberapa jenis graph, antara lain sebagai berikut..
+<br>Terdapat beberapa jenis graph, antara lain sebagai berikut[1].
 
 #### 1. Graph Berarah (Directed Graph)
 Graph berarah adalah jenis graph di mana setiap sisi (edge) memiliki arah tertentu. Dalam graf berarah, sisi-sisi tersebut disebut panah (arc), yang menghubungkan sepasang simpul (vertex) dengan urutan tertentu, sehingga setiap urutan simpul mempunyai arti tersendiri. Berikut merupakan contoh graph berarah.
@@ -19,7 +19,55 @@ Graph berarah adalah jenis graph di mana setiap sisi (edge) memiliki arah terten
 ![Dhimas_Contoh-Graph-Berarah](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-Berarah.png)
 
 #### 2. Graph Tak Berarah (Undirected Graph)
-Graph tak berarah adalah jenis graf di mana setiap sisi (edge) tidak memiliki arah tertentu
+Graph tak berarah adalah jenis graph di mana setiap sisi (edge) tidak memiliki arah tertentu. Pada graph tak berarah, urutan simpul dalam sebuah busur tidak dipentingkan. Berikut merupakan contoh graph tak berarah.
+
+![Dhimas_Contoh-Graph-TakBerarah](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-TakBerarah.png)
+
+#### 3. Graph Berbobot (Weight Graph)
+Graph berbobot adalah jenis graph yang memiliki bobot pada setiap sisinya. Bobot sebuah busur dapat menyatakan panjang sebuah jalan dari 2 buah titik, jumlah rata-rata kendaraan perhari yang melalui sebuah jalan, dll. Berikut contoh graph berbobot. 
+
+![Dhimas_Contoh-Graph-Berbobot](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-Berbobot.jpg)
+
+Graph dapat direpresentasikan dalam berbagai bentuk, antara lain matriks ketetanggaan, matrik bersisian, dan senarai ketetanggaan[2].
+
+#### 1. Representasi Graph Menggunakan Matriks
+Matriks berbobot W untuk graf berbobot G dengan n simpul adalah matriks berukuran n × n, di mana elemen W[i][j] menyatakan bobot dari sisi yang menghubungkan simpul i ke simpul j. Jika tidak ada sisi yang menghubungkan i dan j, maka W[i][j] biasanya diisi dengan nilai tertentu (seperti ∞ atau 0) untuk menunjukkan tidak adanya koneksi. Berikut contoh representasi graph menggunakan matriks.
+
+![Dhimas_Representasi-Matriks](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Representasi-Matriks.png)
+
+#### 2. Representasi Graph Menggunakan Linked List
+Representasi graph menggunakan linked list adalah metode untuk menyimpan graph yang menghubungkan simpul-simpulnya melalui daftar terhubung, di mana setiap sisi graf memiliki bobot yang terkait. Berikut contoh representasi graph menggunakan linked list.
+
+![Dhimas_Representasi-LinkedList](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Representasi-LinkedList.png)
+
+### B. Pohon (Tree)
+Pohon adalah struktur data yang mirip dengan daftar tertaut tetapi alih-alih setiap simpul menunjuk hanya ke simpul berikutnya secara linier, setiap simpul menunjuk ke sejumlah simpul[3]. Pohon adalah contoh struktur data non-linier. Struktur data tree digunakan untuk menyimpan data-data hirarki seperti pohon keluarga, skema pertandingan, struktur organisasi. Terdapat beberapa istilah dalam pohon, antara lain sebagai berikut[4].
+
+![Dhimas_Istilah-Tree](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Istilah-Tree.png)
+
+- Root (akar) adalah node dengan hirarki tertinggi.
+- Parent adalah node yang berada satu level di atas node yang ditinjau (parent adalah node yang memiliki child).
+- Sibling adalah node-node yang memiliki parent yang sama dengan node yang ditinjau.
+- Child adalah node yang berada dibawah node parent.
+- Leaf adalah node yang tidak memiliki child.
+- Subtree adalah pohon yang terdiri dari sebuah simpul (node) dalam pohon utama beserta semua turunannya (descendants).
+- Level atau aras adalah posisi atau kedalaman suatu simpul (node) dalam pohon, dimulai dari level 0 pada node root.
+- Size adalah banyaknya node dalam suatu tree.
+- Height adalah banyaknya tingkatan atau level dalam suatu tree.
+- Degree adalah banyaknya child dalam suatu node.
+- Descendant adalah seluruh node yang terletak setelah node tertentu dan terletak pada jalur yang sama.
+
+Untuk membuat struktur data tree pada bahasa pemrograman C++, dapat dilakukan beberapa operasi, antara lain sebagai berikut.
+
+- Create; digunakan untuk membuat tree baru.
+- Clear; digunakan untuk menghapus tree.
+- isEmpty; digunakan untuk memeriksa apaah tree kosong atau tidak.
+- insert (left or right); digunakan untuk menambah node child (kanan maupun kiri).
+- Find; digunakan untuk mencari root, parent, left child, atau right child dari suatu node.
+- Update; digunakan untuk mengubah isi dari node yang ditunjuk.
+- Retrieve; digunakan untuk mengetahui isi dari node yang ditujuk.
+- Charasteristic; digunakan untuk mengetahui karakteristik dari suatu tree, yakni size, height, dan average length-nya
+- Traverse; digunakan untuk mengunjungi seluruh node dengan cara traversal. Terdapat 3 metode traverse, yaitu PreOrder (mencetak root - child kiri - child kanan), InOrder (mencetak child kiri - root - kanan), dan PostOrder (mencetak child kiri - child kanan - root).
 
 ## Guided 
 
@@ -470,8 +518,27 @@ int main()
 ```
 
 #### Deskripsi Program
-Kode diatas merupakan program implementasi tree atau pohon menggunakan struct.  
+Kode diatas merupakan program implementasi tree atau pohon menggunakan struct. Manipulasi tree pada program ini menggunakan fungsi dan prosedur yang telah dituliskan pada bagian int main(). Setiap fungsi dan prosedur memiliki aksi berbeda beda. Terdapat beberapa fungsi dan prosedur yang dapat digunakan untuk memanipulasi tree, antara lain :
+- struct Pohon; digunakan untuk mendeklarasikan struct Pohon.
+- void init(); digunakan untuk menginisialisasi root sebagai NULL.
+- bool isEmpty(); digunakan untuk memeriksa apakah tree kosong atau tidak.
+- void buatNode(char data); digunakan untuk membuat tree baru (membuat node root).
+- Pohon *insertLeft(char data, Pohon *node); digunakan untuk membuat node child kiri.
+- Pohon *insertRight(char data, Pohon *node)l digunakan untuk membuat node child kanan.
+- void update(char data, Pohon *node); digunakan untuk mengubah isi suatu node.
+- void retrieve(Pohon *node); digunakan untuk mengetahui isi suatu node.
+- void find(Pohon *node); digunakan untuk mencari node dan menampilkan root, parent, sibling, dan child node tersebut.
+- void preOrder(Pohon *node = root); digunakan untuk mencetak traversal secara PreOrder.
+- void inOrder(Pohon *node = root); digunakan untuk mencetak traversal secara InOrder.
+- void postOrder(Pohon *node = root); digunakan untuk mencetak traversal secara PostOrder.
+- void deleteTree(Pohon *node); digunakan untuk menghapus sebuah node dalam tree.
+- void deleteSub(Pohon *node); digunakna untuk menghapus subtree.
+- void clear(); digunakan untuk menghapus seluruh tree.
+- int size(Pohon *node = root); digunakan untuk menghitung jumlah node dalam tree.
+- int height(Pohon *node = root); digunakan untuk menghitung level tree.
+- void characteristic(); digunakan untuk mencetak karakteristik tree.
 
+Kemudian pada int main() dilakukan beberapa operasi yaitu membuat node akar, membuat child kiri dan kanan, mengupdate node, menunjuk node, mencari node, mecetak karakteristik tree, menampilkan traversal tree secara preorder, menampilkan traversal tree secara inorder, menampilkan traversal tree secara postorder.
 
 ## Unguided 
 
@@ -1211,7 +1278,11 @@ Kode diatas merupakan program implementasi tree menggunakan struct. Manipulasi t
 <br>Kemudian pada int main() terdapat beberapa menu dengan fungsinya masing-masing. Jika user memilih 1, maka masuk ke menu Buat Node Akar; jika user memilih 2, maka masuk ke menu Tambah Node Kiri; jika user memilih 3, maka masuk ke menu Tambah Node Kanan; jika user memilih 4, maka masuk ke menu Update Node; jika user memilih 5, maka masuk ke menu Retrieve (Tunjuk) Node; jika user memilih 6, maka masuk ke menu Cari Node; jika user memilih 7, maka masuk ke menu Tampilkan Child (Anak) Node; jika user memilih 8, maka masuk ke menu Tampilkan Descendant Node (Keturunan Node); jika user memilih 9, maka masuk ke menu Hapus Subtree; jika user memilih 10, maka masuk ke menu Hapus Tree; jika user memilih 11, maka masuk ke menu Tampilkan Karakteristik Tree; jika user memilih 12, maka masuk ke menu Tampilkan Traversal PreOrder; jika user memilih 13, maka masuk ke menu Tampilkan Traversal InOrder; jika user memilih 14, maka masuk ke menu Tampilkan Traversal PostOrder; dan jika user memilih 15, maka keluar dari program.
 
 ## Kesimpulan
+Graph adalah sekumpulan simpul didalam bidang 2 dimemnsi yang dihubungkan dengan sekumpulan sisi. Secara matematis, graph dituliskan dengan G = (V, E) dengan G adalah graph, V adalah vertex (simpul), dan E adalah edge (sisi). Terdapat 3 jenis graph, yaitu graph berarah (jenis graph di mana setiap sisi (edge) memiliki arah tertentu), graph tak berarah (jenis graph di mana setiap sisi (edge) tidak memiliki arah tertentu), dan graph berbobot (jenis graph yang memiliki bobot pada setiap sisinya). Graph dapat direpresentasikan menggunakan matriks maupun linked list.
 
+Tree (pohon) adalah struktur data yang setiap simpulnya menunjuk ke sejumlah simpul lain. Pohon adalah contoh struktur data non-linier. Terdapat beberapa istilah dalah struktur data tree, yaitu root, parent, sibling, leaf, child, subtree, level, size, height, degree, descendant, dll.
 
 ## Referensi
-[1] 
+[1] Triase, Triase. (2020). "Struktur Data: Diktat Edisi Revisi." Retrieved from http://repository.uinsu.ac.id/id/eprint/9717.
+<br>[2] Buhaerah, M., Busrah, Z., & Sanjaya, H. (2022). "Teori Graf dan Aplikasinya". Makassar: LSQ Makassar. Retrieved from https://repository.iainpare.ac.id/id/eprint/3489/1/2021%20Teori%20Graf.pdf.
+<br>[3] Joseph Teguh Santoso. (2021). "STRUKTUR DATA dan ALGORITMA (Bagian 1)". Penerbit Yayasan Prima Agus Teknik, 7(1), 1-333. Retrieved from https://penerbit.stekom.ac.id/index.php/yayasanpat/article/view/288.
