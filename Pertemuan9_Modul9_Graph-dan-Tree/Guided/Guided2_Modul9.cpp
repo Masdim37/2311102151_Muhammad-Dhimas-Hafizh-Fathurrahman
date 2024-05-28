@@ -1,17 +1,25 @@
 #include <iostream>
 #include <iomanip>
     using namespace std;
+
+//Deklarasi struct pohon yang nodenya berisi variabel data
 struct Pohon{
     char data;
-    Pohon *left, *right, *parent;
+    Pohon *left, *right, *parent; //deklarasi node left, right, dan parent 
 };
-Pohon *root, *baru;
+Pohon *root, *baru; //Deklarasi node root dan node baru
+
+//Prosudr inisialisasi
 void init(){
-    root = NULL;
+    root = NULL; //Menyatakan node root adalah NULL
 }
+
+//Fungsi isEmpty untuk memeriksa apakah tree kosong atau tidak
 bool isEmpty(){
     return root == NULL;
 }
+
+//Prosedur buatNode untuk membuat node baru
 void buatNode(char data){
     if (isEmpty())
     {
@@ -28,6 +36,8 @@ void buatNode(char data){
         cout << "\n Tree sudah ada!" << endl;
     }
 }
+
+//Fungsi untuk membuat node child kiri
 Pohon *insertLeft(char data, Pohon *node)
 {
     if (isEmpty())
@@ -55,6 +65,8 @@ Pohon *insertLeft(char data, Pohon *node)
         }
     }
 }
+
+//Fungsi untuk membuat node child kanan
 Pohon *insertRight(char data, Pohon *node)
 {
     if (isEmpty())
@@ -82,6 +94,8 @@ Pohon *insertRight(char data, Pohon *node)
         }
     }
 }
+
+//Prosedur untuk mengupdate nilai suatu node
 void update(char data, Pohon *node)
 {
     if (isEmpty())
@@ -103,6 +117,8 @@ void update(char data, Pohon *node)
         }
     }
 }
+
+//Prosedur untuk menunjuk suatu node
 void retrieve(Pohon *node)
 {
     if (isEmpty())
@@ -121,6 +137,8 @@ void retrieve(Pohon *node)
         }
     }
 }
+
+//Prosedur untuk mencari suatu node kemudian menampilkan root, parent, sibling, dan child node tersebut
 void find(Pohon *node)
 {
     if (isEmpty())
@@ -159,8 +177,9 @@ void find(Pohon *node)
         }
     }
 }
+
 // Penelusuran (Traversal)
-// preOrder
+//Prosedur untuk menampilkan traversal secara pre order
 void preOrder(Pohon *node = root)
 {
     if (isEmpty())
@@ -177,7 +196,8 @@ void preOrder(Pohon *node = root)
         }
     }
 }
-// inOrder
+
+//Prosedur untuk menampilkan traversal secara in order
 void inOrder(Pohon *node = root)
 {
     if (isEmpty())
@@ -194,7 +214,8 @@ void inOrder(Pohon *node = root)
         }
     }
 }
-// postOrder
+
+//Prosedur untuk menampilkan traversal secara post order
 void postOrder(Pohon *node = root)
 {
     if (isEmpty())
@@ -211,7 +232,8 @@ void postOrder(Pohon *node = root)
         }
     }
 }
-// Hapus Node Tree
+
+//Prosedur untuk menhapus sebuah node didalam tree
 void deleteTree(Pohon *node)
 {
     if (isEmpty())
@@ -241,7 +263,8 @@ void deleteTree(Pohon *node)
         }
     }
 }
-// Hapus SubTree
+
+//Prosedur untuk menghapus sub tree
 void deleteSub(Pohon *node)
 {
     if (isEmpty())
@@ -255,7 +278,8 @@ void deleteSub(Pohon *node)
         cout << "\n Node subtree " << node->data << " berhasil dihapus." << endl;
     }
 }
-// Hapus Tree
+
+//Prosedur untuk menghapus seluruh tree
 void clear()
 {
     if (isEmpty())
@@ -268,7 +292,8 @@ void clear()
         cout << "\n Pohon berhasil dihapus." << endl;
     }
 }
-// Cek Size Tree
+
+//Fungsi untuk memeriksa jumlah node (size) didalam tree
 int size(Pohon *node = root)
 {
     if (isEmpty())
@@ -288,7 +313,8 @@ int size(Pohon *node = root)
         }
     }
 }
-// Cek Height Level Tree
+
+//Fungsi untuk memeriksa level atau aras (height) tree
 int height(Pohon *node = root)
 {
     if (isEmpty())
@@ -317,45 +343,50 @@ int height(Pohon *node = root)
         }
     }
 }
-// Karakteristik Tree
+
+//Prosedur untuk memeriksa karakteristik tree
 void characteristic()
 {
     cout << "\n Size Tree : " << size() << endl;
     cout << " Height Tree : " << height() << endl;
     cout << " Average Node of Tree : " << size() / height() << endl;
 }
+
 int main()
 {
-    buatNode('A');
-    Pohon *nodeB, *nodeC, *nodeD, *nodeE, *nodeF, *nodeG, *nodeH, *nodeI, *nodeJ;
+    buatNode('A'); //buat node A sebagai root
+    Pohon *nodeB, *nodeC, *nodeD, *nodeE, *nodeF, *nodeG, *nodeH, *nodeI, *nodeJ; //deklarasi node B-J
     
-    nodeB = insertLeft('B', root),
-    nodeC =  insertRight('C', root),
-    nodeD = insertLeft('D', nodeB), 
-    nodeE = insertRight('E', nodeB), 
-    nodeF = insertLeft('F', nodeC), 
-    nodeG = insertLeft('G', nodeE), 
-    nodeH = insertRight('H', nodeE),
-    nodeI = insertLeft('I', nodeG), 
-    nodeJ = insertRight('J', nodeG);
+    nodeB = insertLeft('B', root), //tambah node B sebagai child kiri node A
+    nodeC =  insertRight('C', root), //tambah node C sebagai child kanan node A
+    nodeD = insertLeft('D', nodeB), //tambah node D sebagai child kiri node B
+    nodeE = insertRight('E', nodeB), //tambah node e sebagai child kanan node B
+    nodeF = insertLeft('F', nodeC), //tambah node F sebagai child kiri node C
+    nodeG = insertLeft('G', nodeE), //tambah node G sebagai child kiri node E
+    nodeH = insertRight('H', nodeE), //tambah node H sebagai child kanan node E
+    nodeI = insertLeft('I', nodeG), //tambah node I sebagai child kiri node G
+    nodeJ = insertRight('J', nodeG); //tambah node J sebagai child kanan node G
 
-    update('Z', nodeC);
-    update('C', nodeC);
+    update('Z', nodeC); //update (ubah) nama node C menjadi Z
+    update('C', nodeC); //update (ubah) kembali nama node C menjadi C
 
-    retrieve(nodeC);
+    retrieve(nodeC); //Tunjuk node C
 
-    find(nodeC);
+    find(nodeC); //Mencari node C dan menampilkan root, parent, sibling, dan child node tersebut
 
-    characteristic();
+    characteristic(); //Menampilkan karakteristik tree
 
+    //Menampilkan traversal tree secara pre order
     cout << "PreOrder : " << endl;
     preOrder(root);
     cout << "\n" << endl;
 
+    //menampilkan traversal tree secara in order
     cout << "InOrder : " << endl;
     inOrder(root);
     cout << "\n" << endl;
 
+    //menampilkan traversal tree secara post order
     cout << "PostOrder : " << endl;
     postOrder(root);
     cout << "\n" << endl;
