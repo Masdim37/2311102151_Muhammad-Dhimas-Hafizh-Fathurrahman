@@ -8,7 +8,7 @@ Graf adalah sekumpulan simpul/vertex/titik/node didalam bidang 2 dimemnsi yang d
 <br>Dengan G menyatakan graph, V menyatakan simpul (vertex), dan E menyatakan sisi (edge)
 <br>Simpul pada graf dapat dinomori dengan huruf seperti a, b, c, d, dst atau bisa dengan bilangan asli 1, 2, 3, dst atau gabungan keduanya. Sedangkan sisi yang menghubungkan simpul a dan b dinyatakan dalam sepasang (a,b) atau dinyatakan dalam lambang e1, e2, e3, dst. Berikut merupakan contoh graf.
 
-![Dhimas_Contoh-Graph](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph.png)
+![Dhimas_Contoh-Graph](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph.png)
 
 Dalam kehidupan sehari-hari, graph digunakan untuk mencari rute terpendek pada GPS, memodelkan struktur internet dan routing data, perencanaan rute dan jadwal transportasi umum, dll.
 <br>Terdapat beberapa jenis graph, antara lain sebagai berikut[1].
@@ -16,34 +16,34 @@ Dalam kehidupan sehari-hari, graph digunakan untuk mencari rute terpendek pada G
 #### 1. Graph Berarah (Directed Graph)
 Graph berarah adalah jenis graph di mana setiap sisi (edge) memiliki arah tertentu. Dalam graf berarah, sisi-sisi tersebut disebut panah (arc), yang menghubungkan sepasang simpul (vertex) dengan urutan tertentu, sehingga setiap urutan simpul mempunyai arti tersendiri. Berikut merupakan contoh graph berarah.
 
-![Dhimas_Contoh-Graph-Berarah](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-Berarah.png)
+![Dhimas_Contoh-Graph-Berarah](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-Berarah.png)
 
 #### 2. Graph Tak Berarah (Undirected Graph)
 Graph tak berarah adalah jenis graph di mana setiap sisi (edge) tidak memiliki arah tertentu. Pada graph tak berarah, urutan simpul dalam sebuah busur tidak dipentingkan. Berikut merupakan contoh graph tak berarah.
 
-![Dhimas_Contoh-Graph-TakBerarah](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-TakBerarah.png)
+![Dhimas_Contoh-Graph-TakBerarah](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-TakBerarah.png)
 
 #### 3. Graph Berbobot (Weight Graph)
 Graph berbobot adalah jenis graph yang memiliki bobot pada setiap sisinya. Bobot sebuah busur dapat menyatakan panjang sebuah jalan dari 2 buah titik, jumlah rata-rata kendaraan perhari yang melalui sebuah jalan, dll. Berikut contoh graph berbobot. 
 
-![Dhimas_Contoh-Graph-Berbobot](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-Berbobot.jpg)
+![Dhimas_Contoh-Graph-Berbobot](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph-Berbobot.jpg)
 
 Graph dapat direpresentasikan dalam berbagai bentuk, antara lain matriks ketetanggaan, matrik bersisian, dan senarai ketetanggaan[2].
 
 #### 1. Representasi Graph Menggunakan Matriks
 Matriks berbobot W untuk graf berbobot G dengan n simpul adalah matriks berukuran n × n, di mana elemen W[i][j] menyatakan bobot dari sisi yang menghubungkan simpul i ke simpul j. Jika tidak ada sisi yang menghubungkan i dan j, maka W[i][j] biasanya diisi dengan nilai tertentu (seperti ∞ atau 0) untuk menunjukkan tidak adanya koneksi. Berikut contoh representasi graph menggunakan matriks.
 
-![Dhimas_Representasi-Matriks](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Representasi-Matriks.png)
+![Dhimas_Representasi-Matriks](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Representasi-Matriks.png)
 
 #### 2. Representasi Graph Menggunakan Linked List
 Representasi graph menggunakan linked list adalah metode untuk menyimpan graph yang menghubungkan simpul-simpulnya melalui daftar terhubung, di mana setiap sisi graf memiliki bobot yang terkait. Berikut contoh representasi graph menggunakan linked list.
 
-![Dhimas_Representasi-LinkedList](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Representasi-LinkedList.png)
+![Dhimas_Representasi-LinkedList](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Representasi-LinkedList.png)
 
 ### B. Pohon (Tree)
 Pohon adalah struktur data yang mirip dengan daftar tertaut tetapi alih-alih setiap simpul menunjuk hanya ke simpul berikutnya secara linier, setiap simpul menunjuk ke sejumlah simpul[3]. Pohon adalah contoh struktur data non-linier. Struktur data tree digunakan untuk menyimpan data-data hirarki seperti pohon keluarga, skema pertandingan, struktur organisasi. Terdapat beberapa istilah dalam pohon, antara lain sebagai berikut[4].
 
-![Dhimas_Istilah-Tree](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Istilah-Tree.png)
+![Dhimas_Istilah-Tree](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Istilah-Tree.png)
 
 - Root (akar) adalah node dengan hirarki tertinggi.
 - Parent adalah node yang berada satu level di atas node yang ditinjau (parent adalah node yang memiliki child).
@@ -548,7 +548,7 @@ Contoh : int nama_22102003;
 ### 1. Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya.
 Berikut contoh output program :
 
-![Dhimas_Contoh-Output-Unguided1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Output-Unguided1.png)
+![Dhimas_Contoh-Output-Unguided1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Contoh-Output-Unguided1.png)
 
 ```C++
 #include <iostream>
@@ -1190,67 +1190,67 @@ int main(){
 
 Gunakan fungsi BuatNode_151, TambahKanan_151, dan TambahKiri_151 untuk membuat tree seperti gambar berikut.
 
-![Dhimas_Tree-Unguided2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Tree-Unguided2.png)
+![Dhimas_Tree-Unguided2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Tree-Unguided2.png)
 
 ##### Menambahkan Node A (Root)
-![Dhimas_Output-Unguided2-1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-1.png)
+![Dhimas_Output-Unguided2-1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-1.png)
 
 ##### Menambahkan Node B (Child Kiri Node A)
-![Dhimas_Output-Unguided2-2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-2.png)
+![Dhimas_Output-Unguided2-2](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-2.png)
 
 ##### Menambahkan Node C (Child Kanan Node A)
-![Dhimas_Output-Unguided2-3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-3.png)
+![Dhimas_Output-Unguided2-3](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-3.png)
 
 ##### Menambahkan Node D (Child Kiri Node B)
-![Dhimas_Output-Unguided2-4](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-4.png)
+![Dhimas_Output-Unguided2-4](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-4.png)
 
 ##### Menambahkan Node E (Child Kanan Node B)
-![Dhimas_Output-Unguided2-5](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-5.png)
+![Dhimas_Output-Unguided2-5](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-5.png)
 
 ##### Menambahkan Node F (Child Kanan Node C)
-![Dhimas_Output-Unguided2-6](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-6.png)
+![Dhimas_Output-Unguided2-6](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-6.png)
 
 ##### Menambahkan Node G (Child Kiri Node E)
-![Dhimas_Output-Unguided2-7](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-7.png)
+![Dhimas_Output-Unguided2-7](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-7.png)
 
 ##### Menambahkan Node H (Child Kanan Node E)
-![Dhimas_Output-Unguided2-8](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-8.png)
+![Dhimas_Output-Unguided2-8](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-8.png)
 
 ##### Update Node F Menjadi M
-![Dhimas_Output-Unguided2-9](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-9.png)
+![Dhimas_Output-Unguided2-9](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-9.png)
 
 ##### Retrieve (Tunjuk) Node M
-![Dhimas_Output-Unguided2-10](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-10.png)
+![Dhimas_Output-Unguided2-10](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-10.png)
 
 ##### Cari Node E
-![Dhimas_Output-Unguided2-11](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-11.png)
+![Dhimas_Output-Unguided2-11](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-11.png)
 
 ##### Tampilkan Child Node B
-![Dhimas_Output-Unguided2-12](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-12.png)
+![Dhimas_Output-Unguided2-12](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-12.png)
 
 ##### Tampilkan Descendant Node B
-![Dhimas_Output-Unguided2-13](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-13.png)
+![Dhimas_Output-Unguided2-13](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-13.png)
 
 ##### Hapus Subtree Dengan Root Node C
-![Dhimas_Output-Unguided2-14](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-14.png)
+![Dhimas_Output-Unguided2-14](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-14.png)
 
 ##### Tampilkan Karakteristik Tree
-![Dhimas_Output-Unguided2-15](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-15.png)
+![Dhimas_Output-Unguided2-15](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-15.png)
 
 ##### Tampilkan Traversal Secara PreOrder
-![Dhimas_Output-Unguided2-16](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-16.png)
+![Dhimas_Output-Unguided2-16](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-16.png)
 
 ##### Tampilkan Traversal Secara InOrder
-![Dhimas_Output-Unguided2-17](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-17.png)
+![Dhimas_Output-Unguided2-17](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-17.png)
 
 ##### Tampilkan Traversal Secara PostOrder
-![Dhimas_Output-Unguided2-18](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-18.png)
+![Dhimas_Output-Unguided2-18](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-18.png)
 
 ##### Hapus Tree
-![Dhimas_Output-Unguided2-19](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-19.png)
+![Dhimas_Output-Unguided2-19](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-19.png)
 
 ##### Keluar Dari Program
-![Dhimas_Output-Unguided2-20](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-20.png)
+![Dhimas_Output-Unguided2-20](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided2-20.png)
 
 #### Deskripsi Program
 Kode diatas merupakan program implementasi tree menggunakan struct. Manipulasi tree pada program ini menggunakan menu-menu yang dapat dipilih oleh user. Setiap pilihan menu akan melakukan aksi yang berbeda beda. Terdapat beberapa fungsi dan prosedur yang dapat digunakan untuk memanipulasi tree, antara lain :
