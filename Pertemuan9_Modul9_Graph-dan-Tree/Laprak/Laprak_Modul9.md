@@ -11,7 +11,7 @@ Graf adalah sekumpulan simpul/vertex/titik/node didalam bidang 2 dimemnsi yang d
 ![Dhimas_Contoh-Graph](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Contoh-Graph.png)
 
 Dalam kehidupan sehari-hari, graph digunakan untuk mencari rute terpendek pada GPS, memodelkan struktur internet dan routing data, perencanaan rute dan jadwal transportasi umum, dll.
-<br>Terdapat beberapa jenis graph, antara lain sebagai berikut.
+<br>Terdapat beberapa jenis graph, antara lain sebagai berikut..
 
 #### 1. Graph Berarah (Directed Graph)
 Graph berarah adalah jenis graph di mana setiap sisi (edge) memiliki arah tertentu. Dalam graf berarah, sisi-sisi tersebut disebut panah (arc), yang menghubungkan sepasang simpul (vertex) dengan urutan tertentu, sehingga setiap urutan simpul mempunyai arti tersendiri. Berikut merupakan contoh graph berarah.
