@@ -625,7 +625,7 @@ int main() {
 
 #### Output:
 
-![Dhimas_Output-Unguided1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9-Graph-dan-Tree/Laprak/Dhimas_Output-Unguided1.png)
+![Dhimas_Output-Unguided1](https://github.com/Masdim37/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan9_Modul9_Graph-dan-Tree/Laprak/Dhimas_Output-Unguided1.png)
 
 #### Deskripsi Program
 Kode diatas merupakan program penerapa graph sederhana. Pada awal program terdapat prosedur `TampilGraph_151` yang digunakan untuk menampilkan simpul-simpul (nama-nama kota) beserta busurnya (bobot atau nilai antar simpul). Pada int main() user diminta memasukkan jumlah simpul, kemudian disimpan pada variabel `JumlahSimpul_2311102151`. Kemudian program mendeklarasikan array dinamis bernama `NamaSimpul_2311102151[]` dengan ukuran nilai variabel `JumlahSimpul_2311102151`. Kemudian user diminta menginputkan nama-nama simpul yang kemudian disimpan pada array `NamaSimpul_2311102151[]` menggunakan perulangan. Kemudian program mendeklarasikan array dinamis 2 dimensi bernama `BobotSimpul_151[]` dengan ukuran nilai variabel `JumlahSimpul_2311102151`. Kemudian user diminta memasukkan bobot antar simpul yang kemudian nilainya dimasukkan menggunakan perulangan kedalam array `BobotSimpul_151[]`. Setelah itu program memanggil prosedur `TampilGraph_151` untuk menampilkan simpul-simpul beserta busurnya (bobot) dalam bentuk matriks.
